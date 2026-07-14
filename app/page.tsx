@@ -379,34 +379,34 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="field-marks" aria-label="Artwork-derived field marks">
+      <section className="field-marks" aria-label="Identity marks">
         <div className="section-index">00 / IDENTITY MARKS</div>
         <div className="mark-row">
           <figure className="art-mark mark-woodsy-face">
-            <img src="/nft/2821.png" alt="Crop of Woodsy Dusty's blue security mask" />
+            <img src="/tokens/code-guard.png" alt="Code guard identity token" />
             <figcaption>CODE GUARD</figcaption>
           </figure>
           <figure className="art-mark mark-woodsy-terminal">
-            <img src="/nft/2821.png" alt="Crop of Woodsy Dusty's jacket terminal" />
+            <img src="/tokens/pipeline.png" alt="Pipeline identity token" />
             <figcaption>PIPELINE</figcaption>
           </figure>
           <figure className="art-mark mark-guarded-face">
-            <img src="/nft/8377.png" alt="Crop of Guarded of Vibrant's neon visor" />
+            <img src="/tokens/human-signal.png" alt="Human signal identity token" />
             <figcaption>HUMAN SIGNAL</figcaption>
           </figure>
           <figure className="art-mark mark-guarded-kit">
-            <img src="/nft/8377.png" alt="Crop of Guarded of Vibrant's lure and communications kit" />
+            <img src="/tokens/bait-map.png" alt="Bait map identity token" />
             <figcaption>BAIT MAP</figcaption>
           </figure>
         </div>
-        <p>All four marks are crops of the authentic token artwork—not redraws.</p>
+        <p>Four graphic tokens for the two-track method: code systems and human signals.</p>
       </section>
 
       <section className="roadmap" id="roadmap">
         <div className="roadmap-head">
           <div>
             <p className="eyebrow">MISSION LEDGER / SAVED ON THIS DEVICE</p>
-            <h2>The long way round</h2>
+            <h2>Learning checklist</h2>
             <p>
               Vendor certifications are industry credentials. The TAFE Certificate IV is
               the nationally recognised Australian qualification route.
@@ -482,7 +482,7 @@ export default function Home() {
         <div className="gate-symbol" aria-hidden="true">WHITE<br />HAT</div>
         <div>
           <p className="eyebrow">THE ENGAGEMENT GATE / NO GREY AREA</p>
-          <h2>Curiosity needs written permission.</h2>
+          <h2>Get permission</h2>
           <p>
             Before touching a client system or testing a person: get a signed scope,
             named targets, allowed techniques, dates, stop conditions, data-handling rules
@@ -502,7 +502,7 @@ export default function Home() {
       <section className="career-path">
         <div className="section-title">
           <p className="eyebrow">FROM LAB NOTES TO PAID WORK</p>
-          <h2>The credible contractor path</h2>
+          <h2>Contractor path</h2>
         </div>
         <ol>
           <li><span>01</span><strong>Lab safely</strong><p>Use PortSwigger, legal ranges and your own infrastructure. Never practise on strangers.</p></li>
@@ -520,7 +520,7 @@ export default function Home() {
       <section className="watchlist" id="watchlist">
         <div className="section-title">
           <p className="eyebrow">GUARDED&apos;S WATCH DESK / AUSTRALIA</p>
-          <h2>Follow the signal, not the hype</h2>
+          <h2>Watchlist</h2>
           <p>These are the useful Australian feeds for AI scams, human harm, privacy and responsible deployment.</p>
         </div>
         <div className="watch-grid">
@@ -538,61 +538,25 @@ export default function Home() {
       <section className="merch" id="merch">
         <div className="section-title">
           <p className="eyebrow">FUTURE FIELD KIT / CONCEPTS ONLY</p>
-          <h2>Wear the two-track method</h2>
-          <p>Mockups use the authentic broker artwork. Nothing is for sale yet.</p>
+          <h2>Merch concepts</h2>
+          <p>Concept mockups based on the approved duo artwork. Nothing is for sale yet.</p>
         </div>
         <div className="merch-grid">
-          <article className="merch-card merch-dark">
-            <div className="tee-mockup">
-              <div className="tee-print"><img src="/nft/2821.png" alt="Woodsy Dusty print on a dark concept t-shirt" /></div>
-            </div>
-            <div className="merch-caption"><span>CONCEPT 01</span><h3>Systems operator tee</h3><p>Woodsy Dusty · black field cotton · cyan signal stitch</p></div>
+          <article className="merch-card">
+            <img className="merch-real-image" src="/merch/shirt-approved.png" alt="Approved duo artwork on a navy t-shirt mockup" />
+            <div className="merch-caption"><span>CONCEPT 01</span><h3>T-shirt</h3><p>Navy field cotton · approved dual-character graphic</p></div>
           </article>
-          <article className="merch-card merch-vibrant">
-            <div className="tote-mockup">
-              <div className="tote-handle" aria-hidden="true" />
-              <img src="/nft/8377.png" alt="Guarded of Vibrant print on a bright concept field tote" />
-            </div>
-            <div className="merch-caption"><span>CONCEPT 02</span><h3>Human layer field tote</h3><p>Guarded of Vibrant · signal pink · social-engineering kit</p></div>
+          <article className="merch-card">
+            <img className="merch-real-image" src="/merch/tote-approved.png" alt="Approved duo artwork on a canvas tote mockup" />
+            <div className="merch-caption"><span>CONCEPT 02</span><h3>Tote</h3><p>Canvas carryall · navy handles · olive gusset</p></div>
           </article>
-          <article className="merch-card merch-patch-card">
-            <div className="patch-mockup">
-              <div><img src="/nft/2821.png" alt="Woodsy Dusty patch crop" /></div>
-              <div><img src="/nft/8377.png" alt="Guarded of Vibrant patch crop" /></div>
-              <strong>CODE / PEOPLE</strong>
-              <span>BITPIXI FIELD OPS</span>
-            </div>
-            <div className="merch-caption"><span>CONCEPT 03</span><h3>Dual-track woven patch</h3><p>Two authentic portraits · one operating method</p></div>
+          <article className="merch-card">
+            <img className="merch-real-image" src="/merch/keychain-approved.png" alt="Approved duo artwork as an acrylic keychain mockup" />
+            <div className="merch-caption"><span>CONCEPT 03</span><h3>Acrylic keychain</h3><p>One clear-cut dual-character charm</p></div>
           </article>
-        </div>
-      </section>
-
-      <section className="source-files">
-        <div className="section-title">
-          <p className="eyebrow">RAW SIGNAL / TOKEN SOURCES</p>
-          <h2>The originals, intact</h2>
-          <p>Local copies are included so the site is not dependent on a public IPFS gateway.</p>
-        </div>
-        <div className="source-grid">
-          <article className="source-woodsy">
-            <span>#2821 · HACKER</span>
-            <h3>Woodsy Dusty</h3>
-            <p>IPFS: QmcsrQ…/2821.svg</p>
-            <div>
-              <a href="/nft/2821.svg" target="_blank">Open raw SVG ↗</a>
-              <a href="/nft/2821.json" target="_blank">Metadata JSON ↗</a>
-              <a href="https://opensea.io/item/ethereum/0x892848074ddea461a15f337250da3ce55580ca85/2821" target="_blank" rel="noreferrer">OpenSea ↗</a>
-            </div>
-          </article>
-          <article className="source-guarded">
-            <span>#8377 · PHISHERMAN</span>
-            <h3>Guarded of Vibrant</h3>
-            <p>IPFS: QmcsrQ…/8377.svg</p>
-            <div>
-              <a href="/nft/8377.svg" target="_blank">Open raw SVG ↗</a>
-              <a href="/nft/8377.json" target="_blank">Metadata JSON ↗</a>
-              <a href="https://opensea.io/item/ethereum/0x892848074ddea461a15f337250da3ce55580ca85/8377" target="_blank" rel="noreferrer">OpenSea ↗</a>
-            </div>
+          <article className="merch-card">
+            <img className="merch-real-image" src="/merch/patch-approved.png" alt="Approved duo artwork as a circular embroidered patch mockup" />
+            <div className="merch-caption"><span>CONCEPT 04</span><h3>Embroidered patch</h3><p>Round merrow edge · navy, cyan and pink threadwork</p></div>
           </article>
         </div>
       </section>

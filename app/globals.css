@@ -205,8 +205,6 @@ img { display: block; max-width: 100%; }
 
 .hero h1 span {
   color: var(--woodsy-cyan);
-  -webkit-text-stroke: 1px var(--woodsy-blue);
-  text-stroke: 1px var(--woodsy-blue);
 }
 
 .hero-deck {
@@ -304,8 +302,7 @@ img { display: block; max-width: 100%; }
 .roadmap,
 .career-path,
 .watchlist,
-.merch,
-.source-files {
+.merch {
   width: min(1400px, calc(100% - 40px));
   margin-left: auto;
   margin-right: auto;
@@ -348,10 +345,6 @@ img { display: block; max-width: 100%; }
   background: var(--woodsy-navy);
 }
 
-.mark-woodsy-face img { object-position: 50% 22%; }
-.mark-woodsy-terminal img { object-position: 50% 48%; }
-.mark-guarded-face img { object-position: 50% 24%; }
-.mark-guarded-kit img { object-position: 68% 56%; }
 .mark-guarded-face img,
 .mark-guarded-kit img { border-color: var(--guarded-pink); background: var(--guarded-periwinkle); }
 
@@ -386,9 +379,10 @@ img { display: block; max-width: 100%; }
 .section-title h2,
 .authorisation-gate h2 {
   margin: 0;
-  font-size: clamp(2.7rem, 5vw, 5.8rem);
-  line-height: 0.9;
-  letter-spacing: -0.065em;
+  font-size: clamp(2.1rem, 3.5vw, 4rem);
+  line-height: 1;
+  letter-spacing: -0.045em;
+  font-weight: 650;
 }
 
 .roadmap-head > div:first-child > p:last-child,
@@ -584,7 +578,7 @@ img { display: block; max-width: 100%; }
 }
 
 .authorisation-gate .eyebrow { color: #642041; }
-.authorisation-gate h2 { font-size: clamp(2.4rem, 4.2vw, 4.8rem); }
+.authorisation-gate h2 { font-size: clamp(2.1rem, 3.5vw, 4rem); }
 .authorisation-gate p:last-child { max-width: 52rem; line-height: 1.6; font-size: 0.92rem; }
 .gate-links { display: grid; gap: 14px; position: relative; z-index: 2; }
 .gate-links a { font-family: var(--mono); font-size: 0.68rem; line-height: 1.5; }
@@ -592,7 +586,7 @@ img { display: block; max-width: 100%; }
 .career-path { padding: 24px 0 120px; }
 .section-title { display: grid; grid-template-columns: 1fr 1fr; column-gap: 40px; align-items: end; margin-bottom: 52px; }
 .section-title .eyebrow { grid-column: 1 / -1; }
-.section-title h2 { font-size: clamp(2.8rem, 5vw, 5.7rem); }
+.section-title h2 { font-size: clamp(2.1rem, 3.5vw, 4rem); }
 .section-title > p:last-child { justify-self: end; }
 
 .career-path ol { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
@@ -613,79 +607,13 @@ img { display: block; max-width: 100%; }
 .watch-grid b { position: absolute; top: 26px; right: 26px; font-weight: 400; color: var(--sage); }
 
 .merch { padding: 112px 0 130px; }
-.merch-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-.merch-card { min-width: 0; border: 1px solid var(--line); padding: 24px; min-height: 610px; display: grid; grid-template-rows: 1fr auto; overflow: hidden; }
-.merch-dark { background: #0d1831; border-color: rgba(0, 184, 255, 0.5); }
-.merch-vibrant { background: var(--guarded-periwinkle); color: #261332; border-color: rgba(250, 43, 156, 0.58); }
-.merch-patch-card { background: linear-gradient(135deg, #121d36, #481247); border-color: rgba(255, 155, 32, 0.6); }
-
-.tee-mockup {
-  width: 77%;
-  height: 390px;
-  margin: 20px auto;
-  background: var(--woodsy-navy);
-  clip-path: polygon(23% 0, 38% 7%, 62% 7%, 77% 0, 100% 18%, 82% 42%, 74% 34%, 78% 100%, 22% 100%, 26% 34%, 18% 42%, 0 18%);
-  display: grid;
-  place-items: center;
-  filter: drop-shadow(0 20px 28px rgba(0,0,0,0.4));
-}
-
-.tee-print { width: 45%; aspect-ratio: 0.75; overflow: hidden; border: 1px solid var(--woodsy-cyan); }
-.tee-print img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
-
-.tote-mockup {
-  width: 72%;
-  height: 370px;
-  margin: 52px auto 20px;
-  background: var(--guarded-pink);
-  position: relative;
-  padding: 32px;
-  filter: drop-shadow(0 22px 24px rgba(45, 50, 61, 0.23));
-}
-
-.tote-handle { position: absolute; width: 55%; height: 100px; border: 17px solid var(--guarded-magenta); border-bottom: 0; border-radius: 80px 80px 0 0; left: 22.5%; top: -76px; }
-.tote-mockup img { width: 100%; height: 100%; object-fit: cover; object-position: top; border: 2px solid #111; }
-
-.patch-mockup {
-  width: min(340px, 90%);
-  aspect-ratio: 1;
-  margin: 38px auto 20px;
-  border: 12px double var(--guarded-orange);
-  border-radius: 50%;
-  background: #121b35;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr auto auto;
-  overflow: hidden;
-  padding: 34px 32px 28px;
-  box-shadow: 0 0 0 5px #121b35, 0 0 0 7px rgba(250,43,156,0.35);
-}
-
-.patch-mockup > div { overflow: hidden; }
-.patch-mockup > div:first-child { border-radius: 90px 0 0 90px; }
-.patch-mockup > div:nth-child(2) { border-radius: 0 90px 90px 0; }
-.patch-mockup img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
-.patch-mockup strong, .patch-mockup > span { grid-column: 1 / -1; text-align: center; font-family: var(--mono); }
-.patch-mockup strong { color: var(--guarded-orange); font-size: 1rem; margin-top: 16px; }
-.patch-mockup > span { color: var(--woodsy-cyan); font-size: 0.53rem; letter-spacing: 0.18em; margin-top: 5px; }
-
-.merch-caption { border-top: 1px solid currentColor; padding-top: 20px; opacity: 0.92; }
+.merch-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+.merch-card { min-width: 0; border: 1px solid var(--line); background: linear-gradient(145deg, rgba(16, 27, 57, 0.94), rgba(65, 20, 67, 0.72)); overflow: hidden; }
+.merch-real-image { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-bottom: 1px solid var(--line); }
+.merch-caption { padding: 20px 24px 24px; opacity: 0.92; }
 .merch-caption span { font-family: var(--mono); font-size: 0.57rem; letter-spacing: 0.13em; }
 .merch-caption h3 { margin: 10px 0 8px; font-size: 1.25rem; }
 .merch-caption p { margin: 0; font-size: 0.76rem; opacity: 0.65; }
-
-.source-files { padding: 112px 0 130px; border-top: 1px solid var(--line); }
-.source-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-.source-grid article { border: 1px solid var(--line); padding: 30px; }
-.source-grid article > span { color: var(--ochre); font-family: var(--mono); font-size: 0.63rem; letter-spacing: 0.12em; }
-.source-grid .source-woodsy { background: linear-gradient(135deg, rgba(0,184,255,0.12), transparent 58%); border-color: rgba(0,184,255,0.45); }
-.source-grid .source-woodsy > span { color: var(--woodsy-cyan); }
-.source-grid .source-guarded { background: linear-gradient(135deg, rgba(250,43,156,0.14), transparent 58%); border-color: rgba(250,43,156,0.48); }
-.source-grid .source-guarded > span { color: var(--guarded-pink); }
-.source-grid h3 { margin: 28px 0 10px; font-size: 2rem; letter-spacing: -0.04em; }
-.source-grid p { color: var(--sage); font-family: var(--mono); font-size: 0.62rem; }
-.source-grid article > div { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 34px; }
-.source-grid a { font-size: 0.72rem; text-underline-offset: 4px; }
 
 footer {
   width: min(1520px, calc(100% - 40px));
@@ -716,8 +644,6 @@ footer small { justify-self: end; }
   .authorisation-gate { grid-template-columns: 160px 1fr; }
   .gate-symbol { width: 140px; height: 140px; }
   .gate-links { grid-column: 2; }
-  .merch-grid { grid-template-columns: 1fr 1fr; }
-  .merch-card:last-child { grid-column: 1 / -1; }
 }
 
 @media (max-width: 800px) {
@@ -729,8 +655,7 @@ footer small { justify-self: end; }
   .roadmap,
   .career-path,
   .watchlist,
-  .merch,
-  .source-files { width: min(100% - 28px, 1400px); }
+  .merch { width: min(100% - 28px, 1400px); }
   .broker-stage { grid-template-columns: 1fr; min-height: auto; }
   .broker-card { min-height: 680px; }
   .roadmap-head,
@@ -746,9 +671,7 @@ footer small { justify-self: end; }
   .career-path li p { grid-column: 2; }
   .watch-grid { grid-template-columns: 1fr 1fr; }
   .section-title > p:last-child { justify-self: start; }
-  .merch-grid,
-  .source-grid { grid-template-columns: 1fr; }
-  .merch-card:last-child { grid-column: auto; }
+  .merch-grid { grid-template-columns: 1fr; }
   footer { grid-template-columns: 1fr; padding: 30px 0; text-align: center; }
   footer p { margin: 0; }
   footer small { justify-self: center; }
@@ -779,10 +702,7 @@ footer small { justify-self: end; }
   .career-path li { grid-template-columns: 34px 1fr; gap: 14px; }
   .watch-grid { grid-template-columns: 1fr; }
   .watch-grid a { min-height: 220px; }
-  .merch-card { min-height: 540px; padding: 18px; }
-  .tee-mockup { height: 330px; }
-  .tote-mockup { height: 330px; }
-  .patch-mockup { padding: 28px 26px 22px; }
+  .merch-caption { padding: 18px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
