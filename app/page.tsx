@@ -627,6 +627,10 @@ export default function Home() {
         </div>
       </section>
 
+      <a className="linux-sticker" href="#roadmap" title="Linux is on the checklist">
+        <img src="/stickers/made-with-linux.png" alt="Made with Linux sticker" />
+      </a>
+
       <footer>
         <p>BITPIXI LEARNS CYBERSEC</p>
         <span>LEARN · LAB · EXPLAIN · SHIP</span>

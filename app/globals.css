@@ -94,6 +94,25 @@ img { display: block; max-width: 100%; }
 .entry-copy button { border: 0; background: var(--woodsy-cyan); color: var(--night); padding: 0 20px; font-weight: 800; cursor: pointer; }
 .entry-copy small { color: var(--guarded-orange); font-family: var(--mono); font-size: 0.68rem; }
 
+.linux-sticker {
+  position: fixed;
+  left: 18px;
+  bottom: 18px;
+  z-index: 18;
+  width: 76px;
+  border-radius: 50%;
+  filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.38));
+  transform: rotate(-8deg);
+  transition: transform 180ms ease, filter 180ms ease;
+}
+
+.linux-sticker:hover {
+  transform: rotate(0deg) scale(1.08);
+  filter: drop-shadow(0 10px 16px rgba(0, 184, 255, 0.42));
+}
+
+.linux-sticker img { width: 100%; height: auto; }
+
 .site-header {
   width: min(1520px, calc(100% - 40px));
   min-height: 78px;
@@ -741,6 +760,7 @@ footer small { justify-self: end; }
 }
 
 @media (max-width: 560px) {
+  .linux-sticker { width: 54px; left: 12px; bottom: 12px; }
   .site-header { min-height: 68px; }
   .owlsec-badge { padding: 7px 9px; }
   .owlsec-badge strong { font-size: 0.61rem; }
