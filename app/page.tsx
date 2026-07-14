@@ -397,8 +397,8 @@ export default function Home() {
           <p className="eyebrow">PERSONAL STUDY MAP · MELBOURNE, AUSTRALIA</p>
           <h1>BITPIXI<br />LEARNS<br /><span>CYBERSEC</span></h1>
           <p className="hero-deck">
-            Two brokers. Two attack surfaces. One long game through cyber security,
-            authorised testing and responsible AI leadership.
+            My personal learning plan for cyber security, authorised testing and
+            responsible AI leadership.
           </p>
           <div className="hero-meta">
             <span>37.8136° S</span>
