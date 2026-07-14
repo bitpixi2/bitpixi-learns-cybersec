@@ -574,7 +574,7 @@ export default function Home() {
           <p>Local copies are included so the site is not dependent on a public IPFS gateway.</p>
         </div>
         <div className="source-grid">
-          <article>
+          <article className="source-woodsy">
             <span>#2821 · HACKER</span>
             <h3>Woodsy Dusty</h3>
             <p>IPFS: QmcsrQ…/2821.svg</p>
@@ -584,7 +584,7 @@ export default function Home() {
               <a href="https://opensea.io/item/ethereum/0x892848074ddea461a15f337250da3ce55580ca85/2821" target="_blank" rel="noreferrer">OpenSea ↗</a>
             </div>
           </article>
-          <article>
+          <article className="source-guarded">
             <span>#8377 · PHISHERMAN</span>
             <h3>Guarded of Vibrant</h3>
             <p>IPFS: QmcsrQ…/8377.svg</p>
