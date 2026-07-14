@@ -1,0 +1,24 @@
+{
+  "name": "Guarded of Vibrant",
+  "description": "\"Catch and release\" is the joke. It's catching a whale and getting them to release their grip on their loot. Phishermen will bait traps and wait for unsuspecting prey to stumble along, always searching for that last, elusive great whale. Just one more hook.",
+  "external_url": "https://cyberbrokers.io/",
+  "image": "ipfs://QmcsrQJMKA9qC9GcEMgdjb9LPN99iDNAg8aQQJLJGpkHxk/8377.svg",
+  "contract": "0x892848074ddea461a15f337250da3ce55580ca85",
+  "token_id": 8377,
+  "attributes": [
+    { "trait_type": "Talent", "value": "Phisherman" },
+    { "trait_type": "Species", "value": "Human" },
+    { "trait_type": "Class", "value": "Warriors" },
+    { "trait_type": "Mind", "value": 6 },
+    { "trait_type": "Body", "value": 12 },
+    { "trait_type": "Soul", "value": 11 },
+    { "trait_type": "Underwear", "value": "Dress Blue" },
+    { "trait_type": "Pants", "value": "Murky" },
+    { "trait_type": "Outerwear", "value": "Catch And Release" },
+    { "trait_type": "Shoulders", "value": "Almost Had It" },
+    { "trait_type": "Facial Covering", "value": "Sun Kisses" },
+    { "trait_type": "Eyes", "value": "Neon" },
+    { "trait_type": "Hair", "value": "Strawberry" },
+    { "trait_type": "Hands", "value": "Pole" }
+  ]
+}
