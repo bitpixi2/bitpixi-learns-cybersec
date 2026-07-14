@@ -395,7 +395,7 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-copy">
           <p className="eyebrow">PERSONAL STUDY MAP · MELBOURNE, AUSTRALIA</p>
-          <h1>BITPIXI<br />LEARNS<br /><span>CYBERSEC</span></h1>
+          <h1>BITPIXI<br /><span className="hero-learns">LEARNS</span><br /><span>CYBERSEC</span></h1>
           <p className="hero-deck">
             My personal learning plan for cyber security, authorised testing and
             responsible AI leadership.
