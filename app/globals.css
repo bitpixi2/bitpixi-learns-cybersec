@@ -299,6 +299,7 @@ img { display: block; max-width: 100%; }
 .broker-label span { color: rgba(255,255,255,0.68); }
 
 .field-marks,
+.owlsec-callout,
 .roadmap,
 .career-path,
 .watchlist,
@@ -363,6 +364,30 @@ img { display: block; max-width: 100%; }
   font-size: 0.78rem;
   line-height: 1.5;
 }
+
+.owlsec-callout {
+  margin-top: 0;
+  margin-bottom: 12px;
+  display: grid;
+  grid-template-columns: minmax(260px, 0.72fr) 1.28fr;
+  border: 1px solid rgba(0, 184, 255, 0.38);
+  background: linear-gradient(110deg, rgba(16, 27, 57, 0.96), rgba(73, 36, 49, 0.78));
+  overflow: hidden;
+}
+
+.owlsec-callout img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  object-position: center;
+  border-right: 1px solid rgba(0, 184, 255, 0.3);
+}
+
+.owlsec-callout > div { padding: 36px 42px; align-self: center; }
+.owlsec-callout .eyebrow { margin-bottom: 12px; color: var(--woodsy-cyan); }
+.owlsec-callout h2 { margin: 0; font-size: clamp(1.75rem, 3vw, 2.8rem); letter-spacing: -0.045em; font-weight: 650; }
+.owlsec-callout p:not(.eyebrow) { margin: 14px 0 22px; max-width: 42rem; color: var(--muted); line-height: 1.55; }
+.owlsec-callout a { color: var(--guarded-orange); font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.08em; text-underline-offset: 4px; }
 
 .roadmap { padding: 96px 0 112px; }
 
@@ -639,6 +664,7 @@ footer small { justify-self: end; }
   .hero h1 { font-size: clamp(4.6rem, 13vw, 8rem); max-width: none; }
   .broker-stage { min-height: 720px; }
   .field-marks { grid-template-columns: 140px 1fr; }
+  .owlsec-callout { grid-template-columns: minmax(220px, 0.72fr) 1.28fr; }
   .field-marks > p { grid-column: 2; }
   .mission-group { grid-template-columns: 250px 1fr; gap: 34px; }
   .authorisation-gate { grid-template-columns: 160px 1fr; }
@@ -652,6 +678,7 @@ footer small { justify-self: end; }
   .hero,
   .authorisation-gate { width: min(100% - 28px, 1520px); }
   .field-marks,
+  .owlsec-callout,
   .roadmap,
   .career-path,
   .watchlist,
@@ -689,6 +716,9 @@ footer small { justify-self: end; }
   .broker-card { min-height: 540px; }
   .broker-label { left: 16px; right: 16px; }
   .field-marks { grid-template-columns: 1fr; padding: 52px 0 64px; }
+  .owlsec-callout { grid-template-columns: 1fr; margin-bottom: 0; }
+  .owlsec-callout img { height: 220px; border-right: 0; border-bottom: 1px solid rgba(0, 184, 255, 0.3); }
+  .owlsec-callout > div { padding: 28px 24px; }
   .field-marks > p { grid-column: auto; }
   .art-mark { width: 92px; }
   .roadmap { padding: 70px 0 90px; }

@@ -402,6 +402,16 @@ export default function Home() {
         <p>Four graphic tokens for the two-track method: code systems and human signals.</p>
       </section>
 
+      <aside className="owlsec-callout" aria-label="OwlSec study community">
+        <img src="/owlsec/owlsec-community.jpg" alt="OwlSec owl community artwork" />
+        <div>
+          <p className="eyebrow">OWLSEC / STUDY CREW</p>
+          <h2>Learning with OwlSec</h2>
+          <p>Keeping the learning public, accountable and connected to the community.</p>
+          <a href="https://owlsec.ai/" target="_blank" rel="noreferrer">Visit OwlSec ↗</a>
+        </div>
+      </aside>
+
       <section className="roadmap" id="roadmap">
         <div className="roadmap-head">
           <div>
