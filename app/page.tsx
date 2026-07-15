@@ -508,21 +508,21 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="career-path">
+      <section className="required-reading">
         <div className="section-title">
-          <p className="eyebrow">FROM LAB NOTES TO PAID WORK</p>
-          <h2>Contractor path</h2>
+          <p className="eyebrow">AUSTRALIAN SECURITY BASELINE</p>
+          <h2>Required reading</h2>
+          <p>Start with the current ASD Information Security Manual, then scan its change notes before using it in projects or study notes.</p>
         </div>
-        <ol>
-          <li><span>01</span><strong>Lab safely</strong><p>Use PortSwigger, legal ranges and your own infrastructure. Never practise on strangers.</p></li>
-          <li><span>02</span><strong>Ship evidence</strong><p>Keep a portfolio of sanitised findings, reproducible steps, severity reasoning and remediation.</p></li>
-          <li><span>03</span><strong>Earn signals</strong><p>Security+ or CC first; BSCP, CREST or OSCP when your hands-on skill is ready.</p></li>
-          <li><span>04</span><strong>Operate cleanly</strong><p>Set up the appropriate ABN/business structure, contracts and professional indemnity cover.</p></li>
-          <li><span>05</span><strong>Move upstream</strong><p>After real experience, explore security architecture, AI governance and eventually IRAP eligibility.</p></li>
-        </ol>
-        <div className="career-links">
-          <a href="https://register.business.gov.au/" target="_blank" rel="noreferrer">Australian Business Registration Service ↗</a>
-          <a href="https://www.cyber.gov.au/business-government/protecting-devices-systems/assessment-evaluation-programs/irap/how-to-become-an-irap-assessor" target="_blank" rel="noreferrer">Long-term IRAP assessor requirements ↗</a>
+        <div className="reading-grid">
+          <a href="https://www.cyber.gov.au/sites/default/files/2026-06/Information%20security%20manual%20%28June%202026%29.pdf" target="_blank" rel="noreferrer">
+            <img src="/reading/ism-june-2026-cover.png" alt="First page of ASD's Information Security Manual, June 2026" />
+            <div><span>ASD / JUNE 2026</span><h3>Information Security Manual</h3><p>Australia&apos;s risk-based security framework for IT and operational technology.</p></div>
+          </a>
+          <a href="https://www.cyber.gov.au/sites/default/files/2026-06/ISM%20June%202026%20changes%20%28June%202026%29.pdf" target="_blank" rel="noreferrer">
+            <img src="/reading/ism-changes-june-2026-cover.png" alt="First page of ASD's Information Security Manual June 2026 changes" />
+            <div><span>ASD / JUNE 2026</span><h3>ISM change notes</h3><p>A quick way to see what changed in the current release before you dive in.</p></div>
+          </a>
         </div>
       </section>
 
@@ -530,7 +530,7 @@ export default function Home() {
         <div className="section-title">
           <p className="eyebrow">GUARDED&apos;S WATCH DESK / AUSTRALIA</p>
           <h2>Watchlist</h2>
-          <p>These are the useful Australian feeds for AI scams, human harm, privacy and responsible deployment.</p>
+          <p>Useful Australian feeds for AI scams, human harm, privacy and responsible deployment.</p>
         </div>
         <div className="watch-grid">
           {watchlist.map((item, index) => (
@@ -568,7 +568,13 @@ export default function Home() {
 
       <footer>
         <p>BITPIXI LEARNS CYBERSEC</p>
-        <span>LEARN · LAB · EXPLAIN · SHIP</span>
+        <span className="footer-links">
+          <a href="https://www.linkedin.com/in/bitpixi" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://bitpixi.com/" target="_blank" rel="noreferrer">Website</a>
+          <a href="https://github.com/bitpixi2" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="mailto:Kasey.bitpixi@gmail.com">Email</a>
+          <a href="https://x.com/bitpixi" target="_blank" rel="noreferrer">X</a>
+        </span>
         <small>Personal field plan · updated July 2026</small>
       </footer>
     </main>
