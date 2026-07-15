@@ -100,8 +100,8 @@ img { display: block; max-width: 100%; }
 
 .maker-badge:hover { transform: translateY(-2px); filter: drop-shadow(0 5px 8px rgba(0, 184, 255, 0.3)); }
 .maker-badge img { width: 100%; height: 100%; object-fit: cover; }
-.maker-badge-cyberbrokers { width: 64px; border-radius: 5px; background: #2a0058; }
-.maker-badge-cyberbrokers img { object-fit: cover; }
+.maker-badge-cyberbrokers { width: 38px; height: 38px; border-radius: 50%; background: #2a0058; }
+.maker-badge-cyberbrokers img { object-fit: cover; object-position: center; }
 
 .site-header {
   width: min(1520px, calc(100% - 40px));
