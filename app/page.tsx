@@ -63,15 +63,6 @@ const missionGroups: MissionGroup[] = [
         track: "foundation",
       },
       {
-        id: "isc2-cc",
-        title: "Certified in Cybersecurity (CC)",
-        provider: "ISC2",
-        note: "Entry-level, no-experience credential with ISO/IEC 17024 accreditation.",
-        signal: "FIRST EXAM",
-        href: "https://www.isc2.org/certifications/cc",
-        track: "foundation",
-      },
-      {
         id: "security-plus",
         title: "Security+",
         provider: "AWSN · CompTIA Security+",
@@ -555,7 +546,7 @@ export default function Home() {
           <h2>Build the right base</h2>
           <p>
             Start with Linux and infrastructure basics, then complete the Victorian IT pathway
-            needed for Free TAFE before Cert IV Cyber Security. Add ISC2 CC or Security+ for a
+            needed for Free TAFE before Cert IV Cyber Security. Add Security+ for a
             recognised baseline; use SC-900 and PortSwigger labs to turn it into practical work.
           </p>
         </div>
