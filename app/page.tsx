@@ -488,22 +488,22 @@ export default function Home() {
       </section>
 
       <section className="authorisation-gate">
-        <div className="gate-symbol" aria-hidden="true">WHITE<br />HAT</div>
+        <div className="gate-symbol" aria-hidden="true">BIT<br />PIXI</div>
         <div>
-          <p className="eyebrow">THE ENGAGEMENT GATE / NO GREY AREA</p>
-          <h2>Get permission</h2>
+          <p className="eyebrow">BITPIXI / AUSTRALIAN LEARNING PATH</p>
+          <h2>Build the right base</h2>
           <p>
-            Before touching a client system or testing a person: get a signed scope,
-            named targets, allowed techniques, dates, stop conditions, data-handling rules
-            and a reporting contact. Unauthorised access is an offence in Australia.
+            Start with Linux and infrastructure basics, then complete the Victorian IT pathway
+            needed for Free TAFE before Cert IV Cyber Security. Add ISC2 CC or Security+ for a
+            recognised baseline; use SC-900 and PortSwigger labs to turn it into practical work.
           </p>
         </div>
         <div className="gate-links">
-          <a href="https://www.cyber.gov.au/business-government/detecting-responding-to-threats/vulnerability-planning/vulnerability-disclosure-programs-explained" target="_blank" rel="noreferrer">
-            ASD vulnerability disclosure guidance ↗
+          <a href="https://bitpixi.com/" target="_blank" rel="noreferrer">
+            Visit bitpixi.com ↗
           </a>
-          <a href="https://www.legislation.gov.au/C2004A04868/latest" target="_blank" rel="noreferrer">
-            Australian Criminal Code ↗
+          <a href="https://www.vu.edu.au/courses/certificate-iv-in-cyber-security-22603vic" target="_blank" rel="noreferrer">
+            Victorian Cert IV options ↗
           </a>
         </div>
       </section>
