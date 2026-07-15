@@ -564,7 +564,10 @@ export default function Home() {
       <section className="required-reading" id="reading">
         <div className="section-title">
           <p className="eyebrow">AUSTRALIAN SECURITY BASELINE</p>
-          <h2>Reading List</h2>
+          <div className="section-title-heading">
+            <h2>Reading List</h2>
+            <img className="section-title-badge" src="/tokens/human-signal.png" alt="Human Signal identity badge" />
+          </div>
         </div>
         <div className="reading-grid">
           <a href="https://www.cyber.gov.au/sites/default/files/2026-06/Information%20security%20manual%20%28June%202026%29.pdf" target="_blank" rel="noreferrer">
