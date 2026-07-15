@@ -117,7 +117,7 @@ const missionGroups: MissionGroup[] = [
         signal: "REASSESS LATER",
         href: "https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/",
         track: "systems",
-        callout: "Reassess after Security+ and Centri. English objectives update 28 July 2026—use the updated study guide.",
+        callout: "Reassess after Security+ and Centri. Updates on 28 July 2026.",
         optional: true,
       },
       {
@@ -128,7 +128,6 @@ const missionGroups: MissionGroup[] = [
         signal: "ADDED · FREE",
         href: "https://www.centri.org/courses/blue-team-junior-analyst-pathway-bundle",
         track: "systems",
-        callout: "Certificate of completion after all six courses. Use it to identify gaps and document existing defensive knowledge; it also touches Wireshark, TCPDump, PowerShell, Linux CLI, IOCs, Redline and scanning tools.",
       },
       {
         id: "portswigger-academy",
