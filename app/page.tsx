@@ -488,7 +488,7 @@ export default function Home() {
       </section>
 
       <section className="authorisation-gate">
-        <div className="gate-symbol" aria-hidden="true">BIT<br />PIXI</div>
+        <img className="gate-symbol" src="/badges/blc-cybersec-badge.png" alt="BLC cyber security badge" />
         <div>
           <p className="eyebrow">BITPIXI / AUSTRALIAN LEARNING PATH</p>
           <h2>Build the right base</h2>
