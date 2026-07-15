@@ -83,6 +83,53 @@ img { display: block; max-width: 100%; }
 
 .linux-sticker img { width: 100%; height: auto; }
 
+.codex-sticker {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 18;
+  width: 94px;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 1px;
+  padding: 9px;
+  text-decoration: none;
+  color: var(--paper);
+  background: #101b39;
+  border: 3px solid var(--paper);
+  border-radius: 50%;
+  box-shadow: 0 8px 0 #07111f, 0 12px 18px rgba(0, 0, 0, 0.38);
+  transform: rotate(7deg);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.codex-sticker::before {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  border: 1px dashed rgba(255, 244, 223, 0.62);
+  border-radius: 50%;
+}
+
+.codex-sticker span,
+.codex-sticker strong {
+  position: relative;
+  z-index: 1;
+  font-family: var(--mono);
+  line-height: 1;
+}
+
+.codex-sticker span { font-size: 0.5rem; letter-spacing: 0.09em; }
+.codex-sticker strong { font-size: 0.66rem; letter-spacing: 0.07em; }
+.codex-sticker img { position: relative; z-index: 1; width: 40px; height: 40px; object-fit: contain; }
+
+.codex-sticker:hover {
+  transform: rotate(0deg) scale(1.08);
+  box-shadow: 0 9px 0 #07111f, 0 14px 20px rgba(250, 43, 156, 0.42);
+}
+
 .site-header {
   width: min(1520px, calc(100% - 40px));
   min-height: 78px;
@@ -728,6 +775,11 @@ footer small { justify-self: end; }
 
 @media (max-width: 560px) {
   .linux-sticker { width: 54px; left: 12px; bottom: 12px; }
+  .codex-sticker { width: 62px; right: 12px; bottom: 12px; border-width: 2px; padding: 6px; }
+  .codex-sticker::before { inset: 3px; }
+  .codex-sticker span { font-size: 0.35rem; }
+  .codex-sticker strong { font-size: 0.43rem; }
+  .codex-sticker img { width: 27px; height: 27px; }
   .site-header { min-height: 68px; }
   .owlsec-badge { padding: 7px 9px; }
   .owlsec-badge strong { font-size: 0.61rem; }

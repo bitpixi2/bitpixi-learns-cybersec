@@ -581,6 +581,11 @@ export default function Home() {
       <a className="linux-sticker" href="#roadmap" title="Linux is on the checklist">
         <img src="/stickers/made-with-linux.png" alt="Made with Linux sticker" />
       </a>
+      <a className="codex-sticker" href="https://openai.com/codex" target="_blank" rel="noreferrer" title="Made with Codex">
+        <span>MADE WITH</span>
+        <img src="/stickers/codex-color.png" alt="Codex" />
+        <strong>CODEX</strong>
+      </a>
 
       <footer>
         <p>BITPIXI LEARNS CYBERSEC</p>
