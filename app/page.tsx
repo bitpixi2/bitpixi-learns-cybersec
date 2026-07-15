@@ -373,7 +373,7 @@ export default function Home() {
     <main>
       <header className="site-header">
         <a className="wordmark" href="#top" aria-label="BITPIXI Learns Cybersec home">
-          BPX<span>/</span>SEC
+          B<span>L</span><em>C</em>
         </a>
         <nav className="top-nav" aria-label="Primary navigation">
           <a href="#roadmap">Roadmap</a>
@@ -609,20 +609,12 @@ export default function Home() {
         </div>
         <div className="merch-grid">
           <article className="merch-card">
-            <img className="merch-real-image" src="/merch/shirt-approved.png" alt="Approved duo artwork on a navy t-shirt mockup" />
-            <div className="merch-caption"><span>CONCEPT 01</span><h3>T-shirt</h3><p>Navy field cotton · approved dual-character graphic</p></div>
-          </article>
-          <article className="merch-card">
-            <img className="merch-real-image" src="/merch/tote-approved.png" alt="Approved duo artwork on a canvas tote mockup" />
-            <div className="merch-caption"><span>CONCEPT 02</span><h3>Tote</h3><p>Canvas carryall · navy handles · olive gusset</p></div>
-          </article>
-          <article className="merch-card">
             <img className="merch-real-image" src="/merch/keychain-approved.png" alt="Approved duo artwork as an acrylic keychain mockup" />
-            <div className="merch-caption"><span>CONCEPT 03</span><h3>Acrylic keychain</h3><p>One clear-cut dual-character charm</p></div>
+            <div className="merch-caption"><span>CONCEPT 01</span><h3>Acrylic keychain</h3><p>One clear-cut dual-character charm</p></div>
           </article>
           <article className="merch-card">
             <img className="merch-real-image" src="/merch/patch-approved.png" alt="Approved duo artwork as a circular embroidered patch mockup" />
-            <div className="merch-caption"><span>CONCEPT 04</span><h3>Embroidered patch</h3><p>Round merrow edge · navy, cyan and pink threadwork</p></div>
+            <div className="merch-caption"><span>CONCEPT 02</span><h3>Embroidered patch</h3><p>Round merrow edge · navy, cyan and pink threadwork</p></div>
           </article>
         </div>
       </section>

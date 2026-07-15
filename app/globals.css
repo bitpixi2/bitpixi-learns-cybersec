@@ -131,10 +131,13 @@ img { display: block; max-width: 100%; }
   text-decoration: none;
   font-weight: 800;
   letter-spacing: -0.06em;
-  font-size: 1.2rem;
+  font-size: 1.65rem;
+  line-height: 1;
+  color: var(--paper);
 }
 
-.wordmark span { color: var(--woodsy-red); margin: 0 0.12em; }
+.wordmark span { color: var(--guarded-pink); }
+.wordmark em { color: var(--woodsy-cyan); font-style: normal; }
 
 .top-nav { display: flex; gap: 28px; }
 
