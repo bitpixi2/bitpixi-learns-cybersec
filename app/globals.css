@@ -568,6 +568,16 @@ img { display: block; max-width: 100%; }
 
 .mission-copy small { color: var(--muted); line-height: 1.5; }
 
+.mission-callout {
+  display: block;
+  margin-top: 10px;
+  color: var(--guarded-pink);
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  line-height: 1.45;
+  letter-spacing: 0.04em;
+}
+
 .mission-action { justify-self: end; text-align: right; display: grid; gap: 12px; }
 .mission-action > span { font-family: var(--mono); font-size: 0.55rem; color: var(--sage); letter-spacing: 0.12em; }
 .mission-action a { font-size: 0.72rem; text-underline-offset: 4px; }

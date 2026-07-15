@@ -12,6 +12,7 @@ type Mission = {
   signal: string;
   href: string;
   track: Track;
+  callout?: string;
   optional?: boolean;
 };
 
@@ -72,11 +73,12 @@ const missionGroups: MissionGroup[] = [
       {
         id: "security-plus",
         title: "Security+",
-        provider: "CompTIA",
-        note: "Vendor-neutral security baseline widely understood by technical employers.",
-        signal: "CORE BADGE",
-        href: "https://www.comptia.org/en-us/certifications/security/",
+        provider: "AWSN · CompTIA Security+",
+        note: "Five-day SY0-701 training pathway with an exam voucher, subject to AWSN eligibility and cohort availability.",
+        signal: "AWSN EOI",
+        href: "https://www.awsn.org.au/Web/web/education-training/comp-tia-security-training.aspx",
         track: "foundation",
+        callout: "SIGNED UP · Possible subsidised cost through AWSN.",
       },
       {
         id: "tafe-cert-iv",
@@ -109,11 +111,23 @@ const missionGroups: MissionGroup[] = [
       {
         id: "sc-200",
         title: "Security Operations Analyst Associate",
-        provider: "Microsoft · SC-200",
-        note: "Threat hunting, incident response, Defender XDR, Sentinel and KQL.",
-        signal: "SOC TRACK",
+        provider: "Microsoft · SC-200 · MAYBE",
+        note: "Sentinel, Defender XDR and Defender for Cloud, Entra, KQL, incident response, threat hunting, detection engineering and automation.",
+        signal: "REASSESS LATER",
         href: "https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/",
         track: "systems",
+        callout: "Reassess after Security+ and Centri. English objectives update 28 July 2026—use the updated study guide.",
+        optional: true,
+      },
+      {
+        id: "centri-btja",
+        title: "Blue Team Junior Analyst Pathway Bundle",
+        provider: "Centri · BTJA",
+        note: "Free six-course diagnostic covering OSINT, digital forensics, dark-web operations, threat hunting, vulnerability management and network analysis.",
+        signal: "ADDED · FREE",
+        href: "https://www.centri.org/courses/blue-team-junior-analyst-pathway-bundle",
+        track: "systems",
+        callout: "Certificate of completion after all six courses. Use it to identify gaps and document existing defensive knowledge; it also touches Wireshark, TCPDump, PowerShell, Linux CLI, IOCs, Redline and scanning tools.",
       },
       {
         id: "portswigger-academy",
@@ -200,6 +214,36 @@ const missionGroups: MissionGroup[] = [
     intro:
       "Learn the same transformation problem through four lenses: adoption, business value, cloud capability and governance.",
     missions: [
+      {
+        id: "ms-secure-ai-applied",
+        title: "Secure AI solutions in the cloud",
+        provider: "Microsoft Applied Skills",
+        note: "Configure AI-service security in Defender for Cloud, model guardrails and Microsoft Foundry environment security settings.",
+        signal: "PLANNED · FREE",
+        href: "https://learn.microsoft.com/en-us/credentials/applied-skills/secure-ai-solutions-in-the-cloud/",
+        track: "leadership",
+        callout: "Planned after the contest entry · Free interactive assessment.",
+      },
+      {
+        id: "ms-mcp-applied",
+        title: "Integrate MCP tools with agents in Microsoft Foundry",
+        provider: "Microsoft Applied Skills",
+        note: "Deploy a model, configure an agent, connect it to an MCP server, and monitor agent and tool usage.",
+        signal: "PLANNED · FREE",
+        href: "https://learn.microsoft.com/en-us/credentials/applied-skills/integrate-model-context-protocol-tools-with-agents-in-microsoft-foundry/",
+        track: "leadership",
+        callout: "Direct preparation for agentic pipelines and the AB-620 direction · Free interactive assessment.",
+      },
+      {
+        id: "ms-ab-620",
+        title: "AI Agent Builder Associate",
+        provider: "Microsoft · AB-620",
+        note: "Build and integrate enterprise agents with Copilot Studio, Microsoft Foundry, MCP, Agent2Agent, RAG, APIs, connectors and multi-agent solutions.",
+        signal: "MAIN GOAL",
+        href: "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/",
+        track: "leadership",
+        callout: "Funding plan · Attempt to win the contest voucher first.",
+      },
       {
         id: "ms-ai-leader",
         title: "AI Transformation Leader",
@@ -338,10 +382,8 @@ export default function Home() {
             <img src="/stickers/kanga-root.webp" alt="Kanga Root Discord" />
           </a>
           <span className="badge-pipe" aria-hidden="true">|</span>
-          <span className="badge-label">Made Site With:</span>
-          <a className="maker-badge" href="#mission-tafe-linux" title="Made with Linux"><img src="/stickers/made-with-linux.png" alt="Made with Linux" /></a>
+          <span className="badge-label">Site made with Codex:</span>
           <a className="maker-badge" href="https://openai.com/codex" target="_blank" rel="noreferrer" title="Made with Codex"><img src="/stickers/codex-color.png" alt="Made with Codex" /></a>
-          <a className="maker-badge" href="https://openclaw.ai/" target="_blank" rel="noreferrer" title="Made with OpenClaw"><img src="/stickers/openclaw-icon.png" alt="Made with OpenClaw" /></a>
         </div>
         <nav className="top-nav" aria-label="Primary navigation">
           <a href="#top">Home</a>
@@ -495,6 +537,7 @@ export default function Home() {
                         <p>{mission.provider}</p>
                         <h4>{mission.title}</h4>
                         <small>{mission.note}</small>
+                        {mission.callout && <span className="mission-callout">{mission.callout}</span>}
                       </div>
                       <div className="mission-action">
                         <span>{mission.optional ? "OPTIONAL · " : ""}{mission.signal}</span>
