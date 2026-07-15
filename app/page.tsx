@@ -13,6 +13,7 @@ type Mission = {
   href: string;
   track: Track;
   callout?: string;
+  calloutLink?: { label: string; href: string; suffix?: string };
   optional?: boolean;
 };
 
@@ -222,7 +223,6 @@ const missionGroups: MissionGroup[] = [
         signal: "PLANNED · FREE",
         href: "https://learn.microsoft.com/en-us/credentials/applied-skills/secure-ai-solutions-in-the-cloud/",
         track: "leadership",
-        callout: "Planned after the contest entry · Free interactive assessment.",
       },
       {
         id: "ms-mcp-applied",
@@ -232,7 +232,6 @@ const missionGroups: MissionGroup[] = [
         signal: "PLANNED · FREE",
         href: "https://learn.microsoft.com/en-us/credentials/applied-skills/integrate-model-context-protocol-tools-with-agents-in-microsoft-foundry/",
         track: "leadership",
-        callout: "Direct preparation for agentic pipelines and the AB-620 direction · Free interactive assessment.",
       },
       {
         id: "ms-ab-620",
@@ -242,7 +241,12 @@ const missionGroups: MissionGroup[] = [
         signal: "MAIN GOAL",
         href: "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/",
         track: "leadership",
-        callout: "Funding plan · Attempt to win the contest voucher first.",
+        callout: "Funding plan · Attempt to win the ",
+        calloutLink: {
+          label: "contest voucher",
+          href: "https://customervoice.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR_392dPJTjJGuDHL3BK1bNBUOFYyOVQ3TDVCQVI3TUxSWERSSjJMT1o4RyQlQCN0PWcu",
+          suffix: " first.",
+        },
       },
       {
         id: "ms-ai-leader",
@@ -534,7 +538,19 @@ export default function Home() {
                         <p>{mission.provider}</p>
                         <h4>{mission.title}</h4>
                         <small>{mission.note}</small>
-                        {mission.callout && <span className="mission-callout">{mission.callout}</span>}
+                        {mission.callout && (
+                          <span className="mission-callout">
+                            {mission.callout}
+                            {mission.calloutLink && (
+                              <>
+                                <a href={mission.calloutLink.href} target="_blank" rel="noreferrer">
+                                  {mission.calloutLink.label}
+                                </a>
+                                {mission.calloutLink.suffix}
+                              </>
+                            )}
+                          </span>
+                        )}
                       </div>
                       <div className="mission-action">
                         <span>{mission.optional ? "OPTIONAL · " : ""}{mission.signal}</span>

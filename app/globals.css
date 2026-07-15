@@ -578,6 +578,9 @@ img { display: block; max-width: 100%; }
   letter-spacing: 0.04em;
 }
 
+.mission-callout a { color: inherit; text-underline-offset: 3px; }
+.mission-callout a:hover { color: var(--paper); }
+
 .mission-action { justify-self: end; text-align: right; display: grid; gap: 12px; }
 .mission-action > span { font-family: var(--mono); font-size: 0.55rem; color: var(--sage); letter-spacing: 0.12em; }
 .mission-action a { font-size: 0.72rem; text-underline-offset: 4px; }
