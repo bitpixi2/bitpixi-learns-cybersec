@@ -523,6 +523,18 @@ export default function Home() {
             <img src="/reading/ism-changes-june-2026-cover.png" alt="First page of ASD's Information Security Manual June 2026 changes" />
             <div><span>ASD / JUNE 2026</span><h3>ISM change notes</h3><p>A quick way to see what changed in the current release before you dive in.</p></div>
           </a>
+          <a href="https://www.vic.gov.au/sites/default/files/2026-04/fact-sheet-digital-technologies-victorian-skills-plan-for-2025-into-2026.pdf" target="_blank" rel="noreferrer">
+            <img src="/reading/vic-digital-skills-plan-2026-cover.png" alt="First page of the Victorian Skills Plan Digital Technologies fact sheet" />
+            <div><span>VICTORIA / 2025–26</span><h3>Digital skills plan</h3><p>Current Victorian pathways for cyber, data centres and digital technology careers, including a Ballarat example.</p></div>
+          </a>
+          <a href="https://www.homeaffairs.gov.au/reports-and-pubs/PDFs/2023-2030-aus-cyber-security-strategy-discussion-paper/Victorian-Government-submission.PDF" target="_blank" rel="noreferrer">
+            <img src="/reading/victoria-cyber-strategy-submission-cover.png" alt="First page of Victoria's Australian Cyber Security Strategy submission" />
+            <div><span>VICTORIA / 2023</span><h3>Career pathways submission</h3><p>Victorian recommendations on regional access, work readiness, diverse cohorts and women in cyber careers.</p></div>
+          </a>
+          <a href="https://www.premier.vic.gov.au/sites/default/files/2022-05/220513%20-%20Creating%20More%20Jobs%20For%20Women%20In%20Cyber%20Security.pdf" target="_blank" rel="noreferrer">
+            <img src="/reading/women-in-cyber-vic-2022-cover.png" alt="First page of the Victorian women in cyber security pilot brief" />
+            <div><span>VICTORIA / 2022 ARCHIVE</span><h3>Women in cyber</h3><p>Historical brief on the Women in Security pilot, mentoring, internships and leadership pathways.</p></div>
+          </a>
         </div>
       </section>
 
