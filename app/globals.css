@@ -786,10 +786,10 @@ footer small { justify-self: end; }
 }
 
 @media (max-width: 560px) {
-  .site-header { min-height: 68px; }
-  .badge-strip { gap: 6px; }
-  .badge-pipe { font-size: 0.8rem; }
-  .maker-badge { width: 30px; height: 30px; }
+  .site-header { min-height: 68px; column-gap: 8px; }
+  .badge-strip { gap: 4px; }
+  .badge-pipe { font-size: 0.7rem; }
+  .maker-badge { width: 27px; height: 27px; }
   .owlsec-badge { padding: 5px; }
   .owlsec-badge > span:last-child { display: none; }
   .hero { padding-top: 20px; }

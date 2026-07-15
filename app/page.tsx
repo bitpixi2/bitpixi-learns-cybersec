@@ -325,6 +325,10 @@ export default function Home() {
             <span><strong>OWLSEC</strong>ACTIVE LEARNER</span>
           </a>
           <span className="badge-pipe" aria-hidden="true">|</span>
+          <a className="maker-badge" href="https://discord.gg/DSnxTcqA5F" target="_blank" rel="noreferrer" title="Join Kanga Root on Discord">
+            <img src="/stickers/kanga-root.webp" alt="Kanga Root Discord" />
+          </a>
+          <span className="badge-pipe" aria-hidden="true">|</span>
           <a className="maker-badge" href="#mission-tafe-linux" title="Made with Linux"><img src="/stickers/made-with-linux.png" alt="Made with Linux" /></a>
           <span className="badge-pipe" aria-hidden="true">|</span>
           <a className="maker-badge" href="https://openai.com/codex" target="_blank" rel="noreferrer" title="Made with Codex"><img src="/stickers/codex-color.png" alt="Made with Codex" /></a>
