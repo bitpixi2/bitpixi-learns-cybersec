@@ -364,7 +364,7 @@ export default function Home() {
         <nav className="top-nav" aria-label="Primary navigation">
           <a href="#top">Overview</a>
           <a href="#roadmap">Study Plan</a>
-          <a href="#pathway">Pathway</a>
+          <a href="#pathway">Mission Statement</a>
           <a href="#reading">Reading List</a>
           <a href="#watchlist">Watchlist</a>
           <a href="#merch">Merch Concepts</a>
@@ -542,13 +542,17 @@ export default function Home() {
       <section className="authorisation-gate" id="pathway">
         <img className="gate-symbol" src="/badges/blc-cybersec-badge.png" alt="BLC cyber security badge" />
         <div>
-          <p className="eyebrow">BITPIXI / AUSTRALIAN LEARNING PATH</p>
-          <h2>Helping people every day</h2>
+          <p className="eyebrow">BITPIXI LEARNS CYBERSEC / MISSION STATEMENT</p>
+          <h2>Blue Team, Better Business</h2>
           <p>
-            My goal is to help civilian organisations prevent, detect and respond to compromise.
-            This plan combines the Victorian Certificate III and IV pathway, Security+, blue-team
-            practice, cloud security and authorised web-testing labs. Military and defence-sector
-            work are outside this plan.
+            My goal is to help companies prevent, detect and respond to security incidents,
+            especially as they adopt new AI tools, agentic pipelines and systems that allow AI to
+            move data, decisions and actions into and out of secure sandboxes. This roadmap combines
+            Victorian Certificate III and IV training, Security+, hands-on blue-team practice, cloud
+            security, authorised web-security labs and AI leadership. It focuses on helping commercial
+            organisations introduce AI responsibly, with strong controls around access, permissions,
+            data flows and automated actions, while protecting their employees, customers, systems
+            and data.
           </p>
         </div>
       </section>
