@@ -30,10 +30,10 @@ const X_SHARE_TEXT =
   "I saw @bitpixi's BITPIXI LEARNS CYBERSEC website built with #Codex and I was blown away! Maybe I should design my own personal study guides with @OpenAI tools.";
 const X_SHARE_URL = `https://twitter.com/intent/tweet?text=${encodeURIComponent(X_SHARE_TEXT)}&url=${encodeURIComponent("https://bitpixi-learns-cybersec.bitpixi.chatgpt.site")}`;
 
-const missionGroups: MissionGroup[] = [
+const missionGroupCatalog: MissionGroup[] = [
   {
     id: "foundation",
-    kicker: "PHASE 01 / GET GROUNDED",
+    kicker: "PHASE 02 / AUSTRALIAN FOUNDATIONS",
     title: "Australian foundations",
     intro:
       "Start with the free work already on your desk, then add an employer-readable baseline.",
@@ -100,7 +100,7 @@ const missionGroups: MissionGroup[] = [
   },
   {
     id: "systems",
-    kicker: "PHASE 02 / WOODSY DUSTY",
+    kicker: "PHASE 03 / SYSTEMS + TESTING",
     title: "Systems + authorised testing",
     intro:
       "Build the code, cloud and web-testing side in legal labs first, then prove it with practical exams.",
@@ -185,7 +185,7 @@ const missionGroups: MissionGroup[] = [
   },
   {
     id: "leadership",
-    kicker: "PARALLEL TRACK / AI COMMAND",
+    kicker: "PHASE 01 / AI LEADERSHIP",
     title: "AI leadership quartet",
     intro:
       "Learn the same transformation problem through four lenses: adoption, business value, cloud capability and governance.",
@@ -261,6 +261,12 @@ const missionGroups: MissionGroup[] = [
       },
     ],
   },
+];
+
+const missionGroups: MissionGroup[] = [
+  missionGroupCatalog[2],
+  missionGroupCatalog[0],
+  missionGroupCatalog[1],
 ];
 
 const watchlist = [
@@ -350,7 +356,7 @@ export default function Home() {
     <main>
       <header className="site-header">
         <a className="wordmark" href="#top" aria-label="BITPIXI Learns Cybersec home">
-          <strong>BITPIXI</strong> <span>LEARNS</span> <em>CYBERSEC</em>
+          <img src="/badges/blc-cybersec-badge.png" alt="BLC cyber security badge" />
         </a>
         <div className="badge-strip" aria-label="Project badges">
           <span className="badge-label">Sec Study Groups:</span>
@@ -463,7 +469,7 @@ export default function Home() {
 
         <div className="mission-groups">
           {missionGroups.map((group, groupIndex) => (
-            <section className={`mission-group track-${group.missions[0].track}`} key={group.id}>
+            <section className={`mission-group group-${group.id} track-${group.missions[0].track}`} key={group.id}>
               <div className="group-intro">
                 <span>{String(groupIndex + 1).padStart(2, "0")}</span>
                 <div>
