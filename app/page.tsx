@@ -438,11 +438,12 @@ export default function Home() {
       <section className="roadmap" id="roadmap">
         <div className="roadmap-head">
           <div>
-            <p className="eyebrow">MISSION LEDGER / SAVED ON THIS DEVICE</p>
-            <h2>Learning checklist</h2>
+            <p className="eyebrow">LEARNING / STARTS JULY 2026</p>
+            <h2>My Custom Study Plan</h2>
             <p>
-              Vendor certifications are industry credentials. The TAFE Certificate IV is
-              the nationally recognised Australian qualification route.
+              The Victorian Certificate III and IV are the nationally recognised Australian
+              qualifications in this plan. Security+, Microsoft, Google and AWS credentials add
+              employer-recognised specialisation, while the free courses and labs build practical evidence.
             </p>
           </div>
           <div className="progress-block" aria-live="polite">
