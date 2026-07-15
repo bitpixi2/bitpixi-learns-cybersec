@@ -713,24 +713,11 @@ img { display: block; max-width: 100%; }
   margin-top: 18px;
   padding: 22px 24px;
   display: grid;
-  grid-template-columns: 180px minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr) auto;
   gap: 28px;
   align-items: center;
   border: 1px solid rgba(250, 43, 156, 0.46);
   background: linear-gradient(110deg, rgba(250, 43, 156, 0.1), rgba(0, 184, 255, 0.09));
-}
-
-.share-merch-preview {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5px;
-}
-
-.share-merch-preview img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border: 1px solid rgba(185, 199, 232, 0.24);
 }
 
 .share-copy > span {
@@ -742,6 +729,9 @@ img { display: block; max-width: 100%; }
 }
 
 .x-share-card p { margin: 10px 0 0; color: var(--muted); font-size: 0.82rem; line-height: 1.55; }
+.x-share-card p + p { margin-top: 14px; }
+.x-share-card p a { color: var(--paper); text-decoration-color: var(--guarded-pink); text-underline-offset: 3px; }
+.x-share-card p a:hover { color: var(--woodsy-cyan); }
 .share-actions { display: grid; gap: 8px; }
 .share-actions a,
 .share-actions button {
@@ -842,7 +832,6 @@ footer small { justify-self: end; }
   .contact-section { width: min(100% - 28px, 1400px); }
   .contact-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .x-share-card { grid-template-columns: 1fr; }
-  .share-merch-preview { max-width: 260px; }
   .share-actions { justify-self: start; }
   .country-acknowledgement { width: min(100% - 28px, 1520px); grid-template-columns: 1fr; gap: 12px; }
   footer { grid-template-columns: 1fr; padding: 30px 0; text-align: center; }

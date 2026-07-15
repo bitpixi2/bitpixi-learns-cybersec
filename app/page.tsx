@@ -27,14 +27,8 @@ type MissionGroup = {
 
 const STORAGE_KEY = "bitpixi-cybersec-progress-v1";
 const X_SHARE_TEXT =
-  "I saw @bitpixi's \"BITPIXI LEARNS CYBERSEC\" website built with #Codex and I was blown away! Maybe I should design my own personal study guides with @OpenAIDevs tools. https://bitpixi-learns-cybersec.bitpixi.chatgpt.site";
+  "I saw @bitpixi's \"BITPIXI LEARNS CYBERSEC\" site featuring @CyberBrokers_ and built with #Codex.\n\nI was blown away! Maybe I should design my own personal study guides with @OpenAIDevs tools. 🤔\n\n-> https://bitpixi-learns-cybersec.bitpixi.chatgpt.site";
 const X_SHARE_URL = `https://twitter.com/intent/tweet?text=${encodeURIComponent(X_SHARE_TEXT)}`;
-const MERCH_SHARE_IMAGES = [
-  "/merch/cyberbrokers-notebooks.png",
-  "/merch/patch-approved.png",
-  "/merch/linux-grep-mug.png",
-  "/merch/blc-enamel-pin.png",
-];
 
 const missionGroupCatalog: MissionGroup[] = [
   {
@@ -358,27 +352,6 @@ export default function Home() {
     }
   }
 
-  async function shareWithMerchImages() {
-    try {
-      const files = await Promise.all(
-        MERCH_SHARE_IMAGES.map(async (src, index) => {
-          const response = await fetch(src);
-          if (!response.ok) throw new Error("Unable to prepare merch image");
-          const blob = await response.blob();
-          return new File([blob], `bitpixi-merch-${index + 1}.png`, { type: blob.type || "image/png" });
-        }),
-      );
-      const shareData = { title: "BITPIXI LEARNS CYBERSEC", text: X_SHARE_TEXT, files };
-      if (navigator.share && (!navigator.canShare || navigator.canShare(shareData))) {
-        await navigator.share(shareData);
-        return;
-      }
-    } catch (error) {
-      if (error instanceof DOMException && error.name === "AbortError") return;
-    }
-    window.open(X_SHARE_URL, "_blank", "noopener,noreferrer");
-  }
-
   return (
     <main>
       <header className="site-header">
@@ -689,17 +662,17 @@ export default function Home() {
           </a>
         </div>
         <div className="x-share-card" aria-label="Share this website">
-          <div className="share-merch-preview" aria-label="Four merch images included when supported">
-            {MERCH_SHARE_IMAGES.map((src) => (
-              <img src={src} alt="" aria-hidden="true" key={src} />
-            ))}
-          </div>
           <div className="share-copy">
             <span>SHARE IF YOU ENJOYED THIS</span>
-            <p>{X_SHARE_TEXT}</p>
+            <p>
+              I saw <a href="https://x.com/bitpixi" target="_blank" rel="noreferrer">@bitpixi</a>&apos;s &quot;BITPIXI LEARNS CYBERSEC&quot; site featuring <a href="https://x.com/CyberBrokers_" target="_blank" rel="noreferrer">@CyberBrokers_</a> and built with <a href="https://x.com/hashtag/Codex?src=hashtag_click" target="_blank" rel="noreferrer">#Codex</a>.
+            </p>
+            <p>
+              I was blown away! Maybe I should design my own personal study guides with <a href="https://x.com/OpenAIDevs" target="_blank" rel="noreferrer">@OpenAIDevs</a> tools. 🤔
+            </p>
+            <p>-&gt; <a href="https://bitpixi-learns-cybersec.bitpixi.chatgpt.site">https://bitpixi-learns-cybersec.bitpixi.chatgpt.site</a></p>
           </div>
           <div className="share-actions">
-            <button type="button" onClick={shareWithMerchImages}>Share with 4 images</button>
             <a href={X_SHARE_URL} target="_blank" rel="noreferrer">
               Post on X <span aria-hidden="true">↗</span>
             </a>
