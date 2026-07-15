@@ -27,8 +27,14 @@ type MissionGroup = {
 
 const STORAGE_KEY = "bitpixi-cybersec-progress-v1";
 const X_SHARE_TEXT =
-  "I saw @bitpixi's BITPIXI LEARNS CYBERSEC website built with #Codex and I was blown away! Maybe I should design my own personal study guides with @OpenAI tools.";
-const X_SHARE_URL = `https://twitter.com/intent/tweet?text=${encodeURIComponent(X_SHARE_TEXT)}&url=${encodeURIComponent("https://bitpixi-learns-cybersec.bitpixi.chatgpt.site")}`;
+  "I saw @bitpixi's \"BITPIXI LEARNS CYBERSEC\" website built with #Codex and I was blown away! Maybe I should design my own personal study guides with @OpenAIDevs tools. https://bitpixi-learns-cybersec.bitpixi.chatgpt.site";
+const X_SHARE_URL = `https://twitter.com/intent/tweet?text=${encodeURIComponent(X_SHARE_TEXT)}`;
+const MERCH_SHARE_IMAGES = [
+  "/merch/cyberbrokers-notebooks.png",
+  "/merch/patch-approved.png",
+  "/merch/linux-grep-mug.png",
+  "/merch/blc-enamel-pin.png",
+];
 
 const missionGroupCatalog: MissionGroup[] = [
   {
@@ -352,6 +358,27 @@ export default function Home() {
     }
   }
 
+  async function shareWithMerchImages() {
+    try {
+      const files = await Promise.all(
+        MERCH_SHARE_IMAGES.map(async (src, index) => {
+          const response = await fetch(src);
+          if (!response.ok) throw new Error("Unable to prepare merch image");
+          const blob = await response.blob();
+          return new File([blob], `bitpixi-merch-${index + 1}.png`, { type: blob.type || "image/png" });
+        }),
+      );
+      const shareData = { title: "BITPIXI LEARNS CYBERSEC", text: X_SHARE_TEXT, files };
+      if (navigator.share && (!navigator.canShare || navigator.canShare(shareData))) {
+        await navigator.share(shareData);
+        return;
+      }
+    } catch (error) {
+      if (error instanceof DOMException && error.name === "AbortError") return;
+    }
+    window.open(X_SHARE_URL, "_blank", "noopener,noreferrer");
+  }
+
   return (
     <main>
       <header className="site-header">
@@ -637,13 +664,21 @@ export default function Home() {
           </article>
         </div>
         <div className="x-share-card" id="contact" aria-label="Contact and share">
-          <div>
-            <span>SHARE THE STUDY PLAN</span>
+          <div className="share-merch-preview" aria-label="Four merch images included when supported">
+            {MERCH_SHARE_IMAGES.map((src) => (
+              <img src={src} alt="" aria-hidden="true" key={src} />
+            ))}
+          </div>
+          <div className="share-copy">
+            <span>SHARE IF YOU ENJOYED THIS</span>
             <p>{X_SHARE_TEXT}</p>
           </div>
-          <a href={X_SHARE_URL} target="_blank" rel="noreferrer">
-            Post on X <span aria-hidden="true">↗</span>
-          </a>
+          <div className="share-actions">
+            <button type="button" onClick={shareWithMerchImages}>Share with 4 images</button>
+            <a href={X_SHARE_URL} target="_blank" rel="noreferrer">
+              Post on X <span aria-hidden="true">↗</span>
+            </a>
+          </div>
         </div>
       </section>
 

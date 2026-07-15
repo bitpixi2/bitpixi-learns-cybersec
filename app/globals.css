@@ -663,14 +663,27 @@ img { display: block; max-width: 100%; }
   margin-top: 18px;
   padding: 22px 24px;
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 180px minmax(0, 1fr) auto;
   gap: 28px;
   align-items: center;
   border: 1px solid rgba(250, 43, 156, 0.46);
   background: linear-gradient(110deg, rgba(250, 43, 156, 0.1), rgba(0, 184, 255, 0.09));
 }
 
-.x-share-card > div > span {
+.share-merch-preview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.share-merch-preview img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 1px solid rgba(185, 199, 232, 0.24);
+}
+
+.share-copy > span {
   color: var(--guarded-pink);
   font-family: var(--mono);
   font-size: 0.56rem;
@@ -679,16 +692,22 @@ img { display: block; max-width: 100%; }
 }
 
 .x-share-card p { margin: 10px 0 0; color: var(--muted); font-size: 0.82rem; line-height: 1.55; }
-.x-share-card > a {
+.share-actions { display: grid; gap: 8px; }
+.share-actions a,
+.share-actions button {
   padding: 12px 16px;
   border: 1px solid var(--woodsy-cyan);
+  background: transparent;
   color: var(--paper);
   font-family: var(--mono);
   font-size: 0.66rem;
   text-decoration: none;
+  text-align: center;
   white-space: nowrap;
+  cursor: pointer;
 }
-.x-share-card > a:hover { color: var(--woodsy-cyan); background: rgba(0, 184, 255, 0.08); }
+.share-actions a:hover,
+.share-actions button:hover { color: var(--woodsy-cyan); background: rgba(0, 184, 255, 0.08); }
 
 .country-acknowledgement {
   width: min(1520px, calc(100% - 40px));
@@ -774,7 +793,8 @@ footer small { justify-self: end; }
   .section-title-badge { width: 56px; height: 56px; }
   .merch-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .x-share-card { grid-template-columns: 1fr; }
-  .x-share-card > a { justify-self: start; }
+  .share-merch-preview { max-width: 260px; }
+  .share-actions { justify-self: start; }
   .country-acknowledgement { width: min(100% - 28px, 1520px); grid-template-columns: 1fr; gap: 12px; }
   footer { grid-template-columns: 1fr; padding: 30px 0; text-align: center; }
   footer p { margin: 0; }
