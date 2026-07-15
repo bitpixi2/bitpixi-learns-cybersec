@@ -159,7 +159,7 @@ img { display: block; max-width: 100%; }
   margin: 0 auto;
   min-height: calc(100vh - 78px);
   display: grid;
-  grid-template-columns: 0.72fr 1.28fr;
+  grid-template-columns: 0.62fr 1.38fr;
   gap: 28px;
   align-items: stretch;
   padding: 32px 0 40px;
@@ -256,7 +256,7 @@ img { display: block; max-width: 100%; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
-  width: min(100%, 680px);
+  width: min(100%, 840px);
   min-height: 590px;
   justify-self: end;
   position: relative;
@@ -289,6 +289,56 @@ img { display: block; max-width: 100%; }
 }
 
 .broker-card:hover img { transform: scale(1.018); }
+
+.broker-marks {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.hero-mark {
+  position: absolute;
+  width: 90px;
+  margin: 0;
+  text-align: center;
+  filter: drop-shadow(0 11px 12px rgba(0, 0, 0, 0.72));
+}
+
+.hero-mark img {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--woodsy-cyan);
+  background: var(--woodsy-navy);
+  box-shadow: 0 0 0 4px rgba(7, 17, 31, 0.58);
+}
+
+.broker-card-guarded .hero-mark img {
+  border-color: var(--guarded-pink);
+  background: var(--guarded-periwinkle);
+}
+
+.hero-mark figcaption {
+  width: max-content;
+  max-width: 104px;
+  margin: 8px auto 0;
+  padding: 5px 7px;
+  color: var(--paper);
+  background: rgba(7, 17, 31, 0.86);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: var(--mono);
+  font-size: 0.5rem;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+
+.hero-mark-primary { top: 12%; right: 5%; }
+.hero-mark-secondary { top: 54%; left: 5%; }
 
 .broker-card-woodsy { border-top: 3px solid var(--woodsy-cyan); background: #0d1831; }
 .broker-card-guarded { border-top: 3px solid var(--guarded-pink); background: #25233d; }
@@ -324,7 +374,6 @@ img { display: block; max-width: 100%; }
 
 .broker-label span { color: rgba(255,255,255,0.68); }
 
-.field-marks,
 .roadmap,
 .required-reading,
 .watchlist,
@@ -334,60 +383,11 @@ img { display: block; max-width: 100%; }
   margin-right: auto;
 }
 
-.field-marks {
-  padding: 68px 0 84px;
-  display: grid;
-  grid-template-columns: 180px 1fr auto;
-  gap: 30px;
-  align-items: center;
-  border-top: 1px solid var(--line);
-}
-
 .section-index {
   font-family: var(--mono);
   font-size: 0.62rem;
   letter-spacing: 0.15em;
   color: var(--sage);
-}
-
-.mark-row { display: flex; gap: 14px; flex-wrap: wrap; }
-
-.art-mark {
-  margin: 0;
-  width: 112px;
-  position: relative;
-}
-
-.art-mark > div,
-.art-mark img {
-  width: 72px;
-  height: 72px;
-  border-radius: 50%;
-}
-
-.art-mark img {
-  object-fit: cover;
-  border: 1px solid var(--woodsy-cyan);
-  background: var(--woodsy-navy);
-}
-
-.mark-guarded-face img,
-.mark-guarded-kit img { border-color: var(--guarded-pink); background: var(--guarded-periwinkle); }
-
-.art-mark figcaption {
-  margin-top: 10px;
-  font-family: var(--mono);
-  font-size: 0.54rem;
-  letter-spacing: 0.12em;
-  color: var(--gum);
-}
-
-.field-marks > p {
-  margin: 0;
-  max-width: 18rem;
-  color: var(--muted);
-  font-size: 0.78rem;
-  line-height: 1.5;
 }
 
 .roadmap { padding: 96px 0 112px; }
@@ -682,8 +682,6 @@ footer small { justify-self: end; }
   .hero-copy { padding: 70px 0 34px; }
   .hero h1 { font-size: clamp(4.6rem, 13vw, 8rem); max-width: none; }
   .broker-stage { min-height: 650px; }
-  .field-marks { grid-template-columns: 140px 1fr; }
-  .field-marks > p { grid-column: 2; }
   .mission-group { grid-template-columns: 250px 1fr; gap: 34px; }
   .authorisation-gate { grid-template-columns: 160px 1fr; }
   .gate-symbol { width: 140px; height: 140px; }
@@ -696,7 +694,6 @@ footer small { justify-self: end; }
   .top-nav { justify-content: flex-start; }
   .hero,
   .authorisation-gate { width: min(100% - 28px, 1520px); }
-  .field-marks,
   .roadmap,
   .required-reading,
   .watchlist,
@@ -733,9 +730,9 @@ footer small { justify-self: end; }
   .hero-deck { font-size: 1rem; }
   .broker-card { min-height: 500px; }
   .broker-label { left: 16px; right: 16px; }
-  .field-marks { grid-template-columns: 1fr; padding: 52px 0 64px; }
-  .field-marks > p { grid-column: auto; }
-  .art-mark { width: 92px; }
+  .hero-mark { width: 72px; }
+  .hero-mark img { width: 58px; height: 58px; }
+  .hero-mark figcaption { max-width: 88px; font-size: 0.43rem; padding: 4px 6px; }
   .roadmap { padding: 70px 0 90px; }
   .mission-groups { gap: 70px; }
   .mission { grid-template-columns: 26px 38px 1fr; gap: 14px; }

@@ -83,11 +83,12 @@ const missionGroups: MissionGroup[] = [
       {
         id: "tafe-cert-iv",
         title: "Certificate IV in Cyber Security",
-        provider: "TAFE NSW",
-        note: "The formal Australian route: nationally recognised training. Check intake availability.",
-        signal: "AQF PATH",
-        href: "https://www.tafensw.edu.au/course-areas/information-and-communication-technology/courses/certificate-iv-in-cyber-security--22603VIC-01",
+        provider: "Victoria University · 22603VIC",
+        note: "Victorian nationally recognised training covering cyber security operations, networking, testing and incident response.",
+        signal: "VIC PATH",
+        href: "https://www.vu.edu.au/courses/certificate-iv-in-cyber-security-22603vic",
         track: "foundation",
+        callout: "WAIT FOR PR · Check Victorian funding and residency eligibility before enrolling.",
         optional: true,
       },
     ],
@@ -387,7 +388,6 @@ export default function Home() {
         </div>
         <nav className="top-nav" aria-label="Primary navigation">
           <a href="#top">Home</a>
-          <a href="#identity">Identity</a>
           <a href="#roadmap">Checklist</a>
           <a href="#pathway">Pathway</a>
           <a href="#reading">Reading</a>
@@ -419,6 +419,16 @@ export default function Home() {
               alt="Woodsy Dusty, CyberBroker 2821, in dark cyber outerwear with a glowing blue mask"
               fetchPriority="high"
             />
+            <div className="broker-marks" aria-label="Woodsy Dusty identity marks">
+              <figure className="hero-mark hero-mark-primary">
+                <img src="/tokens/code-guard.png" alt="Code guard identity token" />
+                <figcaption>CODE GUARD</figcaption>
+              </figure>
+              <figure className="hero-mark hero-mark-secondary">
+                <img src="/tokens/pipeline.png" alt="Pipeline identity token" />
+                <figcaption>PIPELINE</figcaption>
+              </figure>
+            </div>
             <div className="broker-label">
               <p>TECHNICAL LAYER · #2821</p>
               <h2>Woodsy Dusty</h2>
@@ -432,34 +442,22 @@ export default function Home() {
               alt="Guarded of Vibrant, CyberBroker 8377, in vivid pink fishing gear with a cyber fishing pole"
               fetchPriority="high"
             />
+            <div className="broker-marks" aria-label="Guarded of Vibrant identity marks">
+              <figure className="hero-mark hero-mark-primary">
+                <img src="/tokens/human-signal.png" alt="Human signal identity token" />
+                <figcaption>HUMAN SIGNAL</figcaption>
+              </figure>
+              <figure className="hero-mark hero-mark-secondary">
+                <img src="/tokens/bait-map.png" alt="Bait map identity token" />
+                <figcaption>BAIT MAP</figcaption>
+              </figure>
+            </div>
             <div className="broker-label">
               <p>HUMAN LAYER · #8377</p>
               <h2>Guarded of Vibrant</h2>
               <span>Talent: Phisherman · people + process safety</span>
             </div>
           </article>
-        </div>
-      </section>
-
-      <section className="field-marks" id="identity" aria-label="Identity marks">
-        <div className="section-index">00 / IDENTITY MARKS</div>
-        <div className="mark-row">
-          <figure className="art-mark mark-woodsy-face">
-            <img src="/tokens/code-guard.png" alt="Code guard identity token" />
-            <figcaption>CODE GUARD</figcaption>
-          </figure>
-          <figure className="art-mark mark-woodsy-terminal">
-            <img src="/tokens/pipeline.png" alt="Pipeline identity token" />
-            <figcaption>PIPELINE</figcaption>
-          </figure>
-          <figure className="art-mark mark-guarded-face">
-            <img src="/tokens/human-signal.png" alt="Human signal identity token" />
-            <figcaption>HUMAN SIGNAL</figcaption>
-          </figure>
-          <figure className="art-mark mark-guarded-kit">
-            <img src="/tokens/bait-map.png" alt="Bait map identity token" />
-            <figcaption>BAIT MAP</figcaption>
-          </figure>
         </div>
       </section>
 
