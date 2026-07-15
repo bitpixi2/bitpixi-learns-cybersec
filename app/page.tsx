@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useMemo, useState, type CSSProperties } from "react";
+import { Globe2, Mail } from "lucide-react";
+import { FaGithub, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 
 type Track = "foundation" | "systems" | "human" | "leadership";
 
@@ -545,7 +547,7 @@ export default function Home() {
         <img className="gate-symbol" src="/badges/blc-cybersec-badge.png" alt="BLC cyber security badge" />
         <div>
           <p className="eyebrow">BITPIXI LEARNS CYBERSEC / MISSION STATEMENT</p>
-          <h2>Keep Calm and Grep On</h2>
+          <h2>Bitpixi Learns Cybersec</h2>
           <p>
             My goal is to help companies prevent, detect and respond to security incidents,
             especially as they adopt new AI tools, agentic pipelines and systems that allow AI to
@@ -645,19 +647,19 @@ export default function Home() {
         </div>
         <div className="contact-grid" aria-label="Bitpixi social links">
           <a href="https://www.linkedin.com/in/bitpixi" target="_blank" rel="noreferrer">
-            <span className="contact-mark">in</span><span><b>LinkedIn</b><small>/in/bitpixi</small></span><em>↗</em>
+            <span className="contact-mark"><FaLinkedinIn aria-hidden="true" /></span><span><b>LinkedIn</b><small>/in/bitpixi</small></span><em>↗</em>
           </a>
           <a href="https://bitpixi.com/" target="_blank" rel="noreferrer">
-            <span className="contact-mark">www</span><span><b>Website</b><small>bitpixi.com</small></span><em>↗</em>
+            <span className="contact-mark"><Globe2 aria-hidden="true" /></span><span><b>Website</b><small>bitpixi.com</small></span><em>↗</em>
           </a>
           <a href="https://github.com/bitpixi2" target="_blank" rel="noreferrer">
-            <span className="contact-mark">gh</span><span><b>GitHub</b><small>@bitpixi2</small></span><em>↗</em>
+            <span className="contact-mark"><FaGithub aria-hidden="true" /></span><span><b>GitHub</b><small>@bitpixi2</small></span><em>↗</em>
           </a>
           <a href="mailto:Kasey.bitpixi@gmail.com">
-            <span className="contact-mark">@</span><span><b>Email</b><small>Kasey.bitpixi@gmail.com</small></span><em>↗</em>
+            <span className="contact-mark"><Mail aria-hidden="true" /></span><span><b>Email</b><small>Kasey.bitpixi@gmail.com</small></span><em>↗</em>
           </a>
           <a href="https://x.com/bitpixi" target="_blank" rel="noreferrer">
-            <span className="contact-mark">x</span><span><b>X</b><small>@bitpixi</small></span><em>↗</em>
+            <span className="contact-mark"><FaXTwitter aria-hidden="true" /></span><span><b>X</b><small>@bitpixi</small></span><em>↗</em>
           </a>
         </div>
         <div className="x-share-card" aria-label="Share this website">

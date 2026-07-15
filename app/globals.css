@@ -703,6 +703,7 @@ img { display: block; max-width: 100%; }
   font-weight: 800;
   text-transform: uppercase;
 }
+.contact-mark svg { width: 20px; height: 20px; stroke-width: 1.8; }
 .contact-grid b,
 .contact-grid small { display: block; }
 .contact-grid b { font-size: 0.95rem; }
