@@ -399,6 +399,7 @@ export default function Home() {
         <div className="broker-stage" aria-label="Authentic CyberBroker artwork">
           <article className="broker-card broker-card-guarded">
             <span className="broker-number">#8377</span>
+            <span className="broker-role">PHISHER · PEOPLE SYSTEMS</span>
             <img
               src="/nft/8377.png"
               alt="CyberBroker 8377 in vivid pink fishing gear with a cyber fishing pole"
@@ -417,6 +418,7 @@ export default function Home() {
           </article>
           <article className="broker-card broker-card-woodsy">
             <span className="broker-number">#2821</span>
+            <span className="broker-role">HACKER · TECHNICAL SYSTEMS</span>
             <img
               src="/nft/2821.png"
               alt="CyberBroker 2821 in dark cyber outerwear with a glowing blue mask"
