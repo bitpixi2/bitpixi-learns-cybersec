@@ -362,12 +362,12 @@ export default function Home() {
           <a className="maker-badge" href="https://openai.com/codex" target="_blank" rel="noreferrer" title="Made with Codex"><img src="/stickers/codex-color.png" alt="Made with Codex" /></a>
         </div>
         <nav className="top-nav" aria-label="Primary navigation">
-          <a href="#top">Home</a>
-          <a href="#roadmap">Checklist</a>
+          <a href="#top">Overview</a>
+          <a href="#roadmap">Study Plan</a>
           <a href="#pathway">Pathway</a>
-          <a href="#reading">Reading</a>
+          <a href="#reading">Reading List</a>
           <a href="#watchlist">Watchlist</a>
-          <a href="#merch">Field kit</a>
+          <a href="#merch">Merch Concepts</a>
         </nav>
       </header>
 
@@ -614,7 +614,6 @@ export default function Home() {
         <div className="section-title">
           <p className="eyebrow">FUTURE FIELD KIT / CONCEPTS ONLY</p>
           <h2>Merch concepts</h2>
-          <p>Concept mockups based on the approved duo artwork. Nothing is for sale yet.</p>
         </div>
         <div className="merch-grid">
           <article className="merch-card">
@@ -635,6 +634,13 @@ export default function Home() {
           </article>
         </div>
       </section>
+
+      <aside className="country-acknowledgement" aria-label="Acknowledgement of Country">
+        <span>ACKNOWLEDGEMENT OF COUNTRY</span>
+        <p>
+          I acknowledge the <a href="https://www.wurundjeri.com.au/" target="_blank" rel="noreferrer">Wurundjeri Woi-wurrung people</a> of the Kulin Nation as the Traditional Owners of the land on which this site was created. I recognise their continuing connection to land, waters and culture, and pay my respects to Elders past and present.
+        </p>
+      </aside>
 
       <footer>
         <p>BITPIXI LEARNS CYBERSEC</p>
