@@ -590,6 +590,7 @@ export default function Home() {
         <div className="section-title">
           <p className="eyebrow">GUARDED&apos;S WATCH DESK / AUSTRALIA</p>
           <h2>Watchlist</h2>
+          <img className="section-title-badge" src="/tokens/bait-map.png" alt="Bait Map identity badge" />
         </div>
         <div className="watch-grid">
           {watchlist.map((item, index) => (
@@ -610,8 +611,8 @@ export default function Home() {
         </div>
         <div className="merch-grid">
           <article className="merch-card">
-            <img className="merch-real-image" src="/merch/keychain-approved.png" alt="Approved duo artwork as an acrylic keychain mockup" />
-            <div className="merch-caption"><span>CONCEPT 01</span><h3>Acrylic keychain</h3><p>One clear-cut dual-character charm</p></div>
+            <img className="merch-real-image" src="/merch/cyberbrokers-notebooks.png" alt="Two overlapping hardcover notebooks, each featuring one authentic CyberBrokers NFT cover" />
+            <div className="merch-caption"><span>CONCEPT 01</span><h3>CyberBrokers notebooks</h3><p>Two notebooks · one authentic NFT cover each</p></div>
           </article>
           <article className="merch-card">
             <img className="merch-real-image" src="/merch/patch-approved.png" alt="Approved duo artwork as a circular embroidered patch mockup" />
