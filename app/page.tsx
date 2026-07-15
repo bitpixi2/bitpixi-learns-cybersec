@@ -543,20 +543,13 @@ export default function Home() {
         <img className="gate-symbol" src="/badges/blc-cybersec-badge.png" alt="BLC cyber security badge" />
         <div>
           <p className="eyebrow">BITPIXI / AUSTRALIAN LEARNING PATH</p>
-          <h2>Build the right base</h2>
+          <h2>Helping people every day</h2>
           <p>
-            Start with Linux and infrastructure basics, then complete the Victorian IT pathway
-            needed for Free TAFE before Cert IV Cyber Security. Add Security+ for a
-            recognised baseline; use SC-900 and PortSwigger labs to turn it into practical work.
+            My goal is to help civilian organisations prevent, detect and respond to compromise.
+            This plan combines the Victorian Certificate III and IV pathway, Security+, blue-team
+            practice, cloud security and authorised web-testing labs. Military and defence-sector
+            work are outside this plan.
           </p>
-        </div>
-        <div className="gate-links">
-          <a href="https://bitpixi.com/" target="_blank" rel="noreferrer">
-            Visit bitpixi.com ↗
-          </a>
-          <a href="https://www.vu.edu.au/courses/certificate-iv-in-cyber-security-22603vic" target="_blank" rel="noreferrer">
-            Victorian Cert IV options ↗
-          </a>
         </div>
       </section>
 

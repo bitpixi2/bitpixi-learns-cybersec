@@ -597,7 +597,7 @@ img { display: block; max-width: 100%; }
   background: linear-gradient(112deg, var(--woodsy-cyan), var(--guarded-periwinkle) 47%, var(--guarded-pink));
   color: #08101f;
   display: grid;
-  grid-template-columns: 210px 1fr 310px;
+  grid-template-columns: 190px minmax(0, 1fr);
   gap: 48px;
   align-items: center;
   padding: 54px;
@@ -627,9 +627,7 @@ img { display: block; max-width: 100%; }
 
 .authorisation-gate .eyebrow { color: #642041; }
 .authorisation-gate h2 { font-size: clamp(2.1rem, 3.5vw, 4rem); }
-.authorisation-gate p:last-child { max-width: 52rem; line-height: 1.6; font-size: 0.92rem; }
-.gate-links { display: grid; gap: 14px; position: relative; z-index: 2; }
-.gate-links a { font-family: var(--mono); font-size: 0.68rem; line-height: 1.5; }
+.authorisation-gate p:last-child { max-width: 66rem; line-height: 1.6; font-size: 0.92rem; }
 
 .required-reading { padding: 24px 0 120px; }
 .section-title { display: grid; grid-template-columns: 1fr 1fr; column-gap: 40px; align-items: end; margin-bottom: 52px; }
@@ -722,7 +720,6 @@ footer small { justify-self: end; }
   .mission-group { grid-template-columns: 250px 1fr; gap: 34px; }
   .authorisation-gate { grid-template-columns: 160px 1fr; }
   .gate-symbol { width: 140px; height: 140px; }
-  .gate-links { grid-column: 2; }
 }
 
 @media (max-width: 800px) {
@@ -745,7 +742,6 @@ footer small { justify-self: end; }
   .mission { grid-template-columns: 30px 34px 38px 1fr; padding: 24px 0; }
   .mission-action { grid-column: 4; justify-self: start; text-align: left; }
   .authorisation-gate { grid-template-columns: 1fr; padding: 36px; }
-  .gate-links { grid-column: auto; }
   .reading-grid { grid-template-columns: 1fr; }
   .watch-grid { grid-template-columns: 1fr 1fr; }
   .section-title > p:last-child { justify-self: start; }
