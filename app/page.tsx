@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState, type CSSProperties, type FormEvent } from "react";
+import { useEffect, useMemo, useState, type CSSProperties } from "react";
 
 type Track = "foundation" | "systems" | "human" | "leadership";
 
@@ -24,7 +24,6 @@ type MissionGroup = {
 };
 
 const STORAGE_KEY = "bitpixi-cybersec-progress-v1";
-const ACCESS_KEY = "bitpixi-cybersec-entry-v1";
 
 const missionGroups: MissionGroup[] = [
   {
@@ -269,9 +268,6 @@ const allMissions = missionGroups.flatMap((group) => group.missions);
 export default function Home() {
   const [completed, setCompleted] = useState<Set<string>>(new Set());
   const [hydrated, setHydrated] = useState(false);
-  const [hasAccess, setHasAccess] = useState(false);
-  const [passcode, setPasscode] = useState("");
-  const [accessError, setAccessError] = useState(false);
 
   useEffect(() => {
     const restoreProgress = window.setTimeout(() => {
@@ -288,28 +284,6 @@ export default function Home() {
 
     return () => window.clearTimeout(restoreProgress);
   }, []);
-
-  useEffect(() => {
-    try {
-      setHasAccess(window.sessionStorage.getItem(ACCESS_KEY) === "granted");
-    } catch {
-      // The entry screen still works when session storage is blocked.
-    }
-  }, []);
-
-  function unlock(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    if (passcode.trim().toLowerCase() === "owl") {
-      try {
-        window.sessionStorage.setItem(ACCESS_KEY, "granted");
-      } catch {
-        // Continue even if storage is unavailable for this visit.
-      }
-      setHasAccess(true);
-      return;
-    }
-    setAccessError(true);
-  }
 
   const progress = useMemo(
     () => Math.round((completed.size / allMissions.length) * 100),
@@ -337,36 +311,6 @@ export default function Home() {
     } catch {
       // No action required.
     }
-  }
-
-  if (!hasAccess) {
-    return (
-      <main className="entry-page">
-        <section className="entry-gate" aria-labelledby="entry-title">
-          <img src="/owlsec/owlsec-community.jpg" alt="OwlSec owl community artwork" />
-          <div className="entry-copy">
-            <p className="eyebrow">OWLSEC / STUDY CREW</p>
-            <h1 id="entry-title">BITPIXI LEARNS CYBERSEC</h1>
-            <p>A small public field plan with an OwlSec entry gate.</p>
-            <form onSubmit={unlock}>
-              <label htmlFor="entry-passcode">Password</label>
-              <div>
-                <input
-                  id="entry-passcode"
-                  type="password"
-                  value={passcode}
-                  onChange={(event) => { setPasscode(event.target.value); setAccessError(false); }}
-                  autoComplete="current-password"
-                  autoFocus
-                />
-                <button type="submit">Enter</button>
-              </div>
-              {accessError && <small>Try the OwlSec password.</small>}
-            </form>
-          </div>
-        </section>
-      </main>
-    );
   }
 
   return (
@@ -455,7 +399,6 @@ export default function Home() {
             <figcaption>BAIT MAP</figcaption>
           </figure>
         </div>
-        <p>Four graphic tokens for the two-track method: code systems and human signals.</p>
       </section>
 
       <aside className="owlsec-callout" aria-label="OwlSec study community">
