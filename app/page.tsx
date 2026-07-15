@@ -82,6 +82,16 @@ const missionGroups: MissionGroup[] = [
         callout: "SIGNED UP · Possible subsidised cost through AWSN.",
       },
       {
+        id: "vu-cert-iii-it",
+        title: "Certificate III in Information Technology",
+        provider: "Victoria University · ICT30120",
+        note: "Victorian foundation pathway and planned prerequisite before Certificate IV, with a cyber security stream covering systems, networking and virtual machines.",
+        signal: "PREREQUISITE",
+        href: "https://www.vu.edu.au/courses/certificate-iii-in-information-technology-ict30120",
+        track: "foundation",
+        callout: "WAIT FOR PR · Check Victorian funding and residency eligibility before enrolling.",
+      },
+      {
         id: "tafe-cert-iv",
         title: "Certificate IV in Cyber Security",
         provider: "Victoria University · 22603VIC",
