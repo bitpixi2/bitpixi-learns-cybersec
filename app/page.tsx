@@ -371,6 +371,7 @@ export default function Home() {
           <a href="#reading">Reading List</a>
           <a href="#watchlist">Watch Desk</a>
           <a href="#merch">Merch Concepts</a>
+          <a href="#contact">Contact</a>
         </nav>
       </header>
 
@@ -627,7 +628,7 @@ export default function Home() {
             <div className="merch-caption"><span>CONCEPT 04</span><h3>BLC enamel pin</h3><p>Black nickel · navy, cyan and pink hard enamel</p></div>
           </article>
         </div>
-        <div className="x-share-card">
+        <div className="x-share-card" id="contact" aria-label="Contact and share">
           <div>
             <span>SHARE THE STUDY PLAN</span>
             <p>{X_SHARE_TEXT}</p>
