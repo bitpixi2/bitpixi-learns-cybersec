@@ -625,6 +625,14 @@ export default function Home() {
             <img className="merch-real-image" src="/merch/patch-approved.png" alt="Approved duo artwork as a circular embroidered patch mockup" />
             <div className="merch-caption"><span>CONCEPT 02</span><h3>Embroidered patch</h3><p>Round merrow edge · navy, cyan and pink threadwork</p></div>
           </article>
+          <article className="merch-card">
+            <img className="merch-real-image" src="/merch/linux-grep-mug.png" alt="Black ceramic mug printed with the Keep Calm and Grep On Linux artwork" />
+            <div className="merch-caption"><span>CONCEPT 03</span><h3>Linux grep mug</h3><p>Gloss-black ceramic · crisp white command-line print</p></div>
+          </article>
+          <article className="merch-card">
+            <img className="merch-real-image" src="/merch/blc-enamel-pin.png" alt="Circular hard-enamel pin featuring the BLC cyber security badge" />
+            <div className="merch-caption"><span>CONCEPT 04</span><h3>BLC enamel pin</h3><p>Black nickel · navy, cyan and pink hard enamel</p></div>
+          </article>
         </div>
       </section>
 
