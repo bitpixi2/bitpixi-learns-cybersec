@@ -347,7 +347,7 @@ export default function Home() {
     <main>
       <header className="site-header">
         <a className="wordmark" href="#top" aria-label="BITPIXI Learns Cybersec home">
-          B<span>L</span><em>C</em>
+          <strong>BITPIXI</strong> <span>LEARNS</span> <em>CYBERSEC</em>
         </a>
         <div className="badge-strip" aria-label="Project badges">
           <span className="badge-label">Sec Study Groups:</span>
