@@ -79,7 +79,7 @@ const missionGroups: MissionGroup[] = [
         note: "Victorian foundation pathway and planned prerequisite before Certificate IV, with a cyber security stream covering systems, networking and virtual machines.",
         signal: "PREREQUISITE",
         href: "https://www.vu.edu.au/courses/certificate-iii-in-information-technology-ict30120",
-        track: "foundation",
+        track: "human",
         callout: "WAIT FOR PR · Check Victorian funding and residency eligibility before enrolling.",
       },
       {
@@ -89,7 +89,7 @@ const missionGroups: MissionGroup[] = [
         note: "Victorian nationally recognised training covering cyber security operations, networking, testing and incident response.",
         signal: "VIC PATH",
         href: "https://www.vu.edu.au/courses/certificate-iv-in-cyber-security-22603vic",
-        track: "foundation",
+        track: "human",
         callout: "WAIT FOR PR · Check Victorian funding and residency eligibility before enrolling.",
         optional: true,
       },
