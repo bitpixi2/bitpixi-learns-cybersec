@@ -695,15 +695,13 @@ img { display: block; max-width: 100%; }
   height: 42px;
   display: grid;
   place-items: center;
-  border: 1px solid var(--guarded-pink);
-  border-radius: 50%;
-  color: var(--guarded-pink);
-  font-family: var(--mono);
-  font-size: 0.65rem;
-  font-weight: 800;
-  text-transform: uppercase;
+  color: var(--paper);
 }
-.contact-mark svg { width: 20px; height: 20px; stroke-width: 1.8; }
+.contact-mark svg { width: 34px; height: 34px; stroke-width: 1.65; transition: color 160ms ease, filter 160ms ease; }
+.contact-grid > a:hover .contact-mark svg {
+  color: var(--paper);
+  filter: drop-shadow(-2px 0 4px rgba(250, 43, 156, 0.62)) drop-shadow(2px 0 4px rgba(0, 184, 255, 0.62));
+}
 .contact-grid b,
 .contact-grid small { display: block; }
 .contact-grid b { font-size: 0.95rem; }
