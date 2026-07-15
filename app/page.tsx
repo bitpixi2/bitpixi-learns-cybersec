@@ -125,6 +125,16 @@ const missionGroups: MissionGroup[] = [
         track: "systems",
       },
       {
+        id: "tryhackme",
+        title: "TryHackMe learning paths",
+        provider: "TryHackMe",
+        note: "Beginner-friendly, guided offensive and defensive security rooms with browser-based hands-on labs.",
+        signal: "LAB PLATFORM",
+        href: "https://tryhackme.com/",
+        track: "systems",
+        optional: true,
+      },
+      {
         id: "bscp",
         title: "Burp Suite Certified Practitioner",
         provider: "PortSwigger · BSCP",
