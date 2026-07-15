@@ -26,6 +26,9 @@ type MissionGroup = {
 };
 
 const STORAGE_KEY = "bitpixi-cybersec-progress-v1";
+const X_SHARE_TEXT =
+  "I saw @bitpixi's BITPIXI LEARNS CYBERSEC website built with #Codex and I was blown away! Maybe I should design my own personal study guides with @OpenAI tools.";
+const X_SHARE_URL = `https://twitter.com/intent/tweet?text=${encodeURIComponent(X_SHARE_TEXT)}&url=${encodeURIComponent("https://bitpixi-learns-cybersec.bitpixi.chatgpt.site")}`;
 
 const missionGroups: MissionGroup[] = [
   {
@@ -623,6 +626,15 @@ export default function Home() {
             <img className="merch-real-image" src="/merch/blc-enamel-pin.png" alt="Circular hard-enamel pin featuring the BLC cyber security badge" />
             <div className="merch-caption"><span>CONCEPT 04</span><h3>BLC enamel pin</h3><p>Black nickel · navy, cyan and pink hard enamel</p></div>
           </article>
+        </div>
+        <div className="x-share-card">
+          <div>
+            <span>SHARE THE STUDY PLAN</span>
+            <p>{X_SHARE_TEXT}</p>
+          </div>
+          <a href={X_SHARE_URL} target="_blank" rel="noreferrer">
+            Post on X <span aria-hidden="true">↗</span>
+          </a>
         </div>
       </section>
 
