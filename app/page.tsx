@@ -362,7 +362,6 @@ export default function Home() {
           <a className="maker-badge" href="https://openai.com/codex" target="_blank" rel="noreferrer" title="Made with Codex"><img src="/stickers/codex-color.png" alt="Made with Codex" /></a>
         </div>
         <nav className="top-nav" aria-label="Primary navigation">
-          <a href="#top">Overview</a>
           <a href="#roadmap">Study Plan</a>
           <a href="#pathway">Mission Statement</a>
           <a href="#reading">Reading List</a>
