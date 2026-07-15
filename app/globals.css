@@ -573,7 +573,7 @@ img { display: block; max-width: 100%; }
 .mission-callout a { color: inherit; text-underline-offset: 3px; }
 .mission-callout a:hover { color: var(--paper); }
 
-.mission-action { justify-self: end; text-align: right; display: grid; gap: 12px; }
+.mission-action { justify-self: end; margin-right: 28px; text-align: right; display: grid; gap: 12px; }
 .mission-action > span { font-family: var(--mono); font-size: 0.55rem; color: var(--sage); letter-spacing: 0.12em; }
 .mission-action a { font-size: 0.72rem; text-underline-offset: 4px; }
 .mission-action a:hover { color: var(--track-color); }
@@ -821,7 +821,7 @@ footer small { justify-self: end; }
   .progress-block { margin-top: 20px; max-width: 360px; }
   .group-intro { position: static; max-width: 520px; }
   .mission { grid-template-columns: 30px 34px 38px 1fr; padding: 24px 0; }
-  .mission-action { grid-column: 4; justify-self: start; text-align: left; }
+  .mission-action { grid-column: 4; justify-self: start; margin-right: 0; text-align: left; }
   .authorisation-gate { grid-template-columns: 1fr; padding: 36px; }
   .reading-grid { grid-template-columns: 1fr; }
   .watch-grid { grid-template-columns: 1fr 1fr; }
