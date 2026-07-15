@@ -358,14 +358,15 @@ export default function Home() {
             <img src="/stickers/kanga-root.webp" alt="Kanga Root Discord" />
           </a>
           <span className="badge-pipe" aria-hidden="true">|</span>
-          <span className="badge-label">Site made with Codex:</span>
+          <span className="badge-label">Site made with:</span>
           <a className="maker-badge" href="https://openai.com/codex" target="_blank" rel="noreferrer" title="Made with Codex"><img src="/stickers/codex-color.png" alt="Made with Codex" /></a>
+          <a className="maker-badge maker-badge-cyberbrokers" href="https://www.cyberbrokers.com/" target="_blank" rel="noreferrer" title="CyberBrokers"><img src="/stickers/cyberbrokers-logo.jpg" alt="CyberBrokers" /></a>
         </div>
         <nav className="top-nav" aria-label="Primary navigation">
           <a href="#roadmap">Study Plan</a>
           <a href="#pathway">Mission Statement</a>
           <a href="#reading">Reading List</a>
-          <a href="#watchlist">Watchlist</a>
+          <a href="#watchlist">Watch Desk</a>
           <a href="#merch">Merch Concepts</a>
         </nav>
       </header>
@@ -386,37 +387,14 @@ export default function Home() {
         </div>
 
         <div className="broker-stage" aria-label="Authentic CyberBroker artwork">
-          <article className="broker-card broker-card-woodsy">
-            <a className="broker-source-link" href="https://www.cyberbrokers.com/" target="_blank" rel="noreferrer">CyberBrokers ↗</a>
-            <img
-              src="/nft/2821.png"
-              alt="Woodsy Dusty, CyberBroker 2821, in dark cyber outerwear with a glowing blue mask"
-              fetchPriority="high"
-            />
-            <div className="broker-marks" aria-label="Woodsy Dusty identity marks">
-              <figure className="hero-mark hero-mark-primary">
-                <img src="/tokens/code-guard.png" alt="Code guard identity token" />
-                <figcaption>CODE GUARD</figcaption>
-              </figure>
-              <figure className="hero-mark hero-mark-secondary">
-                <img src="/tokens/pipeline.png" alt="Pipeline identity token" />
-                <figcaption>PIPELINE</figcaption>
-              </figure>
-            </div>
-            <div className="broker-label">
-              <p>TECHNICAL LAYER · #2821</p>
-              <h2>Woodsy Dusty</h2>
-              <span>Talent: Hacker · systems + agentic security</span>
-            </div>
-          </article>
           <article className="broker-card broker-card-guarded">
-            <a className="broker-source-link" href="https://www.cyberbrokers.com/" target="_blank" rel="noreferrer">CyberBrokers ↗</a>
+            <span className="broker-number">#8377</span>
             <img
               src="/nft/8377.png"
-              alt="Guarded of Vibrant, CyberBroker 8377, in vivid pink fishing gear with a cyber fishing pole"
+              alt="CyberBroker 8377 in vivid pink fishing gear with a cyber fishing pole"
               fetchPriority="high"
             />
-            <div className="broker-marks" aria-label="Guarded of Vibrant identity marks">
+            <div className="broker-marks" aria-label="CyberBroker 8377 identity marks">
               <figure className="hero-mark hero-mark-primary">
                 <img src="/tokens/human-signal.png" alt="Human signal identity token" />
                 <figcaption>HUMAN SIGNAL</figcaption>
@@ -426,10 +404,23 @@ export default function Home() {
                 <figcaption>BAIT MAP</figcaption>
               </figure>
             </div>
-            <div className="broker-label">
-              <p>HUMAN LAYER · #8377</p>
-              <h2>Guarded of Vibrant</h2>
-              <span>Talent: Phisherman · people + process safety</span>
+          </article>
+          <article className="broker-card broker-card-woodsy">
+            <span className="broker-number">#2821</span>
+            <img
+              src="/nft/2821.png"
+              alt="CyberBroker 2821 in dark cyber outerwear with a glowing blue mask"
+              fetchPriority="high"
+            />
+            <div className="broker-marks" aria-label="CyberBroker 2821 identity marks">
+              <figure className="hero-mark hero-mark-primary">
+                <img src="/tokens/code-guard.png" alt="Code guard identity token" />
+                <figcaption>CODE GUARD</figcaption>
+              </figure>
+              <figure className="hero-mark hero-mark-secondary">
+                <img src="/tokens/pipeline.png" alt="Pipeline identity token" />
+                <figcaption>PIPELINE</figcaption>
+              </figure>
             </div>
           </article>
         </div>
@@ -439,7 +430,7 @@ export default function Home() {
         <div className="roadmap-head">
           <div>
             <p className="eyebrow">LEARNING / STARTS JULY 2026</p>
-            <h2>My Custom Study Plan</h2>
+            <h2>Study Plan</h2>
             <p>
               The Victorian Certificate III and IV are the nationally recognised Australian
               qualifications in this plan. Security+, Microsoft, Google and AWS credentials add
@@ -543,12 +534,12 @@ export default function Home() {
         <img className="gate-symbol" src="/badges/blc-cybersec-badge.png" alt="BLC cyber security badge" />
         <div>
           <p className="eyebrow">BITPIXI LEARNS CYBERSEC / MISSION STATEMENT</p>
-          <h2>Blue Team, Better Business</h2>
+          <h2>Keep Calm and Grep On</h2>
           <p>
             My goal is to help companies prevent, detect and respond to security incidents,
             especially as they adopt new AI tools, agentic pipelines and systems that allow AI to
             move data, decisions and actions into and out of secure sandboxes. This roadmap combines
-            Victorian Certificate III and IV training, Security+, hands-on blue-team practice, cloud
+            Victorian Certificate III and IV training, Security+, hands-on practice, cloud
             security, authorised web-security labs and AI leadership. It focuses on helping commercial
             organisations introduce AI responsibly, with strong controls around access, permissions,
             data flows and automated actions, while protecting their employees, customers, systems
@@ -560,7 +551,7 @@ export default function Home() {
       <section className="required-reading" id="reading">
         <div className="section-title">
           <p className="eyebrow">AUSTRALIAN SECURITY BASELINE</p>
-          <h2>Required reading</h2>
+          <h2>Reading List</h2>
         </div>
         <div className="reading-grid">
           <a href="https://www.cyber.gov.au/sites/default/files/2026-06/Information%20security%20manual%20%28June%202026%29.pdf" target="_blank" rel="noreferrer">
@@ -592,9 +583,11 @@ export default function Home() {
 
       <section className="watchlist" id="watchlist">
         <div className="section-title">
-          <p className="eyebrow">GUARDED&apos;S WATCH DESK / AUSTRALIA</p>
-          <h2>Watchlist</h2>
-          <img className="section-title-badge" src="/tokens/bait-map.png" alt="Bait Map identity badge" />
+          <p className="eyebrow">THE LATEST NEWS IN AUSTRALIA</p>
+          <div className="section-title-heading">
+            <h2>Watch Desk</h2>
+            <img className="section-title-badge" src="/tokens/bait-map.png" alt="Bait Map identity badge" />
+          </div>
         </div>
         <div className="watch-grid">
           {watchlist.map((item, index) => (
@@ -610,8 +603,8 @@ export default function Home() {
 
       <section className="merch" id="merch">
         <div className="section-title">
-          <p className="eyebrow">FUTURE FIELD KIT / CONCEPTS ONLY</p>
-          <h2>Merch concepts</h2>
+          <p className="eyebrow">FUTURE FAN KIT / CONCEPTS ONLY</p>
+          <h2>Merch Concepts</h2>
         </div>
         <div className="merch-grid">
           <article className="merch-card">
@@ -636,7 +629,7 @@ export default function Home() {
       <aside className="country-acknowledgement" aria-label="Acknowledgement of Country">
         <span>ACKNOWLEDGEMENT OF COUNTRY</span>
         <p>
-          I acknowledge the <a href="https://www.wurundjeri.com.au/" target="_blank" rel="noreferrer">Wurundjeri Woi-wurrung people</a> of the Kulin Nation as the Traditional Owners of the land on which this site was created. I recognise their continuing connection to land, waters and culture, and pay my respects to Elders past and present.
+          I acknowledge the Wurundjeri Woi-wurrung people of the Kulin Nation as the Traditional Owners of the land on which this site was created. I recognise their continuing connection to land, waters and culture, and pay my respects to Elders past and present.
         </p>
       </aside>
 
