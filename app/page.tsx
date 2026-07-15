@@ -344,6 +344,9 @@ export default function Home() {
             My personal learning plan for cyber security, authorised testing and
             responsible AI leadership.
           </p>
+          <a className="cyberbrokers-link" href="https://www.cyberbrokers.com/" target="_blank" rel="noreferrer">
+            CyberBrokers <span>↗</span>
+          </a>
           <div className="hero-meta">
             <span>37.8136° S</span>
             <span>144.9631° E</span>
@@ -585,6 +588,11 @@ export default function Home() {
         <span>MADE WITH</span>
         <img src="/stickers/codex-color.png" alt="Codex" />
         <strong>CODEX</strong>
+      </a>
+      <a className="openclaw-sticker" href="https://openclaw.ai/" target="_blank" rel="noreferrer" title="Made with OpenClaw">
+        <span>MADE WITH</span>
+        <img src="/stickers/openclaw-icon.png" alt="OpenClaw" />
+        <strong>OPENCLAW</strong>
       </a>
 
       <footer>

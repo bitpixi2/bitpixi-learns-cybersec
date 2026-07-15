@@ -98,7 +98,7 @@ img { display: block; max-width: 100%; }
   text-decoration: none;
   color: var(--paper);
   background: #101b39;
-  border: 3px solid var(--paper);
+  border: 0;
   border-radius: 50%;
   box-shadow: 0 8px 0 #07111f, 0 12px 18px rgba(0, 0, 0, 0.38);
   transform: rotate(7deg);
@@ -120,6 +120,44 @@ img { display: block; max-width: 100%; }
 .codex-sticker:hover {
   transform: rotate(0deg) scale(1.08);
   box-shadow: 0 9px 0 #07111f, 0 14px 20px rgba(250, 43, 156, 0.42);
+}
+
+.openclaw-sticker {
+  position: fixed;
+  left: 115px;
+  bottom: 104px;
+  z-index: 18;
+  width: 94px;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 1px;
+  padding: 9px;
+  text-decoration: none;
+  color: var(--paper);
+  background: #ee1626;
+  border-radius: 50%;
+  box-shadow: 0 8px 0 #07111f, 0 12px 18px rgba(0, 0, 0, 0.38);
+  transform: rotate(-6deg);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.openclaw-sticker span,
+.openclaw-sticker strong {
+  position: relative;
+  z-index: 1;
+  font-family: var(--mono);
+  line-height: 1;
+}
+
+.openclaw-sticker span { font-size: 0.5rem; letter-spacing: 0.08em; }
+.openclaw-sticker strong { font-size: 0.56rem; letter-spacing: 0.02em; }
+.openclaw-sticker img { position: relative; z-index: 1; width: 42px; height: 42px; object-fit: cover; border-radius: 50%; }
+
+.openclaw-sticker:hover {
+  transform: rotate(0deg) scale(1.08);
+  box-shadow: 0 9px 0 #07111f, 0 14px 20px rgba(255, 155, 32, 0.42);
 }
 
 .site-header {
@@ -278,6 +316,25 @@ img { display: block; max-width: 100%; }
   margin: 34px 0 0;
 }
 
+.cyberbrokers-link {
+  width: fit-content;
+  margin-top: 20px;
+  padding: 9px 12px;
+  border: 1px solid rgba(250, 43, 156, 0.72);
+  color: var(--paper);
+  background: rgba(66, 10, 84, 0.38);
+  text-decoration: none;
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+.cyberbrokers-link span { color: var(--guarded-pink); }
+.cyberbrokers-link:hover { background: rgba(250, 43, 156, 0.24); transform: translateY(-2px); }
+
 .hero-meta {
   margin-top: 42px;
   padding-top: 14px;
@@ -295,7 +352,9 @@ img { display: block; max-width: 100%; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
-  min-height: 660px;
+  width: min(100%, 680px);
+  min-height: 590px;
+  justify-self: end;
   position: relative;
   z-index: 2;
 }
@@ -724,7 +783,7 @@ footer small { justify-self: end; }
   .hero { grid-template-columns: 1fr; min-height: auto; }
   .hero-copy { padding: 70px 0 34px; }
   .hero h1 { font-size: clamp(4.6rem, 13vw, 8rem); max-width: none; }
-  .broker-stage { min-height: 720px; }
+  .broker-stage { min-height: 650px; }
   .field-marks { grid-template-columns: 140px 1fr; }
   .owlsec-callout { grid-template-columns: minmax(220px, 0.72fr) 1.28fr; }
   .field-marks > p { grid-column: 2; }
@@ -745,8 +804,8 @@ footer small { justify-self: end; }
   .required-reading,
   .watchlist,
   .merch { width: min(100% - 28px, 1400px); }
-  .broker-stage { grid-template-columns: 1fr; min-height: auto; }
-  .broker-card { min-height: 680px; }
+  .broker-stage { grid-template-columns: 1fr; min-height: auto; width: 100%; }
+  .broker-card { min-height: 620px; }
   .roadmap-head,
   .mission-group,
   .section-title { grid-template-columns: 1fr; }
@@ -767,10 +826,14 @@ footer small { justify-self: end; }
 
 @media (max-width: 560px) {
   .linux-sticker { width: 54px; left: 12px; bottom: 12px; }
-  .codex-sticker { width: 62px; left: 8px; bottom: 74px; border-width: 2px; padding: 6px; }
+  .codex-sticker { width: 62px; left: 8px; bottom: 74px; padding: 6px; }
   .codex-sticker span { font-size: 0.35rem; }
   .codex-sticker strong { font-size: 0.43rem; }
   .codex-sticker img { width: 27px; height: 27px; }
+  .openclaw-sticker { width: 62px; left: 78px; bottom: 74px; padding: 6px; }
+  .openclaw-sticker span { font-size: 0.35rem; }
+  .openclaw-sticker strong { font-size: 0.38rem; }
+  .openclaw-sticker img { width: 28px; height: 28px; }
   .site-header { min-height: 68px; }
   .owlsec-badge { padding: 7px 9px; }
   .owlsec-badge strong { font-size: 0.61rem; }
@@ -779,7 +842,7 @@ footer small { justify-self: end; }
   .hero-copy { padding-top: 42px; }
   .hero h1 { font-size: clamp(3.5rem, 18vw, 5.4rem); }
   .hero-deck { font-size: 1rem; }
-  .broker-card { min-height: 540px; }
+  .broker-card { min-height: 500px; }
   .broker-label { left: 16px; right: 16px; }
   .field-marks { grid-template-columns: 1fr; padding: 52px 0 64px; }
   .owlsec-callout { grid-template-columns: 1fr; margin-bottom: 0; }
