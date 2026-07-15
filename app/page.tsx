@@ -535,6 +535,10 @@ export default function Home() {
             <img src="/reading/women-in-cyber-vic-2022-cover.png" alt="First page of the Victorian women in cyber security pilot brief" />
             <div><span>VICTORIA / 2022 ARCHIVE</span><h3>Women in cyber</h3><p>Historical brief on the Women in Security pilot, mentoring, internships and leadership pathways.</p></div>
           </a>
+          <a href="https://www.industry.gov.au/sites/default/files/2025-12/national-ai-plan.pdf" target="_blank" rel="noreferrer">
+            <img src="/reading/national-ai-plan-2025-cover.png" alt="First page of Australia's National AI Plan 2025" />
+            <div><span>AUSTRALIA / 2025</span><h3>National AI Plan</h3><p>The federal plan for growing AI capability, spreading benefits and keeping Australians safe.</p></div>
+          </a>
         </div>
       </section>
 
