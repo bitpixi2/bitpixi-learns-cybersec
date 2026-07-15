@@ -78,7 +78,7 @@ const missionGroups: MissionGroup[] = [
         note: "Five-day SY0-701 training pathway with an exam voucher, subject to AWSN eligibility and cohort availability.",
         signal: "AWSN EOI",
         href: "https://www.awsn.org.au/Web/web/education-training/comp-tia-security-training.aspx",
-        track: "foundation",
+        track: "human",
         callout: "SIGNED UP · Possible subsidised cost through AWSN.",
       },
       {
@@ -185,35 +185,6 @@ const missionGroups: MissionGroup[] = [
         signal: "LATER GAME",
         href: "https://www.offsec.com/courses/pen-200/",
         track: "systems",
-        optional: true,
-      },
-    ],
-  },
-  {
-    id: "human",
-    kicker: "PHASE 03 / GUARDED OF VIBRANT",
-    title: "Human layer + social engineering",
-    intro:
-      "Study the bait, the workaround and the evidence trail—without targeting a real person unless a signed scope says you may.",
-    missions: [
-      {
-        id: "sans-sec467",
-        title: "Social Engineering for Security Professionals",
-        provider: "SANS · SEC467",
-        note: "Professional methodology for authorised social-engineering assessments and countermeasures.",
-        signal: "SPECIALIST",
-        href: "https://www.sans.org/cyber-security-courses/social-engineering-security-professionals/",
-        track: "human",
-        optional: true,
-      },
-      {
-        id: "giac-gosi",
-        title: "Open Source Intelligence",
-        provider: "GIAC · GOSI",
-        note: "OSINT collection, analysis, privacy, OPSEC and reporting for people and organisations.",
-        signal: "RESEARCH",
-        href: "https://www.giac.org/certifications/open-source-intelligence-gosi",
-        track: "human",
         optional: true,
       },
     ],
@@ -519,7 +490,7 @@ export default function Home() {
                 {group.missions.map((mission, index) => {
                   const isDone = completed.has(mission.id);
                   return (
-                    <article className={`mission ${isDone ? "is-done" : ""}`} id={`mission-${mission.id}`} key={mission.id}>
+                    <article className={`mission track-${mission.track} ${isDone ? "is-done" : ""}`} id={`mission-${mission.id}`} key={mission.id}>
                       <label className="mission-toggle">
                         <input
                           type="checkbox"

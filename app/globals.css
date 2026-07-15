@@ -520,6 +520,7 @@ img { display: block; max-width: 100%; }
 }
 
 .mission:hover { background: color-mix(in srgb, var(--track-color) 9%, transparent); }
+.mission.track-human { --track-color: var(--guarded-pink); }
 .mission.is-done { opacity: 0.54; }
 .mission.is-done h4 { text-decoration: line-through; text-decoration-thickness: 1px; }
 
