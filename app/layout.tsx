@@ -6,8 +6,9 @@ export const metadata: Metadata = {
   description:
     "A personal Australian study map for cyber security, authorised testing and responsible AI leadership.",
   icons: {
-    icon: "/nft/2821.png",
-    shortcut: "/nft/2821.png",
+    icon: "/badges/blc-cybersec-badge.png",
+    shortcut: "/badges/blc-cybersec-badge.png",
+    apple: "/badges/blc-cybersec-badge.png",
   },
 };
 
