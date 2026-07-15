@@ -319,21 +319,28 @@ export default function Home() {
         <a className="wordmark" href="#top" aria-label="BITPIXI Learns Cybersec home">
           B<span>L</span><em>C</em>
         </a>
+        <div className="badge-strip" aria-label="Project badges">
+          <a className="owlsec-badge" href="https://owlsec.ai/" target="_blank" rel="noreferrer" aria-label="OwlSec active learner">
+            <span className="owl-eyes" aria-hidden="true"><i /><i /></span>
+            <span><strong>OWLSEC</strong>ACTIVE LEARNER</span>
+          </a>
+          <span className="badge-pipe" aria-hidden="true">|</span>
+          <a className="maker-badge" href="#mission-tafe-linux" title="Made with Linux"><img src="/stickers/made-with-linux.png" alt="Made with Linux" /></a>
+          <span className="badge-pipe" aria-hidden="true">|</span>
+          <a className="maker-badge" href="https://openai.com/codex" target="_blank" rel="noreferrer" title="Made with Codex"><img src="/stickers/codex-color.png" alt="Made with Codex" /></a>
+          <span className="badge-pipe" aria-hidden="true">|</span>
+          <a className="maker-badge" href="https://openclaw.ai/" target="_blank" rel="noreferrer" title="Made with OpenClaw"><img src="/stickers/openclaw-icon.png" alt="Made with OpenClaw" /></a>
+        </div>
         <nav className="top-nav" aria-label="Primary navigation">
-          <a href="#roadmap">Roadmap</a>
+          <a href="#top">Home</a>
+          <a href="#identity">Identity</a>
+          <a href="#owlsec">OwlSec</a>
+          <a href="#roadmap">Checklist</a>
+          <a href="#pathway">Pathway</a>
+          <a href="#reading">Reading</a>
           <a href="#watchlist">Watchlist</a>
           <a href="#merch">Field kit</a>
         </nav>
-        <a
-          className="owlsec-badge"
-          href="https://owlsec.ai/"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="OwlSec active learner"
-        >
-          <span className="owl-eyes" aria-hidden="true"><i /><i /></span>
-          <span><strong>OWLSEC</strong>ACTIVE LEARNER</span>
-        </a>
       </header>
 
       <section className="hero" id="top">
@@ -344,9 +351,6 @@ export default function Home() {
             My personal learning plan for cyber security, authorised testing and
             responsible AI leadership.
           </p>
-          <a className="cyberbrokers-link" href="https://www.cyberbrokers.com/" target="_blank" rel="noreferrer">
-            CyberBrokers <span>↗</span>
-          </a>
           <div className="hero-meta">
             <span>37.8136° S</span>
             <span>144.9631° E</span>
@@ -356,6 +360,7 @@ export default function Home() {
 
         <div className="broker-stage" aria-label="Authentic CyberBroker artwork">
           <article className="broker-card broker-card-woodsy">
+            <a className="broker-source-link" href="https://www.cyberbrokers.com/" target="_blank" rel="noreferrer">CyberBrokers ↗</a>
             <img
               src="/nft/2821.png"
               alt="Woodsy Dusty, CyberBroker 2821, in dark cyber outerwear with a glowing blue mask"
@@ -368,6 +373,7 @@ export default function Home() {
             </div>
           </article>
           <article className="broker-card broker-card-guarded">
+            <a className="broker-source-link" href="https://www.cyberbrokers.com/" target="_blank" rel="noreferrer">CyberBrokers ↗</a>
             <img
               src="/nft/8377.png"
               alt="Guarded of Vibrant, CyberBroker 8377, in vivid pink fishing gear with a cyber fishing pole"
@@ -382,7 +388,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="field-marks" aria-label="Identity marks">
+      <section className="field-marks" id="identity" aria-label="Identity marks">
         <div className="section-index">00 / IDENTITY MARKS</div>
         <div className="mark-row">
           <figure className="art-mark mark-woodsy-face">
@@ -404,7 +410,7 @@ export default function Home() {
         </div>
       </section>
 
-      <aside className="owlsec-callout" aria-label="OwlSec study community">
+      <aside className="owlsec-callout" id="owlsec" aria-label="OwlSec study community">
         <img src="/owlsec/owlsec-community.jpg" alt="OwlSec owl community artwork" />
         <div>
           <p className="eyebrow">OWLSEC / STUDY CREW</p>
@@ -459,7 +465,7 @@ export default function Home() {
                 {group.missions.map((mission, index) => {
                   const isDone = completed.has(mission.id);
                   return (
-                    <article className={`mission ${isDone ? "is-done" : ""}`} key={mission.id}>
+                    <article className={`mission ${isDone ? "is-done" : ""}`} id={`mission-${mission.id}`} key={mission.id}>
                       <label className="mission-toggle">
                         <input
                           type="checkbox"
@@ -470,6 +476,20 @@ export default function Home() {
                         <span className="check-box" aria-hidden="true">{isDone ? "✓" : ""}</span>
                       </label>
                       <span className="mission-number">{String(index + 1).padStart(2, "0")}</span>
+                      <img
+                        className="mission-badge"
+                        src={mission.id === "tafe-linux"
+                          ? "/stickers/made-with-linux.png"
+                          : mission.track === "human"
+                            ? "/tokens/human-signal.png"
+                            : mission.track === "systems"
+                              ? "/tokens/code-guard.png"
+                              : mission.track === "leadership"
+                                ? "/tokens/pipeline.png"
+                                : "/badges/blc-cybersec-badge.png"}
+                        alt=""
+                        aria-hidden="true"
+                      />
                       <div className="mission-copy">
                         <p>{mission.provider}</p>
                         <h4>{mission.title}</h4>
@@ -490,7 +510,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="authorisation-gate">
+      <section className="authorisation-gate" id="pathway">
         <img className="gate-symbol" src="/badges/blc-cybersec-badge.png" alt="BLC cyber security badge" />
         <div>
           <p className="eyebrow">BITPIXI / AUSTRALIAN LEARNING PATH</p>
@@ -511,11 +531,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="required-reading">
+      <section className="required-reading" id="reading">
         <div className="section-title">
           <p className="eyebrow">AUSTRALIAN SECURITY BASELINE</p>
           <h2>Required reading</h2>
-          <p>Start with the current ASD Information Security Manual, then scan its change notes before using it in projects or study notes.</p>
         </div>
         <div className="reading-grid">
           <a href="https://www.cyber.gov.au/sites/default/files/2026-06/Information%20security%20manual%20%28June%202026%29.pdf" target="_blank" rel="noreferrer">
@@ -549,7 +568,6 @@ export default function Home() {
         <div className="section-title">
           <p className="eyebrow">GUARDED&apos;S WATCH DESK / AUSTRALIA</p>
           <h2>Watchlist</h2>
-          <p>Useful Australian feeds for AI scams, human harm, privacy and responsible deployment.</p>
         </div>
         <div className="watch-grid">
           {watchlist.map((item, index) => (
@@ -580,20 +598,6 @@ export default function Home() {
           </article>
         </div>
       </section>
-
-      <a className="linux-sticker" href="#roadmap" title="Linux is on the checklist">
-        <img src="/stickers/made-with-linux.png" alt="Made with Linux sticker" />
-      </a>
-      <a className="codex-sticker" href="https://openai.com/codex" target="_blank" rel="noreferrer" title="Made with Codex">
-        <span>MADE WITH</span>
-        <img src="/stickers/codex-color.png" alt="Codex" />
-        <strong>CODEX</strong>
-      </a>
-      <a className="openclaw-sticker" href="https://openclaw.ai/" target="_blank" rel="noreferrer" title="Made with OpenClaw">
-        <span>MADE WITH</span>
-        <img src="/stickers/openclaw-icon.png" alt="OpenClaw" />
-        <strong>OPENCLAW</strong>
-      </a>
 
       <footer>
         <p>BITPIXI LEARNS CYBERSEC</p>

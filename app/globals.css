@@ -64,110 +64,42 @@ input { font: inherit; }
 
 img { display: block; max-width: 100%; }
 
-.linux-sticker {
-  position: fixed;
-  left: 18px;
-  bottom: 18px;
-  z-index: 18;
-  width: 76px;
-  border-radius: 50%;
-  filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.38));
-  transform: rotate(-8deg);
-  transition: transform 180ms ease, filter 180ms ease;
+.badge-strip {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.linux-sticker:hover {
-  transform: rotate(0deg) scale(1.08);
-  filter: drop-shadow(0 10px 16px rgba(0, 184, 255, 0.42));
+.badge-pipe {
+  color: rgba(185, 199, 232, 0.45);
+  font-family: var(--mono);
+  font-size: 1.1rem;
 }
 
-.linux-sticker img { width: 100%; height: auto; }
-
-.codex-sticker {
-  position: fixed;
-  left: 9px;
-  bottom: 104px;
-  z-index: 18;
-  width: 94px;
-  aspect-ratio: 1;
+.maker-badge {
+  width: 38px;
+  height: 38px;
   display: grid;
   place-items: center;
-  align-content: center;
-  gap: 1px;
-  padding: 9px;
-  text-decoration: none;
-  color: var(--paper);
-  background: #101b39;
-  border: 0;
   border-radius: 50%;
-  box-shadow: 0 8px 0 #07111f, 0 12px 18px rgba(0, 0, 0, 0.38);
-  transform: rotate(7deg);
-  transition: transform 180ms ease, box-shadow 180ms ease;
+  overflow: hidden;
+  background: var(--woodsy-navy);
+  transition: transform 160ms ease, filter 160ms ease;
 }
 
-.codex-sticker span,
-.codex-sticker strong {
-  position: relative;
-  z-index: 1;
-  font-family: var(--mono);
-  line-height: 1;
-}
-
-.codex-sticker span { font-size: 0.5rem; letter-spacing: 0.09em; }
-.codex-sticker strong { font-size: 0.66rem; letter-spacing: 0.07em; }
-.codex-sticker img { position: relative; z-index: 1; width: 40px; height: 40px; object-fit: contain; }
-
-.codex-sticker:hover {
-  transform: rotate(0deg) scale(1.08);
-  box-shadow: 0 9px 0 #07111f, 0 14px 20px rgba(250, 43, 156, 0.42);
-}
-
-.openclaw-sticker {
-  position: fixed;
-  left: 115px;
-  bottom: 104px;
-  z-index: 18;
-  width: 94px;
-  aspect-ratio: 1;
-  display: grid;
-  place-items: center;
-  align-content: center;
-  gap: 1px;
-  padding: 9px;
-  text-decoration: none;
-  color: var(--paper);
-  background: #ee1626;
-  border-radius: 50%;
-  box-shadow: 0 8px 0 #07111f, 0 12px 18px rgba(0, 0, 0, 0.38);
-  transform: rotate(-6deg);
-  transition: transform 180ms ease, box-shadow 180ms ease;
-}
-
-.openclaw-sticker span,
-.openclaw-sticker strong {
-  position: relative;
-  z-index: 1;
-  font-family: var(--mono);
-  line-height: 1;
-}
-
-.openclaw-sticker span { font-size: 0.5rem; letter-spacing: 0.08em; }
-.openclaw-sticker strong { font-size: 0.56rem; letter-spacing: 0.02em; }
-.openclaw-sticker img { position: relative; z-index: 1; width: 42px; height: 42px; object-fit: cover; border-radius: 50%; }
-
-.openclaw-sticker:hover {
-  transform: rotate(0deg) scale(1.08);
-  box-shadow: 0 9px 0 #07111f, 0 14px 20px rgba(255, 155, 32, 0.42);
-}
+.maker-badge:hover { transform: translateY(-2px); filter: drop-shadow(0 5px 8px rgba(0, 184, 255, 0.3)); }
+.maker-badge img { width: 100%; height: 100%; object-fit: cover; }
 
 .site-header {
   width: min(1520px, calc(100% - 40px));
   min-height: 78px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: 1fr auto;
   align-items: center;
-  gap: 28px;
+  gap: 10px 28px;
+  padding-top: 10px;
   border-bottom: 1px solid var(--line);
   position: relative;
   z-index: 10;
@@ -186,7 +118,17 @@ img { display: block; max-width: 100%; }
 .wordmark span { color: var(--guarded-pink); }
 .wordmark em { color: var(--woodsy-cyan); font-style: normal; }
 
-.top-nav { display: flex; gap: 28px; }
+.top-nav {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  overflow-x: auto;
+  border-top: 1px solid rgba(185, 199, 232, 0.12);
+  scrollbar-width: none;
+}
+
+.top-nav::-webkit-scrollbar { display: none; }
 
 .top-nav a {
   font-family: var(--mono);
@@ -195,13 +137,14 @@ img { display: block; max-width: 100%; }
   letter-spacing: 0.15em;
   text-decoration: none;
   color: var(--muted);
+  padding: 10px 12px 12px;
+  white-space: nowrap;
   transition: color 160ms ease;
 }
 
 .top-nav a:hover { color: var(--paper); }
 
 .owlsec-badge {
-  justify-self: end;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -316,24 +259,25 @@ img { display: block; max-width: 100%; }
   margin: 34px 0 0;
 }
 
-.cyberbrokers-link {
-  width: fit-content;
-  margin-top: 20px;
-  padding: 9px 12px;
+.broker-source-link {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 4;
+  padding: 8px 10px;
   border: 1px solid rgba(250, 43, 156, 0.72);
   color: var(--paper);
-  background: rgba(66, 10, 84, 0.38);
+  background: rgba(7, 17, 31, 0.84);
   text-decoration: none;
   font-family: var(--mono);
-  font-size: 0.65rem;
+  font-size: 0.58rem;
   font-weight: 700;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   transition: background 180ms ease, transform 180ms ease;
 }
 
-.cyberbrokers-link span { color: var(--guarded-pink); }
-.cyberbrokers-link:hover { background: rgba(250, 43, 156, 0.24); transform: translateY(-2px); }
+.broker-source-link:hover { background: rgba(250, 43, 156, 0.88); transform: translateY(-2px); }
 
 .hero-meta {
   margin-top: 42px;
@@ -499,10 +443,18 @@ img { display: block; max-width: 100%; }
 
 .owlsec-callout img {
   width: 100%;
-  height: 240px;
+  height: 100%;
+  min-height: 320px;
   object-fit: cover;
   object-position: center;
   border-right: 1px solid rgba(0, 184, 255, 0.3);
+  animation: owlsec-drift 9s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+@keyframes owlsec-drift {
+  from { transform: scale(1.01) translate3d(-0.5%, 0, 0); }
+  to { transform: scale(1.07) translate3d(1.5%, -1%, 0); }
 }
 
 .owlsec-callout > div { padding: 36px 42px; align-self: center; }
@@ -632,7 +584,7 @@ img { display: block; max-width: 100%; }
 
 .mission {
   display: grid;
-  grid-template-columns: 30px 42px 1fr 190px;
+  grid-template-columns: 30px 42px 44px 1fr 190px;
   gap: 18px;
   align-items: center;
   min-height: 144px;
@@ -662,6 +614,15 @@ img { display: block; max-width: 100%; }
 .mission-toggle input:checked + .check-box { background: var(--track-color); border-color: var(--track-color); }
 
 .mission-number { font-family: var(--mono); font-size: 0.68rem; color: var(--sage); }
+
+.mission-badge {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid color-mix(in srgb, var(--track-color) 60%, transparent);
+  background: var(--woodsy-navy);
+}
 
 .mission-copy p {
   margin: 0 0 8px;
@@ -795,7 +756,7 @@ footer small { justify-self: end; }
 
 @media (max-width: 800px) {
   .site-header { grid-template-columns: 1fr auto; width: min(100% - 28px, 1520px); }
-  .top-nav { display: none; }
+  .top-nav { justify-content: flex-start; }
   .hero,
   .authorisation-gate { width: min(100% - 28px, 1520px); }
   .field-marks,
@@ -811,8 +772,8 @@ footer small { justify-self: end; }
   .section-title { grid-template-columns: 1fr; }
   .progress-block { margin-top: 20px; max-width: 360px; }
   .group-intro { position: static; max-width: 520px; }
-  .mission { grid-template-columns: 30px 34px 1fr; padding: 24px 0; }
-  .mission-action { grid-column: 3; justify-self: start; text-align: left; }
+  .mission { grid-template-columns: 30px 34px 38px 1fr; padding: 24px 0; }
+  .mission-action { grid-column: 4; justify-self: start; text-align: left; }
   .authorisation-gate { grid-template-columns: 1fr; padding: 36px; }
   .gate-links { grid-column: auto; }
   .reading-grid { grid-template-columns: 1fr; }
@@ -825,19 +786,12 @@ footer small { justify-self: end; }
 }
 
 @media (max-width: 560px) {
-  .linux-sticker { width: 54px; left: 12px; bottom: 12px; }
-  .codex-sticker { width: 62px; left: 8px; bottom: 74px; padding: 6px; }
-  .codex-sticker span { font-size: 0.35rem; }
-  .codex-sticker strong { font-size: 0.43rem; }
-  .codex-sticker img { width: 27px; height: 27px; }
-  .openclaw-sticker { width: 62px; left: 78px; bottom: 74px; padding: 6px; }
-  .openclaw-sticker span { font-size: 0.35rem; }
-  .openclaw-sticker strong { font-size: 0.38rem; }
-  .openclaw-sticker img { width: 28px; height: 28px; }
   .site-header { min-height: 68px; }
-  .owlsec-badge { padding: 7px 9px; }
-  .owlsec-badge strong { font-size: 0.61rem; }
-  .owlsec-badge > span:last-child { font-size: 0.48rem; }
+  .badge-strip { gap: 6px; }
+  .badge-pipe { font-size: 0.8rem; }
+  .maker-badge { width: 30px; height: 30px; }
+  .owlsec-badge { padding: 5px; }
+  .owlsec-badge > span:last-child { display: none; }
   .hero { padding-top: 20px; }
   .hero-copy { padding-top: 42px; }
   .hero h1 { font-size: clamp(3.5rem, 18vw, 5.4rem); }
@@ -846,15 +800,15 @@ footer small { justify-self: end; }
   .broker-label { left: 16px; right: 16px; }
   .field-marks { grid-template-columns: 1fr; padding: 52px 0 64px; }
   .owlsec-callout { grid-template-columns: 1fr; margin-bottom: 0; }
-  .owlsec-callout img { height: 220px; border-right: 0; border-bottom: 1px solid rgba(0, 184, 255, 0.3); }
+  .owlsec-callout img { height: 300px; min-height: 300px; border-right: 0; border-bottom: 1px solid rgba(0, 184, 255, 0.3); }
   .owlsec-callout > div { padding: 28px 24px; }
   .field-marks > p { grid-column: auto; }
   .art-mark { width: 92px; }
   .roadmap { padding: 70px 0 90px; }
   .mission-groups { gap: 70px; }
-  .mission { grid-template-columns: 26px 1fr; gap: 14px; }
+  .mission { grid-template-columns: 26px 38px 1fr; gap: 14px; }
   .mission-number { display: none; }
-  .mission-action { grid-column: 2; }
+  .mission-action { grid-column: 3; }
   .authorisation-gate { padding: 28px 24px; margin-bottom: 80px; }
   .gate-symbol { width: 112px; height: 112px; font-size: 1.25rem; }
   .required-reading { padding-bottom: 90px; }
@@ -863,6 +817,10 @@ footer small { justify-self: end; }
   .watch-grid { grid-template-columns: 1fr; }
   .watch-grid a { min-height: 220px; }
   .merch-caption { padding: 18px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .owlsec-callout img { animation: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
