@@ -330,25 +330,22 @@ export default function Home() {
           B<span>L</span><em>C</em>
         </a>
         <div className="badge-strip" aria-label="Project badges">
-          <a className="owlsec-badge" href="https://owlsec.ai/" target="_blank" rel="noreferrer" aria-label="OwlSec active learner">
-            <span className="owl-eyes" aria-hidden="true"><i /><i /></span>
-            <span><strong>OWLSEC</strong>ACTIVE LEARNER</span>
+          <span className="badge-label">Sec Study Groups:</span>
+          <a className="maker-badge" href="https://discord.com/invite/owls" target="_blank" rel="noreferrer" title="Join OwlSec on Discord">
+            <img src="/stickers/owlsec-face.png" alt="OwlSec Discord" />
           </a>
-          <span className="badge-pipe" aria-hidden="true">|</span>
           <a className="maker-badge" href="https://discord.gg/DSnxTcqA5F" target="_blank" rel="noreferrer" title="Join Kanga Root on Discord">
             <img src="/stickers/kanga-root.webp" alt="Kanga Root Discord" />
           </a>
           <span className="badge-pipe" aria-hidden="true">|</span>
+          <span className="badge-label">Made Site With:</span>
           <a className="maker-badge" href="#mission-tafe-linux" title="Made with Linux"><img src="/stickers/made-with-linux.png" alt="Made with Linux" /></a>
-          <span className="badge-pipe" aria-hidden="true">|</span>
           <a className="maker-badge" href="https://openai.com/codex" target="_blank" rel="noreferrer" title="Made with Codex"><img src="/stickers/codex-color.png" alt="Made with Codex" /></a>
-          <span className="badge-pipe" aria-hidden="true">|</span>
           <a className="maker-badge" href="https://openclaw.ai/" target="_blank" rel="noreferrer" title="Made with OpenClaw"><img src="/stickers/openclaw-icon.png" alt="Made with OpenClaw" /></a>
         </div>
         <nav className="top-nav" aria-label="Primary navigation">
           <a href="#top">Home</a>
           <a href="#identity">Identity</a>
-          <a href="#owlsec">OwlSec</a>
           <a href="#roadmap">Checklist</a>
           <a href="#pathway">Pathway</a>
           <a href="#reading">Reading</a>
@@ -423,16 +420,6 @@ export default function Home() {
           </figure>
         </div>
       </section>
-
-      <aside className="owlsec-callout" id="owlsec" aria-label="OwlSec study community">
-        <img src="/owlsec/owlsec-community.jpg" alt="OwlSec owl community artwork" />
-        <div>
-          <p className="eyebrow">OWLSEC / STUDY CREW</p>
-          <h2>Learning with OwlSec</h2>
-          <p>Keeping the learning public, accountable and connected to the community.</p>
-          <a href="https://owlsec.ai/" target="_blank" rel="noreferrer">Visit OwlSec ↗</a>
-        </div>
-      </aside>
 
       <section className="roadmap" id="roadmap">
         <div className="roadmap-head">
