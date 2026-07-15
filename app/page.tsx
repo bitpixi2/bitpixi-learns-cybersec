@@ -663,7 +663,32 @@ export default function Home() {
             <div className="merch-caption"><span>CONCEPT 04</span><h3>BLC enamel pin</h3><p>Black nickel · navy, cyan and pink hard enamel</p></div>
           </article>
         </div>
-        <div className="x-share-card" id="contact" aria-label="Contact and share">
+      </section>
+
+      <section className="contact-section" id="contact">
+        <div className="section-title contact-title">
+          <p className="eyebrow">FIND BITPIXI ONLINE</p>
+          <h2>Contact</h2>
+          <p>Follow my work, view current projects or get in touch directly.</p>
+        </div>
+        <div className="contact-grid" aria-label="Bitpixi social links">
+          <a href="https://www.linkedin.com/in/bitpixi" target="_blank" rel="noreferrer">
+            <span className="contact-mark">in</span><span><b>LinkedIn</b><small>/in/bitpixi</small></span><em>↗</em>
+          </a>
+          <a href="https://bitpixi.com/" target="_blank" rel="noreferrer">
+            <span className="contact-mark">www</span><span><b>Website</b><small>bitpixi.com</small></span><em>↗</em>
+          </a>
+          <a href="https://github.com/bitpixi2" target="_blank" rel="noreferrer">
+            <span className="contact-mark">gh</span><span><b>GitHub</b><small>@bitpixi2</small></span><em>↗</em>
+          </a>
+          <a href="mailto:Kasey.bitpixi@gmail.com">
+            <span className="contact-mark">@</span><span><b>Email</b><small>Kasey.bitpixi@gmail.com</small></span><em>↗</em>
+          </a>
+          <a href="https://x.com/bitpixi" target="_blank" rel="noreferrer">
+            <span className="contact-mark">x</span><span><b>X</b><small>@bitpixi</small></span><em>↗</em>
+          </a>
+        </div>
+        <div className="x-share-card" aria-label="Share this website">
           <div className="share-merch-preview" aria-label="Four merch images included when supported">
             {MERCH_SHARE_IMAGES.map((src) => (
               <img src={src} alt="" aria-hidden="true" key={src} />
@@ -691,13 +716,6 @@ export default function Home() {
 
       <footer>
         <p>BITPIXI LEARNS CYBERSEC</p>
-        <span className="footer-links">
-          <a href="https://www.linkedin.com/in/bitpixi" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="https://bitpixi.com/" target="_blank" rel="noreferrer">Website</a>
-          <a href="https://github.com/bitpixi2" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="mailto:Kasey.bitpixi@gmail.com">Email</a>
-          <a href="https://x.com/bitpixi" target="_blank" rel="noreferrer">X</a>
-        </span>
         <small>Personal field plan · updated July 2026</small>
       </footer>
     </main>

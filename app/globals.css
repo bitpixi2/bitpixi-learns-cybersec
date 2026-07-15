@@ -650,7 +650,7 @@ img { display: block; max-width: 100%; }
 .watch-grid p { margin: 0; color: var(--muted); line-height: 1.55; font-size: 0.85rem; }
 .watch-grid b { position: absolute; top: 26px; right: 26px; font-weight: 400; color: var(--sage); }
 
-.merch { padding: 112px 0 130px; }
+.merch { padding: 112px 0 80px; }
 .merch-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
 .merch-card { min-width: 0; border: 1px solid var(--line); background: linear-gradient(145deg, rgba(16, 27, 57, 0.94), rgba(65, 20, 67, 0.72)); overflow: hidden; }
 .merch-real-image { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-bottom: 1px solid var(--line); }
@@ -658,6 +658,56 @@ img { display: block; max-width: 100%; }
 .merch-caption span { font-family: var(--mono); font-size: 0.57rem; letter-spacing: 0.13em; }
 .merch-caption h3 { margin: 9px 0 7px; font-size: 1.05rem; }
 .merch-caption p { margin: 0; font-size: 0.76rem; opacity: 0.65; }
+
+.contact-section {
+  width: min(1400px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 70px 0 130px;
+  border-top: 1px solid var(--line);
+}
+
+.contact-title { margin-bottom: 34px; }
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.contact-grid > a {
+  min-width: 0;
+  min-height: 146px;
+  padding: 22px;
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr) auto;
+  gap: 14px;
+  align-items: center;
+  color: var(--paper);
+  text-decoration: none;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  transition: background 160ms ease, color 160ms ease;
+}
+
+.contact-grid > a:hover { background: rgba(250, 43, 156, 0.08); color: var(--woodsy-cyan); }
+.contact-mark {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--guarded-pink);
+  border-radius: 50%;
+  color: var(--guarded-pink);
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.contact-grid b,
+.contact-grid small { display: block; }
+.contact-grid b { font-size: 0.95rem; }
+.contact-grid small { margin-top: 7px; overflow: hidden; color: var(--muted); font-family: var(--mono); font-size: 0.56rem; text-overflow: ellipsis; white-space: nowrap; }
+.contact-grid em { color: var(--sage); font-style: normal; }
 
 .x-share-card {
   margin-top: 18px;
@@ -741,7 +791,7 @@ footer {
   min-height: 120px;
   border-top: 1px solid var(--line);
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: 1fr auto;
   align-items: center;
   gap: 20px;
   font-family: var(--mono);
@@ -752,9 +802,6 @@ footer {
 
 footer p { color: var(--paper); font-weight: 800; }
 footer small { justify-self: end; }
-.footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 14px; }
-.footer-links a { color: var(--guarded-periwinkle); text-decoration: none; }
-.footer-links a:hover { color: var(--guarded-pink); }
 
 @media (max-width: 1120px) {
   .hero { grid-template-columns: 1fr; min-height: auto; }
@@ -792,6 +839,8 @@ footer small { justify-self: end; }
   .section-title > p:last-child { justify-self: start; }
   .section-title-badge { width: 56px; height: 56px; }
   .merch-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .contact-section { width: min(100% - 28px, 1400px); }
+  .contact-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .x-share-card { grid-template-columns: 1fr; }
   .share-merch-preview { max-width: 260px; }
   .share-actions { justify-self: start; }
@@ -806,7 +855,7 @@ footer small { justify-self: end; }
   .badge-strip { gap: 4px; }
   .badge-pipe { font-size: 0.7rem; }
   .maker-badge { width: 27px; height: 27px; }
-  .maker-badge-cyberbrokers { width: 48px; }
+  .maker-badge-cyberbrokers { width: 27px; height: 27px; }
   .badge-label { font-size: 0.48rem; letter-spacing: 0.04em; }
   .hero { padding-top: 20px; }
   .hero-copy { padding-top: 42px; }
@@ -830,6 +879,7 @@ footer small { justify-self: end; }
   .watch-grid a { min-height: 220px; }
   .merch-grid { grid-template-columns: 1fr; }
   .merch-caption { padding: 18px; }
+  .contact-grid { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {
