@@ -594,6 +594,18 @@ export default function Home() {
             <img src="/reading/national-ai-plan-2025-cover.png" alt="First page of Australia's National AI Plan 2025" />
             <div><span>AUSTRALIA / 2025</span><h3>National AI Plan</h3><p>The federal plan for growing AI capability, spreading benefits and keeping Australians safe.</p></div>
           </a>
+          <a className="reading-feature" href="https://www.goodreads.com/book/show/160171.Just_for_Fun" target="_blank" rel="noreferrer">
+            <img src="/reading/just-for-fun-cover.jpg" alt="Cover of Just for Fun by Linus Torvalds and David Diamond" />
+            <div><span>LINUX / MEMOIR</span><h3>Just for Fun</h3><p>Linus Torvalds and David Diamond on the people, ideas and culture behind Linux.</p></div>
+          </a>
+          <a href="https://www.oreilly.com/library/view/the-developers-playbook/9781098162191/" target="_blank" rel="noreferrer">
+            <img src="/reading/llm-security-playbook-cover.jpg" alt="Cover of The Developer's Playbook for Large Language Model Security by Steve Wilson" />
+            <div><span>AI SECURITY / 2024</span><h3>LLM Security Playbook</h3><p>A practical guide to prompt injection, trust boundaries and the OWASP risks facing AI applications.</p></div>
+          </a>
+          <a href="https://link.springer.com/book/10.1007/978-3-032-05250-6" target="_blank" rel="noreferrer">
+            <img src="/reading/generative-ai-cybersecurity-cover.jpg" alt="Cover of Generative AI in Cybersecurity by Leslie F. Sikos" />
+            <div><span>AI + CYBER / 2025</span><h3>Generative AI in Cybersecurity</h3><p>A Perth-authored briefing on offensive GenAI, deepfakes, secure deployments and SOC automation.</p></div>
+          </a>
         </div>
       </section>
 
