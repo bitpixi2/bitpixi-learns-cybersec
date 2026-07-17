@@ -598,13 +598,21 @@ export default function Home() {
             <img src="/reading/just-for-fun-cover.jpg" alt="Cover of Just for Fun by Linus Torvalds and David Diamond" />
             <div><span>LINUX / MEMOIR</span><h3>Just for Fun</h3><p>Linus Torvalds and David Diamond on the people, ideas and culture behind Linux.</p></div>
           </a>
+          <a href="https://www.wiley-vch.de/de/fachgebiete/computer-und-informatik/the-active-defender-978-1-119-89521-3" target="_blank" rel="noreferrer">
+            <img src="/reading/active-defender-cover.jpg" alt="Cover of The Active Defender by Catherine J. Ullman" />
+            <div><span>OFFENCE FOR DEFENDERS / 2023</span><h3>The Active Defender</h3><p>Learn offensive tradecraft, attacker thinking and purple-team testing from a defender&apos;s position.</p></div>
+          </a>
+          <a href="https://www.oreilly.com/library/view/practical-threat-detection/9781801076715/" target="_blank" rel="noreferrer">
+            <img src="/reading/practical-threat-detection-cover.jpg" alt="Cover of Practical Threat Detection Engineering by Megan Roddie, Jason Deyalsingh and Gary J. Katz" />
+            <div><span>BLUE + PURPLE TEAM / 2023</span><h3>Practical Threat Detection Engineering</h3><p>Build and validate detections with ATT&amp;CK, Elastic, Atomic Red Team, CALDERA and detection-as-code.</p></div>
+          </a>
+          <a href="https://nostarch.com/evading-edr" target="_blank" rel="noreferrer">
+            <img src="/reading/evading-edr-cover.jpg" alt="Cover of Evading EDR by Matt Hand" />
+            <div><span>HARD MODE / 2023</span><h3>Evading EDR</h3><p>Study detection-aware attacks and EDR bypasses to understand where endpoint defences become brittle.</p></div>
+          </a>
           <a href="https://www.oreilly.com/library/view/the-developers-playbook/9781098162191/" target="_blank" rel="noreferrer">
             <img src="/reading/llm-security-playbook-cover.jpg" alt="Cover of The Developer's Playbook for Large Language Model Security by Steve Wilson" />
-            <div><span>AI SECURITY / 2024</span><h3>LLM Security Playbook</h3><p>A practical guide to prompt injection, trust boundaries and the OWASP risks facing AI applications.</p></div>
-          </a>
-          <a href="https://link.springer.com/book/10.1007/978-3-032-05250-6" target="_blank" rel="noreferrer">
-            <img src="/reading/generative-ai-cybersecurity-cover.jpg" alt="Cover of Generative AI in Cybersecurity by Leslie F. Sikos" />
-            <div><span>AI + CYBER / 2025</span><h3>Generative AI in Cybersecurity</h3><p>A Perth-authored briefing on offensive GenAI, deepfakes, secure deployments and SOC automation.</p></div>
+            <div><span>AI SECURITY / 2024</span><h3>LLM Security Playbook</h3><p>Apply the same adversarial thinking to prompt injection, trust boundaries and the OWASP risks facing AI applications.</p></div>
           </a>
         </div>
       </section>
