@@ -594,9 +594,13 @@ export default function Home() {
             <img src="/reading/national-ai-plan-2025-cover.png" alt="First page of Australia's National AI Plan 2025" />
             <div><span>AUSTRALIA / 2025</span><h3>National AI Plan</h3><p>The federal plan for growing AI capability, spreading benefits and keeping Australians safe.</p></div>
           </a>
-          <a className="reading-feature" href="https://www.goodreads.com/book/show/160171.Just_for_Fun" target="_blank" rel="noreferrer">
+          <a href="https://www.goodreads.com/book/show/160171.Just_for_Fun" target="_blank" rel="noreferrer">
             <img src="/reading/just-for-fun-cover.jpg" alt="Cover of Just for Fun by Linus Torvalds and David Diamond" />
             <div><span>LINUX / MEMOIR</span><h3>Just for Fun</h3><p>Linus Torvalds and David Diamond on the people, ideas and culture behind Linux.</p></div>
+          </a>
+          <a href="https://link.springer.com/book/9798868821769" target="_blank" rel="noreferrer">
+            <img src="/reading/deceptive-intelligence-cover.jpg" alt="Cover of Deceptive Intelligence by Sean Oriyano" />
+            <div><span>AI + SOCIAL ENGINEERING / 2026</span><h3>Deceptive Intelligence</h3><p>Advanced ethical testing of AI-generated phishing, deepfake impersonation, voice pretexting and human vulnerabilities.</p></div>
           </a>
           <a href="https://www.wiley-vch.de/de/fachgebiete/computer-und-informatik/the-active-defender-978-1-119-89521-3" target="_blank" rel="noreferrer">
             <img src="/reading/active-defender-cover.jpg" alt="Cover of The Active Defender by Catherine J. Ullman" />
