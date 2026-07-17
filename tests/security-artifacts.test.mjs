@@ -65,6 +65,8 @@ test("keeps the incident evidence synthetic and internally linked", async () => 
   assert.match(incident.answer_sha256, /^[a-f0-9]{64}$/);
   assert.match(serialised, /\.example/);
   assert.match(serialised, /192\.0\.2\.|198\.51\.100\.|203\.0\.113\./);
+  assert.match(serialised, /finance\.user@blc\.example/);
+  assert.doesNotMatch(serialised, /alex[._ ]chen/i);
   assert.doesNotMatch(serialised, /@gmail\.|@outlook\.|@yahoo\./i);
 });
 
