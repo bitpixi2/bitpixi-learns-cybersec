@@ -717,7 +717,9 @@ export default function Home() {
 
       <footer>
         <p>BITPIXI LEARNS CYBERSEC</p>
-        <small>Personal field plan · updated July 2026</small>
+        <small>
+          Personal field plan · updated July 2026 · <a href="/.well-known/security.txt">audit trail</a>
+        </small>
       </footer>
     </main>
   );

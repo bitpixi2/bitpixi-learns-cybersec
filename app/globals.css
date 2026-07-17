@@ -792,6 +792,45 @@ footer {
 
 footer p { color: var(--paper); font-weight: 800; }
 footer small { justify-self: end; }
+footer a { color: var(--woodsy-cyan); text-underline-offset: 3px; }
+footer a:hover { color: var(--guarded-pink); }
+
+.not-found-shell {
+  width: min(100% - 40px, 920px);
+  min-height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  align-content: center;
+  gap: 22px;
+}
+
+.not-found-shell h1 {
+  margin: 0;
+  color: var(--paper);
+  font-size: clamp(4rem, 13vw, 8rem);
+  line-height: 0.9;
+  letter-spacing: -0.07em;
+}
+
+.not-found-shell > p:not(.eyebrow) {
+  max-width: 700px;
+  margin: 0;
+  color: var(--muted);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  line-height: 1.7;
+}
+
+.not-found-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.not-found-actions a {
+  padding: 12px 16px;
+  border: 1px solid var(--woodsy-cyan);
+  color: var(--paper);
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  text-decoration: none;
+}
+.not-found-actions a:hover { background: rgba(0, 184, 255, 0.09); color: var(--woodsy-cyan); }
+.not-found-shell > small { color: var(--sage); font-family: var(--mono); letter-spacing: 0.14em; }
 
 @media (max-width: 1120px) {
   .hero { grid-template-columns: 1fr; min-height: auto; }

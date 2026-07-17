@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bitpixi-learns-cybersec.bitpixi.chatgpt.site/sitemap.xml

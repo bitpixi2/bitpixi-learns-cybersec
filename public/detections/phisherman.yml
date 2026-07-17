@@ -1,0 +1,30 @@
+title: Suspicious Exchange Inbox Rule With External Redirect or Deletion
+id: 6722390c-8807-46c0-a30b-9a972a588377
+status: experimental
+description: Detects creation or modification of an Exchange inbox rule that redirects mail externally or deletes matching messages, a common persistence and collection pattern after account takeover.
+references:
+  - https://bitpixi-learns-cybersec.bitpixi.chatgpt.site/field-notes/incident-8377.json
+author: Bitpixi
+date: 2026-07-18
+tags:
+  - attack.collection
+  - attack.t1114.003
+logsource:
+  product: m365
+  service: audit
+detection:
+  selection_operation:
+    Operation:
+      - New-InboxRule
+      - Set-InboxRule
+  selection_action:
+    Parameters|contains:
+      - RedirectTo
+      - ForwardTo
+      - ForwardAsAttachmentTo
+      - DeleteMessage=True
+  condition: selection_operation and selection_action
+falsepositives:
+  - Approved administrative forwarding configured through a documented change process
+  - User-created rules to an organisation-controlled archive address
+level: high

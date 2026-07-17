@@ -1,0 +1,15 @@
+/* TEAM */
+Creator: Kasey Robinson / Bitpixi
+Contact: Kasey.bitpixi@gmail.com
+Location: Wurundjeri Woi-wurrung Country, Melbourne, Australia
+
+/* SITE */
+Name: BITPIXI LEARNS CYBERSEC
+Purpose: Public cyber-security and responsible AI learning fieldbook
+Built with: React, Next.js, Vinext, Cloudflare Workers and Codex
+Source: https://github.com/bitpixi2/bitpixi-learns-cybersec
+Audit trail: /.well-known/security.txt
+Privacy: No application analytics or challenge submissions are collected
+
+/* FIELD NOTE */
+Good recon is welcome. Good judgement is the actual flag.

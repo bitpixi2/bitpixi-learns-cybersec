@@ -1,0 +1,35 @@
+BITPIXI LEARNS CYBERSEC — AUTHORISED TESTING POLICY
+Last reviewed: 2026-07-18
+
+PURPOSE
+This is a personal public learning project with a small synthetic blue-team
+exercise. Good-faith research is welcome only within the boundary below.
+
+IN SCOPE
+- The exact host: bitpixi-learns-cybersec.bitpixi.chatgpt.site
+- Public pages, response headers and static assets on that host
+- Synthetic files under /field-notes/ and /detections/
+- Low-rate, non-destructive requests that do not affect other visitors
+
+OUT OF SCOPE
+- chatgpt.site, Cloudflare, GitHub, hosting control planes and adjacent tenants
+- Linked course providers, social platforms and any other third-party origin
+- Credential attacks, social engineering or access to another person's data
+- Denial-of-service, load, resource-exhaustion and destructive testing
+- Persisting, changing or deleting data or content
+
+SYNTHETIC DATA
+Challenge identities are fictional. IP addresses use documentation-only
+ranges and domains use the reserved .example namespace. There is no challenge
+submission endpoint and this application does not collect answers.
+
+REPORTING
+Email Kasey.bitpixi@gmail.com with subject "BLC security report". Include the
+affected URL, reproducible steps, observed impact and suggested remediation.
+I aim to acknowledge useful reports within seven days. No paid bounty is
+offered.
+
+SAFE HARBOUR
+Good-faith research that remains within this policy will be treated as
+authorised for this project. This policy cannot authorise testing of systems
+owned or operated by third parties. If uncertain, pause and ask first.

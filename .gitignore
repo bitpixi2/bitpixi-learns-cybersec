@@ -40,3 +40,6 @@ next-env.d.ts
 /.wrangler/
 /outputs/
 /work/
+
+# Private generated concepts; production-ready assets live under public/merch.
+/merch-drafts/
