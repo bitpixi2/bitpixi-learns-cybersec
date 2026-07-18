@@ -4,29 +4,29 @@ import "./globals.css";
 const sourceEasterEgg = String.raw`
        ><(((('>
 
-  #8377: suspicious link spotted
-  #2821: safely checked and blocked
+  #8377: missed Tuesday
+  #2821: the schedule needs a patch
 
-  verdict: no tokens were spilled
+  verdict: patch the plan, not the person
 `;
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://bitpixi-learns-cybersec.bitpixi.chatgpt.site"),
   title: "BITPIXI LEARNS CYBERSEC",
   description:
-    "A public Australian study map for cyber security, authorised testing and responsible AI leadership.",
+    "A public Australian study map for women in cyber security, ADHD-friendly learning and responsible AI leadership.",
   openGraph: {
     type: "website",
     url: "/",
     title: "BITPIXI LEARNS CYBERSEC",
     description:
-      "Human signal, safe verification and phishing awareness from an Australian cyber security learning roadmap.",
+      "Women in cyber, ADHD-friendly learning and personal study tools built with Codex.",
     images: [
       {
         url: "/og.png",
         width: 1734,
         height: 907,
-        alt: "Bitpixi Learns Cybersec: human signal and safe phishing-link verification",
+        alt: "Bitpixi Learns Cybersec: women in cyber and ADHD-friendly study tools built with Codex",
       },
     ],
   },
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "BITPIXI LEARNS CYBERSEC",
     description:
-      "Human signal, safe verification and phishing awareness.",
+      "Women in cyber, ADHD-friendly learning and personal study tools built with Codex.",
     images: ["/og.png"],
   },
   alternates: {

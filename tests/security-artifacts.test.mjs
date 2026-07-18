@@ -39,9 +39,9 @@ test("sets the defensive response baseline and audit breadcrumb", async () => {
   assert.match(html, /\/og\.png/);
   assert.match(html, /summary_large_image/);
   assert.match(html, /blc-source-note/);
-  assert.match(html, /#8377: suspicious link spotted/);
-  assert.match(html, /#2821: safely checked and blocked/);
-  assert.match(html, /verdict: no tokens were spilled/);
+  assert.match(html, /#8377: missed Tuesday/);
+  assert.match(html, /#2821: the schedule needs a patch/);
+  assert.match(html, /verdict: patch the plan, not the person/);
 });
 
 test("publishes a complete security.txt and bounded policy", async () => {
@@ -57,24 +57,25 @@ test("publishes a complete security.txt and bounded policy", async () => {
   assert.match(policy, /denial-of-service/i);
   assert.match(policy, /third-party origin/i);
   assert.match(policy, /fictional field note/i);
-  assert.match(policy, /no submission endpoint/i);
+  assert.match(policy, /no\s+submission endpoint/i);
 });
 
 test("keeps the character Easter egg short, safe and self-contained", async () => {
-  const fieldNote = JSON.parse(await read("public/field-notes/spill-the-tea.json"));
+  const fieldNote = JSON.parse(await read("public/field-notes/patch-the-plan.json"));
   const serialised = JSON.stringify(fieldNote);
 
   assert.equal(fieldNote.easter_egg, true);
-  assert.equal(fieldNote.cast["#8377"], "human phishing-link investigator");
-  assert.equal(fieldNote.cast["#2821"], "systems verifier");
+  assert.equal(fieldNote.title, "Patch the Plan");
+  assert.equal(fieldNote.cast["#8377"], "woman building her cybersecurity path");
+  assert.equal(fieldNote.cast["#2821"], "Codex study copilot");
   assert.equal(fieldNote.exchange.length, 4);
-  assert.match(fieldNote.finding, /Nobody clicked\./);
-  assert.equal(fieldNote.flag, "BLC{spill_the_tea_not_the_tokens}");
-  assert.ok(fieldNote.tea_cup.length >= 6);
+  assert.match(fieldNote.finding, /ADHD-friendly learning loop/);
+  assert.equal(fieldNote.flag, "BLC{patch_the_plan_not_the_person}");
+  assert.ok(fieldNote.tea_break.length >= 6);
   assert.doesNotMatch(serialised, /events|answer_sha256|detection_artifacts/);
   assert.doesNotMatch(serialised, /alex[._ ]chen|finance\.user/i);
   assert.doesNotMatch(serialised, /\u2014/);
 
   const fieldNotes = await readdir(projectFile("public/field-notes/"));
-  assert.deepEqual(fieldNotes.sort(), ["spill-the-tea.json"]);
+  assert.deepEqual(fieldNotes.sort(), ["patch-the-plan.json"]);
 });

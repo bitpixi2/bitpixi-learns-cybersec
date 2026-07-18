@@ -24,7 +24,7 @@ Do not:
 - claim authorisation for any host other than the exact production hostname above;
 - publish sensitive details before there has been a reasonable opportunity to respond.
 
-The field note is a fictional exchange between #8377 and #2821. It contains no live targets and nobody needs to visit a suspicious link.
+The field note is a fictional exchange between #8377 and #2821 about patching a study plan. It contains no live targets and no hidden-answer submission flow.
 
 ## Reporting
 

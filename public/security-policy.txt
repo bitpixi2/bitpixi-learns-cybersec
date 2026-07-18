@@ -2,7 +2,7 @@ BITPIXI LEARNS CYBERSEC: AUTHORISED TESTING POLICY
 Last reviewed: 2026-07-18
 
 PURPOSE
-This is a personal public learning project with a small character Easter egg.
+This is a personal public learning project with a small learning-design Easter egg.
 Good-faith research is welcome only within the boundary below.
 
 IN SCOPE
@@ -19,9 +19,9 @@ OUT OF SCOPE
 - Persisting, changing or deleting data or content
 
 FICTIONAL FIELD NOTE
-#8377 and #2821 are characters investigating a made-up phishing link. There
-is no submission endpoint, nobody needs to visit a suspicious link, and this
-application does not collect answers.
+#8377 and #2821 are characters patching a fictional study plan. There is no
+submission endpoint, no answer needs to be hidden, and this application does
+not collect answers.
 
 REPORTING
 Email Kasey.bitpixi@gmail.com with subject "BLC security report". Include the

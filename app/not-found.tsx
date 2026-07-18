@@ -4,10 +4,10 @@ export default function NotFound() {
   return (
     <main className="not-found-shell">
       <p className="eyebrow">FIELD NOTE 404 / SAFE FAILURE</p>
-      <h1>Good recon. Nothing spilled.</h1>
+      <h1>Good recon. The route needs a patch.</h1>
       <p>
-        This route does not exist. #8377 reported it, #2821 checked it, and the
-        kettle remains safely on.
+        This route does not exist. #8377 found the friction, #2821 logged it,
+        and the learner gets to restart.
       </p>
       <div className="not-found-actions">
         <Link href="/">Return to the fieldbook</Link>
