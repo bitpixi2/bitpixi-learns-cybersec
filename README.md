@@ -15,8 +15,7 @@ This repository is intentionally reviewable. Start with the live response header
 
 - [`SECURITY.md`](SECURITY.md) defines the authorised, low-rate and non-destructive testing scope.
 - [`Woodsy-Dusty-threat-model.md`](Woodsy-Dusty-threat-model.md) documents trust boundaries, abuse paths and residual risks.
-- [`public/field-notes/incident-8377.json`](public/field-notes/incident-8377.json) is a quick phishing-link Easter egg starring #8377 and #2821.
-- [`public/field-notes/2821.json`](public/field-notes/2821.json) is the machine-readable control manifest.
+- [`public/field-notes/spill-the-tea.json`](public/field-notes/spill-the-tea.json) is a quick phishing-link Easter egg starring #8377 and #2821.
 
 The Easter egg shows its flag directly and has no entry form. Study progress is non-sensitive browser-local state; the application has no user accounts, application database or analytics collector.
 

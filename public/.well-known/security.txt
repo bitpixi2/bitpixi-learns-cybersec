@@ -3,4 +3,4 @@ Expires: 2027-07-18T00:00:00.000Z
 Preferred-Languages: en
 Canonical: https://bitpixi-learns-cybersec.bitpixi.chatgpt.site/.well-known/security.txt
 Policy: https://bitpixi-learns-cybersec.bitpixi.chatgpt.site/security-policy.txt
-Hiring: https://bitpixi-learns-cybersec.bitpixi.chatgpt.site/field-notes/incident-8377.json
+Hiring: https://bitpixi-learns-cybersec.bitpixi.chatgpt.site/field-notes/spill-the-tea.json

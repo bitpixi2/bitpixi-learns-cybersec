@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
+import { readFile, readdir } from "node:fs/promises";
 import test from "node:test";
 
 const projectFile = (path) => new URL(`../${path}`, import.meta.url);
@@ -61,7 +61,7 @@ test("publishes a complete security.txt and bounded policy", async () => {
 });
 
 test("keeps the character Easter egg short, safe and self-contained", async () => {
-  const fieldNote = JSON.parse(await read("public/field-notes/incident-8377.json"));
+  const fieldNote = JSON.parse(await read("public/field-notes/spill-the-tea.json"));
   const serialised = JSON.stringify(fieldNote);
 
   assert.equal(fieldNote.easter_egg, true);
@@ -74,14 +74,7 @@ test("keeps the character Easter egg short, safe and self-contained", async () =
   assert.doesNotMatch(serialised, /events|answer_sha256|detection_artifacts/);
   assert.doesNotMatch(serialised, /alex[._ ]chen|finance\.user/i);
   assert.doesNotMatch(serialised, /\u2014/);
-});
 
-test("documents privacy boundaries and known gaps", async () => {
-  const controls = JSON.parse(await read("public/field-notes/2821.json"));
-
-  assert.equal(controls.data_collection.application_analytics, false);
-  assert.equal(controls.data_collection.easter_egg_submissions, false);
-  assert.equal(controls.data_collection.browser_progress.leaves_device, false);
-  assert.match(controls.browser_controls.csp.mode, /report-only/i);
-  assert.ok(controls.known_gaps.length >= 3);
+  const fieldNotes = await readdir(projectFile("public/field-notes/"));
+  assert.deepEqual(fieldNotes.sort(), ["spill-the-tea.json"]);
 });
