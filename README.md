@@ -11,43 +11,6 @@ The site pairs two authentic CyberBrokers: #2821 for technical systems and #8377
 
 [![BITPIXI LEARNS CYBERSEC hero](docs/screenshots/00-hero.png)](https://bitpixi-learns-cybersec.bitpixi.chatgpt.site/#top)
 
-## Site tour
-
-Every preview opens the corresponding section on the live site.
-
-<table>
-  <tr>
-    <td width="50%">
-      <a href="https://bitpixi-learns-cybersec.bitpixi.chatgpt.site/#roadmap"><img src="docs/screenshots/01-study-plan.png" alt="Study Plan section" width="100%"></a><br>
-      <strong>Study Plan</strong> — 21 missions across AI leadership, Australian foundations and authorised testing.
-    </td>
-    <td width="50%">
-      <a href="https://bitpixi-learns-cybersec.bitpixi.chatgpt.site/#pathway"><img src="docs/screenshots/02-mission-statement.png" alt="Mission Statement section" width="100%"></a><br>
-      <strong>Mission Statement</strong> — responsible AI adoption and commercial blue-team defence.
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <a href="https://bitpixi-learns-cybersec.bitpixi.chatgpt.site/#reading"><img src="docs/screenshots/03-reading-list.png" alt="Reading List section" width="100%"></a><br>
-      <strong>Reading List</strong> — Australian frameworks, Linux, AI social engineering and advanced defender books.
-    </td>
-    <td width="50%">
-      <a href="https://bitpixi-learns-cybersec.bitpixi.chatgpt.site/#watchlist"><img src="docs/screenshots/04-watch-desk.png" alt="Watch Desk section" width="100%"></a><br>
-      <strong>Watch Desk</strong> — current Australian cyber, scams, deepfake, privacy and AI guidance.
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <a href="https://bitpixi-learns-cybersec.bitpixi.chatgpt.site/#merch"><img src="docs/screenshots/05-merch-concepts.png" alt="Merch Concepts section" width="100%"></a><br>
-      <strong>Merch Concepts</strong> — CyberBrokers notebooks, patch, Linux mug and BLC pin.
-    </td>
-    <td width="50%">
-      <a href="https://bitpixi-learns-cybersec.bitpixi.chatgpt.site/#contact"><img src="docs/screenshots/06-contact.png" alt="Contact section" width="100%"></a><br>
-      <strong>Contact</strong> — Bitpixi links and a ready-to-share post.
-    </td>
-  </tr>
-</table>
-
 ## Resource directory
 
 ### Australian foundations
@@ -60,6 +23,10 @@ Every preview opens the corresponding section on the live site.
 | [AWSN — CompTIA Security+ training](https://www.awsn.org.au/Web/web/education-training/comp-tia-security-training.aspx) | Possible subsidised Security+ pathway |
 | [VU Certificate III in Information Technology](https://www.vu.edu.au/courses/certificate-iii-in-information-technology-ict30120) | Planned Victorian prerequisite; wait for PR eligibility |
 | [VU Certificate IV in Cyber Security](https://www.vu.edu.au/courses/certificate-iv-in-cyber-security-22603vic) | Nationally recognised Victorian cyber qualification; wait for PR eligibility |
+
+[![Study Plan — 21 cyber-security learning missions](docs/screenshots/01-study-plan.png)](https://bitpixi-learns-cybersec.bitpixi.chatgpt.site/#roadmap)
+
+**[Study Plan](https://bitpixi-learns-cybersec.bitpixi.chatgpt.site/#roadmap)** — 21 missions across AI leadership, Australian foundations and authorised testing.
 
 ### AI leadership and governance
 
@@ -86,6 +53,10 @@ Every preview opens the corresponding section on the live site.
 | [CREST certifications](https://www.crest-approved.org/skills-certifications-careers/crest-certifications/) | Australia and New Zealand penetration-testing pathway |
 | [OffSec PEN-200 and OSCP+](https://www.offsec.com/courses/pen-200/) | Advanced practical penetration testing |
 
+[![Reading List — Australian frameworks and advanced cyber-security books](docs/screenshots/03-reading-list.png)](https://bitpixi-learns-cybersec.bitpixi.chatgpt.site/#reading)
+
+**[Reading List](https://bitpixi-learns-cybersec.bitpixi.chatgpt.site/#reading)** — Australian frameworks, Linux, AI social engineering and advanced defender books.
+
 ### Australian frameworks and reading
 
 | Resource | Focus |
@@ -107,6 +78,10 @@ Every preview opens the corresponding section on the live site.
 | [*Practical Threat Detection Engineering*](https://www.oreilly.com/library/view/practical-threat-detection/9781801076715/) | ATT&CK, detection-as-code and adversary emulation |
 | [*Evading EDR*](https://nostarch.com/evading-edr) | Detection-aware attacks and endpoint-defence limits |
 | [*The Developer's Playbook for Large Language Model Security*](https://www.oreilly.com/library/view/the-developers-playbook/9781098162191/) | Prompt injection, trust boundaries and LLM application security |
+
+[![Merch Concepts — CyberBrokers notebooks, patch, Linux mug and BLC pin](docs/screenshots/05-merch-concepts.png)](https://bitpixi-learns-cybersec.bitpixi.chatgpt.site/#merch)
+
+**[Merch Concepts](https://bitpixi-learns-cybersec.bitpixi.chatgpt.site/#merch)** — CyberBrokers notebooks, embroidered patch, Linux mug and BLC pin.
 
 ### Australian watch desk
 
