@@ -1,14 +1,14 @@
-BITPIXI LEARNS CYBERSEC — AUTHORISED TESTING POLICY
+BITPIXI LEARNS CYBERSEC: AUTHORISED TESTING POLICY
 Last reviewed: 2026-07-18
 
 PURPOSE
-This is a personal public learning project with a small synthetic blue-team
-exercise. Good-faith research is welcome only within the boundary below.
+This is a personal public learning project with a small learning-design Easter egg.
+Good-faith research is welcome only within the boundary below.
 
 IN SCOPE
 - The exact host: bitpixi-learns-cybersec.bitpixi.chatgpt.site
 - Public pages, response headers and static assets on that host
-- Synthetic files under /field-notes/ and /detections/
+- Fictional files under /field-notes/
 - Low-rate, non-destructive requests that do not affect other visitors
 
 OUT OF SCOPE
@@ -18,10 +18,10 @@ OUT OF SCOPE
 - Denial-of-service, load, resource-exhaustion and destructive testing
 - Persisting, changing or deleting data or content
 
-SYNTHETIC DATA
-Challenge identities are fictional. IP addresses use documentation-only
-ranges and domains use the reserved .example namespace. There is no challenge
-submission endpoint and this application does not collect answers.
+FICTIONAL FIELD NOTE
+#8377 and #2821 are characters patching a fictional study plan. There is no
+submission endpoint, no answer needs to be hidden, and this application does
+not collect answers.
 
 REPORTING
 Email Kasey.bitpixi@gmail.com with subject "BLC security report". Include the

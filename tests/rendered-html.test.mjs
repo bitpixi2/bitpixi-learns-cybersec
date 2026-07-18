@@ -39,6 +39,7 @@ test("returns a safe custom 404", async () => {
 
   const html = await response.text();
   assert.match(html, /Good recon/i);
-  assert.match(html, /Missing is not the same as vulnerable/i);
+  assert.match(html, /route needs a patch/i);
+  assert.match(html, /learner gets to restart/i);
   assert.doesNotMatch(html, /node_modules|file:\/\/|ERR_[A-Z_]+|\bat [A-Za-z_$][\w$]* \(/i);
 });

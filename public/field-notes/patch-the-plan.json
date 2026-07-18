@@ -1,0 +1,38 @@
+{
+  "easter_egg": true,
+  "title": "Patch the Plan",
+  "mission": "Help more women enter cybersecurity by making the path fit the learner.",
+  "cast": {
+    "#8377": "woman building her cybersecurity path",
+    "#2821": "Codex study copilot"
+  },
+  "exchange": [
+    {
+      "speaker": "#8377",
+      "line": "I missed Tuesday. Did I fail cybersecurity?"
+    },
+    {
+      "speaker": "#2821",
+      "line": "No. The schedule failed its user."
+    },
+    {
+      "speaker": "#8377",
+      "line": "Patch?"
+    },
+    {
+      "speaker": "#2821",
+      "line": "One tiny mission, one visible win, and permission to restart."
+    }
+  ],
+  "finding": "Barrier patched. #8377 used Codex to turn an overwhelming cyber roadmap into an ADHD-friendly learning loop and the personal tools she needed.",
+  "tea_break": [
+    "       (  (",
+    "        )  )",
+    "      ........",
+    "      |      |]",
+    "      \\      /",
+    "       `----'"
+  ],
+  "lesson": "Women belong in cybersecurity. Good systems adapt to people.",
+  "flag": "BLC{patch_the_plan_not_the_person}"
+}

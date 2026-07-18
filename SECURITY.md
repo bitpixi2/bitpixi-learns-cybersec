@@ -4,14 +4,14 @@
 
 The supported version is the current `main` branch and the production site at `https://bitpixi-learns-cybersec.bitpixi.chatgpt.site`.
 
-Low-rate, non-destructive testing is authorised for the site's public pages and the explicitly synthetic paths under `/field-notes/` and `/detections/`. You may inspect public source, response headers, static assets and browser-local behaviour.
+Low-rate, non-destructive testing is authorised for the site's public pages and field notes under `/field-notes/`. You may inspect public source, response headers, static assets and browser-local behaviour.
 
 ## Rules of engagement
 
 Please:
 
 - keep automated requests low-rate and stop if availability degrades;
-- use only your own browser state and the supplied synthetic records;
+- use only your own browser state and the supplied fictional field note;
 - preserve evidence and include reproducible steps in a report;
 - identify the affected URL, expected behaviour, observed behaviour and likely impact.
 
@@ -24,7 +24,7 @@ Do not:
 - claim authorisation for any host other than the exact production hostname above;
 - publish sensitive details before there has been a reasonable opportunity to respond.
 
-The incident records use reserved example IP addresses, `.example` domains and fictional identities. They are training evidence, not targets.
+The field note is a fictional exchange between #8377 and #2821 about patching a study plan. It contains no live targets and no hidden-answer submission flow.
 
 ## Reporting
 

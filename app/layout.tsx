@@ -1,23 +1,32 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+const sourceEasterEgg = String.raw`
+       ><(((('>
+
+  #8377: missed Tuesday
+  #2821: the schedule needs a patch
+
+  verdict: patch the plan, not the person
+`;
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://bitpixi-learns-cybersec.bitpixi.chatgpt.site"),
   title: "BITPIXI LEARNS CYBERSEC",
   description:
-    "A public Australian study map for cyber security, authorised testing and responsible AI leadership.",
+    "A public Australian study map for women in cyber security, ADHD-friendly learning and responsible AI leadership.",
   openGraph: {
     type: "website",
     url: "/",
     title: "BITPIXI LEARNS CYBERSEC",
     description:
-      "Blue-team field notes, authorised testing and detection-as-code from an Australian cyber security learning roadmap.",
+      "Women in cyber, ADHD-friendly learning and personal study tools built with Codex.",
     images: [
       {
         url: "/og.png",
-        width: 1731,
-        height: 909,
-        alt: "Bitpixi Learns Cybersec — blue-team field notes and Operation Catch & Release",
+        width: 1734,
+        height: 907,
+        alt: "Bitpixi Learns Cybersec: women in cyber and ADHD-friendly study tools built with Codex",
       },
     ],
   },
@@ -25,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "BITPIXI LEARNS CYBERSEC",
     description:
-      "Blue-team field notes, authorised testing and detection-as-code.",
+      "Women in cyber, ADHD-friendly learning and personal study tools built with Codex.",
     images: ["/og.png"],
   },
   alternates: {
@@ -49,7 +58,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <template id="blc-source-note">{sourceEasterEgg}</template>
+        {children}
+      </body>
     </html>
   );
 }
