@@ -11,7 +11,7 @@
   },
   "data_collection": {
     "application_analytics": false,
-    "challenge_submissions": false,
+    "easter_egg_submissions": false,
     "tracking_pixels": false,
     "browser_progress": {
       "storage": "localStorage",

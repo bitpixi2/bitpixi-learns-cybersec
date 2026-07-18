@@ -1,9 +1,0 @@
-// Operation Catch and Release — synthetic Microsoft 365 hunting query
-// Correlate the result with risky sign-ins and OAuth consent in incident-8377.json.
-OfficeActivity
-| where TimeGenerated > ago(24h)
-| where Operation in ("New-InboxRule", "Set-InboxRule")
-| where Parameters has_any ("RedirectTo", "ForwardTo", "ForwardAsAttachmentTo", "DeleteMessage=True")
-| extend ExternalRedirect = extract(@"(?:RedirectTo|ForwardTo)=([^;]+)", 1, tostring(Parameters))
-| project TimeGenerated, UserId, ClientIP, Operation, OfficeObjectId, ExternalRedirect, Parameters
-| order by TimeGenerated desc

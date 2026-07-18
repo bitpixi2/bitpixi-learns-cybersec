@@ -38,6 +38,10 @@ test("sets the defensive response baseline and audit breadcrumb", async () => {
   assert.match(html, /og:image/);
   assert.match(html, /\/og\.png/);
   assert.match(html, /summary_large_image/);
+  assert.match(html, /blc-source-note/);
+  assert.match(html, /#8377: suspicious link spotted/);
+  assert.match(html, /#2821: safely checked and blocked/);
+  assert.match(html, /verdict: no tokens were spilled/);
 });
 
 test("publishes a complete security.txt and bounded policy", async () => {
@@ -52,42 +56,31 @@ test("publishes a complete security.txt and bounded policy", async () => {
   assert.match(policy, /low-rate, non-destructive/i);
   assert.match(policy, /denial-of-service/i);
   assert.match(policy, /third-party origin/i);
-  assert.match(policy, /reserved \.example namespace/i);
+  assert.match(policy, /fictional field note/i);
+  assert.match(policy, /no submission endpoint/i);
 });
 
-test("keeps the incident evidence synthetic and internally linked", async () => {
-  const incident = JSON.parse(await read("public/field-notes/incident-8377.json"));
-  const serialised = JSON.stringify(incident);
+test("keeps the character Easter egg short, safe and self-contained", async () => {
+  const fieldNote = JSON.parse(await read("public/field-notes/incident-8377.json"));
+  const serialised = JSON.stringify(fieldNote);
 
-  assert.equal(incident.synthetic, true);
-  assert.ok(incident.events.length >= 8);
-  assert.equal(incident.detection_artifacts.length, 2);
-  assert.match(incident.answer_sha256, /^[a-f0-9]{64}$/);
-  assert.match(serialised, /\.example/);
-  assert.match(serialised, /192\.0\.2\.|198\.51\.100\.|203\.0\.113\./);
-  assert.match(serialised, /finance\.user@blc\.example/);
-  assert.doesNotMatch(serialised, /alex[._ ]chen/i);
-  assert.doesNotMatch(serialised, /@gmail\.|@outlook\.|@yahoo\./i);
-});
-
-test("ships reviewable detection-as-code", async () => {
-  const sigma = await read("public/detections/phisherman.yml");
-  const kql = await read("public/detections/phisherman.kql");
-
-  assert.match(sigma, /^title:/m);
-  assert.match(sigma, /^id: [a-f0-9-]{36}$/m);
-  assert.match(sigma, /^logsource:/m);
-  assert.match(sigma, /New-InboxRule/);
-  assert.match(sigma, /condition: selection_operation and selection_action/);
-  assert.match(kql, /OfficeActivity/);
-  assert.match(kql, /RedirectTo/);
+  assert.equal(fieldNote.easter_egg, true);
+  assert.equal(fieldNote.cast["#8377"], "human phishing-link investigator");
+  assert.equal(fieldNote.cast["#2821"], "systems verifier");
+  assert.equal(fieldNote.exchange.length, 4);
+  assert.match(fieldNote.finding, /Nobody clicked\./);
+  assert.equal(fieldNote.flag, "BLC{spill_the_tea_not_the_tokens}");
+  assert.ok(fieldNote.tea_cup.length >= 6);
+  assert.doesNotMatch(serialised, /events|answer_sha256|detection_artifacts/);
+  assert.doesNotMatch(serialised, /alex[._ ]chen|finance\.user/i);
+  assert.doesNotMatch(serialised, /\u2014/);
 });
 
 test("documents privacy boundaries and known gaps", async () => {
   const controls = JSON.parse(await read("public/field-notes/2821.json"));
 
   assert.equal(controls.data_collection.application_analytics, false);
-  assert.equal(controls.data_collection.challenge_submissions, false);
+  assert.equal(controls.data_collection.easter_egg_submissions, false);
   assert.equal(controls.data_collection.browser_progress.leaves_device, false);
   assert.match(controls.browser_controls.csp.mode, /report-only/i);
   assert.ok(controls.known_gaps.length >= 3);

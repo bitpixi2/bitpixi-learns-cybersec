@@ -5,21 +5,20 @@
 
 A public Australian cyber-security and responsible AI leadership fieldbook.
 
-The site pairs two authentic CyberBrokers—Woodsy Dusty (#2821) for the technical track and Guarded of Vibrant (#8377) for the human layer—with an 18-mission study checklist, Australian research watchlist, authorised-testing boundary and a small purple-team audit trail.
+The site pairs two authentic CyberBrokers: Woodsy Dusty (#2821) for the technical track and Guarded of Vibrant (#8377) for the human layer. They anchor an 18-mission study checklist, Australian research watchlist, authorised-testing boundary and a small audit trail.
 
 Live site: [bitpixi-learns-cybersec.bitpixi.chatgpt.site](https://bitpixi-learns-cybersec.bitpixi.chatgpt.site)
 
 ## Audit trail
 
-This repository is intentionally reviewable. Start with the live response headers or [`/.well-known/security.txt`](https://bitpixi-learns-cybersec.bitpixi.chatgpt.site/.well-known/security.txt), then follow the synthetic case without testing real identities, systems or third parties.
+This repository is intentionally reviewable. Start with the live response headers or [`/.well-known/security.txt`](https://bitpixi-learns-cybersec.bitpixi.chatgpt.site/.well-known/security.txt), then find the short character exchange without testing real systems or third parties.
 
 - [`SECURITY.md`](SECURITY.md) defines the authorised, low-rate and non-destructive testing scope.
 - [`Woodsy-Dusty-threat-model.md`](Woodsy-Dusty-threat-model.md) documents trust boundaries, abuse paths and residual risks.
-- [`public/field-notes/incident-8377.json`](public/field-notes/incident-8377.json) is a synthetic phishing and account-takeover investigation.
-- [`public/detections/phisherman.yml`](public/detections/phisherman.yml) and [`public/detections/phisherman.kql`](public/detections/phisherman.kql) provide testable detection-as-code.
+- [`public/field-notes/incident-8377.json`](public/field-notes/incident-8377.json) is a quick phishing-link Easter egg starring #8377 and #2821.
 - [`public/field-notes/2821.json`](public/field-notes/2821.json) is the machine-readable control manifest.
 
-The challenge has no submission endpoint and collects no answers. Study progress is non-sensitive browser-local state; the application has no user accounts, application database or analytics collector.
+The Easter egg shows its flag directly and has no entry form. Study progress is non-sensitive browser-local state; the application has no user accounts, application database or analytics collector.
 
 ## Architecture
 
