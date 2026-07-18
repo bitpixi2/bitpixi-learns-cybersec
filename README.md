@@ -3,9 +3,16 @@
 [![Verify](https://github.com/bitpixi2/bitpixi-learns-cybersec/actions/workflows/ci.yml/badge.svg)](https://github.com/bitpixi2/bitpixi-learns-cybersec/actions/workflows/ci.yml)
 [![CodeQL](https://github.com/bitpixi2/bitpixi-learns-cybersec/actions/workflows/codeql.yml/badge.svg)](https://github.com/bitpixi2/bitpixi-learns-cybersec/actions/workflows/codeql.yml)
 
-A public Australian cyber-security and responsible AI leadership fieldbook about women entering the field, ADHD-friendly learning design and personal study tools built with Codex.
-
-The site pairs two authentic CyberBrokers: #2821 for technical systems and #8377 for people systems. They anchor a 21-mission study checklist, an Australian research watch desk, a curated reading list and a small audit trail.
+<table>
+  <tr>
+    <td width="76" align="center"><img src="public/stickers/codex-color.png" width="56" alt="Codex logo"></td>
+    <td>A public Australian cyber-security and responsible AI leadership fieldbook about women entering the field, ADHD-friendly learning design and personal study tools built with <strong>Codex</strong>.</td>
+  </tr>
+  <tr>
+    <td width="76" align="center"><a href="https://www.cyberbrokers.com/"><img src="public/stickers/cyberbrokers-logo.jpg" width="56" alt="CyberBrokers logo"></a></td>
+    <td>The site pairs two authentic <a href="https://www.cyberbrokers.com/"><strong>CyberBrokers</strong></a>: #2821 for technical systems and #8377 for people systems. They anchor a 21-mission study checklist, an Australian research watch desk, a curated reading list and a small audit trail.</td>
+  </tr>
+</table>
 
 **[Open the live study plan](https://bitpixi-learns-cybersec.bitpixi.chatgpt.site)**
 
@@ -96,8 +103,16 @@ The site pairs two authentic CyberBrokers: #2821 for technical systems and #8377
 
 ### Communities
 
-- [OwlSec](https://discord.com/invite/owls)
-- [Kanga Root](https://discord.gg/DSnxTcqA5F)
+<table>
+  <tr>
+    <td width="76" align="center"><a href="https://discord.com/invite/owls"><img src="public/stickers/owlsec-face.png" width="56" alt="OwlSec owl logo"></a></td>
+    <td><a href="https://discord.com/invite/owls"><strong>OwlSec</strong></a><br>Cyber-security study group on Discord.</td>
+  </tr>
+  <tr>
+    <td width="76" align="center"><a href="https://discord.gg/DSnxTcqA5F"><img src="public/stickers/kanga-root.webp" width="56" alt="Kanga Root kangaroo logo"></a></td>
+    <td><a href="https://discord.gg/DSnxTcqA5F"><strong>Kanga Root</strong></a><br>Security study group on Discord.</td>
+  </tr>
+</table>
 
 ## Audit trail
 
@@ -114,10 +129,3 @@ The Easter egg shows its flag directly and has no entry form. Study progress is 
 The application is a React 19 and Next.js 16 fieldbook compiled by Vinext for a Cloudflare Worker-compatible runtime. The Worker centralises security headers and dispatches the page renderer and allowlisted image optimisation. Public assets are immutable source artifacts; progress remains in `localStorage` on the visitor's own device.
 
 The original CyberBrokers SVGs, PNG renders and metadata snapshots live in `public/nft/`. They are intentionally public and are not secrets or access controls.
-
-## Commands
-
-- `npm run dev` starts local development.
-- `npm run build` creates the production build.
-- `npm test` builds and verifies the rendered fieldbook and audit artifacts.
-- `npm run lint` runs the code-quality checks.
