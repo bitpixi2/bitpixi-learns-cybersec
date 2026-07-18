@@ -5,9 +5,124 @@
 
 A public Australian cyber-security and responsible AI leadership fieldbook about women entering the field, ADHD-friendly learning design and personal study tools built with Codex.
 
-The site pairs two authentic CyberBrokers: Woodsy Dusty (#2821) for the technical track and Guarded of Vibrant (#8377) for the human layer. They anchor an 18-mission study checklist, Australian research watchlist, authorised-testing boundary and a small audit trail.
+The site pairs two authentic CyberBrokers: #2821 for technical systems and #8377 for people systems. They anchor a 21-mission study checklist, an Australian research watch desk, a curated reading list and a small audit trail.
 
-Live site: [bitpixi-learns-cybersec.bitpixi.chatgpt.site](https://bitpixi-learns-cybersec.bitpixi.chatgpt.site)
+**[Open the live study plan](https://bitpixi-learns-cybersec.bitpixi.chatgpt.site)**
+
+[![BITPIXI LEARNS CYBERSEC hero](docs/screenshots/00-hero.png)](https://bitpixi-learns-cybersec.bitpixi.chatgpt.site/#top)
+
+## Site tour
+
+Every preview opens the corresponding section on the live site.
+
+<table>
+  <tr>
+    <td width="50%">
+      <a href="https://bitpixi-learns-cybersec.bitpixi.chatgpt.site/#roadmap"><img src="docs/screenshots/01-study-plan.png" alt="Study Plan section" width="100%"></a><br>
+      <strong>Study Plan</strong> — 21 missions across AI leadership, Australian foundations and authorised testing.
+    </td>
+    <td width="50%">
+      <a href="https://bitpixi-learns-cybersec.bitpixi.chatgpt.site/#pathway"><img src="docs/screenshots/02-mission-statement.png" alt="Mission Statement section" width="100%"></a><br>
+      <strong>Mission Statement</strong> — responsible AI adoption and commercial blue-team defence.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <a href="https://bitpixi-learns-cybersec.bitpixi.chatgpt.site/#reading"><img src="docs/screenshots/03-reading-list.png" alt="Reading List section" width="100%"></a><br>
+      <strong>Reading List</strong> — Australian frameworks, Linux, AI social engineering and advanced defender books.
+    </td>
+    <td width="50%">
+      <a href="https://bitpixi-learns-cybersec.bitpixi.chatgpt.site/#watchlist"><img src="docs/screenshots/04-watch-desk.png" alt="Watch Desk section" width="100%"></a><br>
+      <strong>Watch Desk</strong> — current Australian cyber, scams, deepfake, privacy and AI guidance.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <a href="https://bitpixi-learns-cybersec.bitpixi.chatgpt.site/#merch"><img src="docs/screenshots/05-merch-concepts.png" alt="Merch Concepts section" width="100%"></a><br>
+      <strong>Merch Concepts</strong> — CyberBrokers notebooks, patch, Linux mug and BLC pin.
+    </td>
+    <td width="50%">
+      <a href="https://bitpixi-learns-cybersec.bitpixi.chatgpt.site/#contact"><img src="docs/screenshots/06-contact.png" alt="Contact section" width="100%"></a><br>
+      <strong>Contact</strong> — Bitpixi links and a ready-to-share post.
+    </td>
+  </tr>
+</table>
+
+## Resource directory
+
+### Australian foundations
+
+| Resource | Focus |
+| --- | --- |
+| [TAFE NSW — Introduction to Linux](https://store.training.tafensw.edu.au/product/introduction-to-linux/) | Free Linux fundamentals |
+| [TAFE NSW — Introduction to Data Centres](https://store.training.tafensw.edu.au/product/introduction-to-data-centres/) | Free infrastructure fundamentals |
+| [Google Cybersecurity Certificate](https://grow.google/certificates/cybersecurity/) | Linux, SQL, Python, SIEM and incident response |
+| [AWSN — CompTIA Security+ training](https://www.awsn.org.au/Web/web/education-training/comp-tia-security-training.aspx) | Possible subsidised Security+ pathway |
+| [VU Certificate III in Information Technology](https://www.vu.edu.au/courses/certificate-iii-in-information-technology-ict30120) | Planned Victorian prerequisite; wait for PR eligibility |
+| [VU Certificate IV in Cyber Security](https://www.vu.edu.au/courses/certificate-iv-in-cyber-security-22603vic) | Nationally recognised Victorian cyber qualification; wait for PR eligibility |
+
+### AI leadership and governance
+
+| Resource | Focus |
+| --- | --- |
+| [Microsoft Applied Skills — Secure AI solutions](https://learn.microsoft.com/en-us/credentials/applied-skills/secure-ai-solutions-in-the-cloud/) | Cloud AI guardrails and Defender controls |
+| [Microsoft Applied Skills — Integrate MCP tools](https://learn.microsoft.com/en-us/credentials/applied-skills/integrate-model-context-protocol-tools-with-agents-in-microsoft-foundry/) | Foundry agents, MCP tools and monitoring |
+| [Microsoft AI Agent Builder Associate — AB-620](https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/) | Enterprise agents, RAG, MCP and APIs |
+| [Microsoft AI Transformation Leader — AB-731](https://learn.microsoft.com/en-us/credentials/certifications/ai-transformation-leader/) | Responsible adoption and business change |
+| [Google Cloud Generative AI Leader](https://cloud.google.com/learn/certification/generative-ai-leader) | GenAI strategy and responsible adoption |
+| [AWS Certified AI Practitioner](https://aws.amazon.com/certification/certified-ai-practitioner/) | Foundation models, security and governance |
+| [IAPP AI Governance Professional](https://iapp.org/certify/aigp) | AI lifecycle governance, law, risk and trust |
+
+### Hands-on security and authorised testing
+
+| Resource | Focus |
+| --- | --- |
+| [Centri Blue Team Junior Analyst pathway](https://www.centri.org/courses/blue-team-junior-analyst-pathway-bundle) | Free defensive skills diagnostic |
+| [TryHackMe](https://tryhackme.com/) | Guided cyber labs |
+| [PortSwigger Web Security Academy](https://portswigger.net/web-security) | Free authorised web-security labs |
+| [PortSwigger Burp Suite Certified Practitioner](https://portswigger.net/web-security/certification) | Practical web-security examination |
+| [Microsoft Security, Compliance and Identity Fundamentals — SC-900](https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/) | Microsoft security fundamentals |
+| [Microsoft Security Operations Analyst — SC-200](https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/) | Sentinel, Defender, KQL and threat hunting |
+| [CREST certifications](https://www.crest-approved.org/skills-certifications-careers/crest-certifications/) | Australia and New Zealand penetration-testing pathway |
+| [OffSec PEN-200 and OSCP+](https://www.offsec.com/courses/pen-200/) | Advanced practical penetration testing |
+
+### Australian frameworks and reading
+
+| Resource | Focus |
+| --- | --- |
+| [ASD Information Security Manual — June 2026](https://www.cyber.gov.au/sites/default/files/2026-06/Information%20security%20manual%20%28June%202026%29.pdf) | Australian risk-based security controls |
+| [ISM June 2026 change notes](https://www.cyber.gov.au/sites/default/files/2026-06/ISM%20June%202026%20changes%20%28June%202026%29.pdf) | Current ISM changes |
+| [Victorian Digital Technologies Skills Plan 2025–26](https://www.vic.gov.au/sites/default/files/2026-04/fact-sheet-digital-technologies-victorian-skills-plan-for-2025-into-2026.pdf) | Victorian digital career pathways |
+| [Victorian cyber-strategy submission](https://www.homeaffairs.gov.au/reports-and-pubs/PDFs/2023-2030-aus-cyber-security-strategy-discussion-paper/Victorian-Government-submission.PDF) | Regional access, work readiness and diverse cohorts |
+| [Women in Cyber Security pilot brief](https://www.premier.vic.gov.au/sites/default/files/2022-05/220513%20-%20Creating%20More%20Jobs%20For%20Women%20In%20Cyber%20Security.pdf) | Victorian mentoring, internships and leadership archive |
+| [Australia's National AI Plan 2025](https://www.industry.gov.au/sites/default/files/2025-12/national-ai-plan.pdf) | National AI capability, benefit and safety plan |
+
+### Books
+
+| Book | Focus |
+| --- | --- |
+| [*Just for Fun*](https://www.goodreads.com/book/show/160171.Just_for_Fun) | Linus Torvalds, Linux and open-source culture |
+| [*Deceptive Intelligence*](https://link.springer.com/book/9798868821769) | AI-enabled social engineering, phishing and deepfakes |
+| [*The Active Defender*](https://www.wiley-vch.de/de/fachgebiete/computer-und-informatik/the-active-defender-978-1-119-89521-3) | Offensive thinking for defenders |
+| [*Practical Threat Detection Engineering*](https://www.oreilly.com/library/view/practical-threat-detection/9781801076715/) | ATT&CK, detection-as-code and adversary emulation |
+| [*Evading EDR*](https://nostarch.com/evading-edr) | Detection-aware attacks and endpoint-defence limits |
+| [*The Developer's Playbook for Large Language Model Security*](https://www.oreilly.com/library/view/the-developers-playbook/9781098162191/) | Prompt injection, trust boundaries and LLM application security |
+
+### Australian watch desk
+
+| Resource | Focus |
+| --- | --- |
+| [National Anti-Scam Centre](https://www.scamwatch.gov.au/stop-check-protect/help-to-spot-and-avoid-scams/how-scammers-use-technology-and-ai) | AI-assisted scams targeting Australians |
+| [ASD Annual Cyber Threat Report](https://www.cyber.gov.au/about-us/view-all-content/reports-and-statistics/annual-cyber-threat-report-2024-2025) | Australia's current threat picture |
+| [Australian Institute of Criminology](https://www.aic.gov.au/publications/sb/sb51) | AI-enabled crime, impersonation and fraud research |
+| [eSafety deepfake research](https://www.esafety.gov.au/industry/tech-trends-and-challenges/deepfakes) | Synthetic-media harms and detection limits |
+| [OAIC guidance on commercial AI products](https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/guidance-on-privacy-and-the-use-of-commercially-available-ai-products) | Australian privacy obligations and AI |
+| [National AI Centre](https://www.industry.gov.au/science-technology-and-innovation/technology/artificial-intelligence/national-ai-centre) | Responsible organisational AI adoption |
+
+### Communities
+
+- [OwlSec](https://discord.com/invite/owls)
+- [Kanga Root](https://discord.gg/DSnxTcqA5F)
 
 ## Audit trail
 
