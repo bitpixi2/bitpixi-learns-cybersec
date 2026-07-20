@@ -29,7 +29,7 @@
     "@vitejs/plugin-rsc": "0.5.28",
     "eslint": "9.39.4",
     "eslint-config-next": "16.2.10",
-    "react-server-dom-webpack": "19.2.6",
+    "react-server-dom-webpack": "19.2.7",
     "tailwindcss": "4.2.1",
     "typescript": "5.9.3",
     "vinext": "0.2.1",
